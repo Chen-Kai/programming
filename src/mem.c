@@ -12,8 +12,17 @@ void memcpy_test() {
 	puts(dest_p);
 }
 
+void memmove_test() {
+	char *src_p = STRING_TO_BE_COPIED;
+	char *dest_p = malloc(11);
+	assert(strlen(src_p) < 11);
+	memmove(dest_p, src_p, strlen(src_p));
+	puts(dest_p);
+}
+
 int main(void) {
 	memcpy_test();
+	memmove_test();
 	return 0;
 }
 
