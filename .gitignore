@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 *.swp
+=======
+*.project
+*.cproject
+>>>>>>> branch 'master' of https://github.com/DailyEfforts/c_basics.git
 /Debug
