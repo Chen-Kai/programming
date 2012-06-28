@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, Android_DemosActivity!</string>
     <string name="app_name">Android_Demos</string>
+    <string-array name="topics">
+        <item >handler</item>
+    </string-array>
 
 </resources>
