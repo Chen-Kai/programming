@@ -35,6 +35,8 @@ public class HandlerActivity extends Activity {
 				mHandler.post(mWorker);
 				mMsgHnadler.sendMessageDelayed(Message.obtain(mMsgHnadler,
 						MsgHandler.MSG_SET_CONTENT_TO_EDITTEXT), 3000);
+				mMsgHnadler.sendMessageDelayed(Message.obtain(mMsgHnadler,
+						MsgHandler.MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER), 5000);
 			}
 		});
 	}
@@ -48,12 +50,17 @@ public class HandlerActivity extends Activity {
 
 	class MsgHandler extends Handler {
 		public static final int MSG_SET_CONTENT_TO_EDITTEXT = 0;
+		public static final int MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER = 1;
 
 		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			case MSG_SET_CONTENT_TO_EDITTEXT:
-				mEditText.setText("by handleMessage");
+				mEditText.setText("handle MSG_SET_CONTENT_TO_EDITTEXT");
+				mHandler.removeMessages(MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER);
+				break;
+			case MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER:
+				mEditText.setText("handle MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER");
 				break;
 			default:
 				break;
