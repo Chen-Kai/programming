@@ -12,12 +12,24 @@
 
         <requestFocus />
     </EditText>
-    
-    <Button
-        android:id="@+id/button1_handler"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_post_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Post" />
+
+        <Button
+            android:id="@+id/btn_cancel_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_post_handler"
+            android:text="Cancel" />
+    </RelativeLayout>
 
 </LinearLayout>
