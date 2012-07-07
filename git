@@ -9,3 +9,6 @@ git push [remote nick name]
 
 # cancel local commit
 git reset HEAD~1
+
+# rm remote
+git remote rm [remote nick name]
