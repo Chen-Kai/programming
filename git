@@ -5,7 +5,7 @@ git clone [remote url] ([local_dir])
 git remote -v
 
 # push to remote
-git push [remote name]
+git push (-f) [remote name]
 
 # cancel local commit
 git reset HEAD~1
@@ -15,3 +15,15 @@ git remote add [remote name] [remote url]
 
 # rm remote
 git remote rm [remote name]
+
+# replace local file using file in git repo
+git checkout [file name]
+
+# fetch from remote
+git fetch [remote name]
+
+# merge the local repo and the remote repo
+git merge [remote name]/[remote branch]
+
+# rm from index
+git rm --cached [file to be rm]
