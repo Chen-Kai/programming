@@ -1,0 +1,11 @@
+# clone a repo
+git clone [url] ([local_dir])
+
+# check remote url
+git remote -v
+
+# push to remote
+git push [remote nick name]
+
+# cancel local commit
+git reset HEAD~1
