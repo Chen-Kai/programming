@@ -1,14 +1,17 @@
 # clone a repo
-git clone [url] ([local_dir])
+git clone [remote url] ([local_dir])
 
 # check remote url
 git remote -v
 
 # push to remote
-git push [remote nick name]
+git push [remote name]
 
 # cancel local commit
 git reset HEAD~1
 
+# add remote
+git remote add [remote name] [remote url]
+
 # rm remote
-git remote rm [remote nick name]
+git remote rm [remote name]
