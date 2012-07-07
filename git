@@ -27,3 +27,15 @@ git merge [remote name]/[remote branch]
 
 # rm from index
 git rm --cached [file to be rm]
+
+# one commit, one line log 
+git log --pretty=oneline
+
+# view git repo visually
+gitk
+
+# view detail modification  for this commit
+git log -p
+
+# view the latest commit
+git log -1
