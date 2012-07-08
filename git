@@ -39,3 +39,6 @@ git log -p
 
 # view the latest commit
 git log -1
+
+# view config infor
+git config --list
