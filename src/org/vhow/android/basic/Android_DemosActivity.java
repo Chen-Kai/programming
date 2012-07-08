@@ -1,6 +1,6 @@
-package org.vhow.android.demos;
+package org.vhow.android.basic;
 
-import org.vhow.android.demos.handler.HandlerActivity;
+import org.vhow.android.basic.handler.HandlerActivity;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class Android_DemosActivity extends ListActivity {
 	private ListAdapter mListAdapter;

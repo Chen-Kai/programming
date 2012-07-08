@@ -1,6 +1,6 @@
-package org.vhow.android.demos.handler;
+package org.vhow.android.basic.handler;
 
-import org.vhow.android.demos.R;
+import org.vhow.android.basic.R;
 
 import android.app.Activity;
 import android.os.Bundle;
