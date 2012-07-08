@@ -1,5 +1,6 @@
 package org.vhow.android.basic;
 
+import org.vhow.android.basic.display.DisplayInfo;
 import org.vhow.android.basic.handler.HandlerActivity;
 
 import android.app.ListActivity;
@@ -29,6 +30,10 @@ public class Android_DemosActivity extends ListActivity {
 		case 0:
 			Intent intent = new Intent(this, HandlerActivity.class);
 			startActivity(intent);
+			break;
+		case 1:
+			Intent intent2 = new Intent(this, DisplayInfo.class);
+			startActivity(intent2);
 			break;
 		}
 	}
