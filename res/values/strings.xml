@@ -5,6 +5,8 @@
     <string name="app_name">Android_Demos</string>
     <string-array name="topics">
         <item >handler</item>
+        <item >display</item>
+        <item >sensor</item>
     </string-array>
 
 </resources>
