@@ -3,6 +3,7 @@ package org.vhow.android.basic;
 import org.vhow.android.basic.display.DisplayInfo;
 import org.vhow.android.basic.handler.HandlerActivity;
 import org.vhow.android.basic.sensor.SensorActivity;
+import org.vhow.android.basic.touch.TouchActivity;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -12,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class Android_DemosActivity extends ListActivity {
+public class AndroidBasicActivity extends ListActivity {
 	private ListAdapter mListAdapter;
 
 	@Override
@@ -29,15 +30,18 @@ public class Android_DemosActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		switch (position) {
 		case 0:
-			Intent intent = new Intent(this, HandlerActivity.class);
-			startActivity(intent);
+			Intent intent0 = new Intent(this, HandlerActivity.class);
+			startActivity(intent0);
 			break;
 		case 1:
-			Intent intent2 = new Intent(this, DisplayInfo.class);
-			startActivity(intent2);
+			Intent intent1 = new Intent(this, DisplayInfo.class);
+			startActivity(intent1);
 			break;
 		case 2:
-			Intent intent3 = new Intent(this, SensorActivity.class);
+			Intent intent2 = new Intent(this, SensorActivity.class);
+			startActivity(intent2);
+		case 3:
+			Intent intent3 = new Intent(this, TouchActivity.class);
 			startActivity(intent3);
 		}
 	}
