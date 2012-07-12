@@ -1,6 +1,7 @@
 package org.vhow.android.basic;
 
 import org.vhow.android.basic.display.DisplayInfo;
+import org.vhow.android.basic.gesture.GestureActivity;
 import org.vhow.android.basic.handler.HandlerActivity;
 import org.vhow.android.basic.sensor.SensorActivity;
 import org.vhow.android.basic.touch.TouchActivity;
@@ -43,6 +44,9 @@ public class AndroidBasicActivity extends ListActivity {
 		case 3:
 			Intent intent3 = new Intent(this, TouchActivity.class);
 			startActivity(intent3);
+		case 4:
+			Intent intent4 = new Intent(this, GestureActivity.class);
+			startActivity(intent4);			
 		}
 	}
 }

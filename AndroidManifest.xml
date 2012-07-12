@@ -21,6 +21,7 @@
         <activity android:name=".display.DisplayInfo"></activity>
         <activity android:name=".touch.TouchActivity"></activity>
         <activity android:name=".sensor.SensorActivity"></activity>
+        <activity android:name=".gesture.GestureActivity"></activity>
     </application>
 
 </manifest>

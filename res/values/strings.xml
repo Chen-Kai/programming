@@ -2,12 +2,13 @@
 <resources>
 
     <string name="hello">Hello World, Android_DemosActivity!</string>
-    <string name="app_name">Android_Demos</string>
+    <string name="app_name">Android_Basic</string>
     <string-array name="topics">
         <item >handler</item>
         <item >display info</item>
         <item >sensor list</item>
         <item >touch</item>
+        <item >gesture</item>
     </string-array>
 
 </resources>
