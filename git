@@ -42,3 +42,13 @@ git log -1
 
 # view config infor
 git config --list
+
+# first push to a repo
+git push -u origin master
+
+# set user.name
+git config --global user.name [your name here]
+git remote show origin
+git branch test
+git merge test
+git push --all [remote name]
