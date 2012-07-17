@@ -48,7 +48,19 @@ git push -u origin master
 
 # set user.name
 git config --global user.name [your name here]
-git remote show origin
-git branch test
+
+# show remote info
+git remote show [remote name]
+
+# switch to a branch
+git branch [branch name]
+
+# merge a branch to current branch
 git merge test
+
+# push all branches to remote
 git push --all [remote name]
+
+# stop tracking a file
+git rm --cached .project
+.gitignore
