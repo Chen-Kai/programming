@@ -3,12 +3,10 @@
 
     <string name="hello">Hello World, Android_DemosActivity!</string>
     <string name="app_name">Android_Basic</string>
-    <string-array name="topics">
-        <item >handler</item>
-        <item >display info</item>
-        <item >sensor list</item>
-        <item >touch</item>
-        <item >gesture</item>
-    </string-array>
+    <string name="activity_label_handler">Handler</string>
+    <string name="activity_label_display_info">Display</string>
+    <string name="activity_label_sensor">Sensor</string>
+    <string name="activity_label_touchevent">TouchEvent</string>
+    <string name="activity_label_gesture">Gesture</string>
 
 </resources>

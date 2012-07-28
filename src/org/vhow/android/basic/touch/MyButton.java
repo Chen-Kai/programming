@@ -26,9 +26,9 @@ public class MyButton extends Button {
 		info.append("Touched ");
 		info.append(touchedPointsNum);
 		info.append(touchedPointsNum > 1 ? " points" : " point");
-		
+
 		Toast.makeText(mContext, info, Toast.LENGTH_SHORT).show();
-		
+
 		return super.onTouchEvent(event);
 	}
 

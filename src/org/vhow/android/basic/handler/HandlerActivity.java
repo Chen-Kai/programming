@@ -39,11 +39,12 @@ public class HandlerActivity extends Activity {
 						MsgHandler.MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER), 6000);
 			}
 		});
-		
+
 		mButtonCancel.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mMsgHnadler.removeMessages(MsgHandler.MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER);
+				mMsgHnadler
+						.removeMessages(MsgHandler.MSG_SET_CONTENT_TO_EDITTEXT_ANOTHER);
 			}
 		});
 	}

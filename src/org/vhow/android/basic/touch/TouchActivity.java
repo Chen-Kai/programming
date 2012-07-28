@@ -9,7 +9,7 @@ public class TouchActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		setContentView(R.layout.touch_activity_ui);
 	}
 }

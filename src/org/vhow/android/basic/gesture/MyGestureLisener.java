@@ -4,9 +4,9 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 
 public class MyGestureLisener extends GestureDetector.SimpleOnGestureListener {
-	
+
 	IDoubleTapHandler mDoubleTapHandler;
-	
+
 	public void setDoubleTapHandler(IDoubleTapHandler mDoubleTapHandler) {
 		this.mDoubleTapHandler = mDoubleTapHandler;
 	}
@@ -58,9 +58,9 @@ public class MyGestureLisener extends GestureDetector.SimpleOnGestureListener {
 	public boolean onSingleTapConfirmed(MotionEvent e) {
 		return super.onSingleTapConfirmed(e);
 	}
-	
+
 	public interface IDoubleTapHandler {
 		void onDoubleTap();
 	}
-	
+
 }
