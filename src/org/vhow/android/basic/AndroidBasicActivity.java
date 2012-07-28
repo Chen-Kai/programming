@@ -58,9 +58,10 @@ public class AndroidBasicActivity extends ListActivity {
 			ResolveInfo info = iterator.next();
 			mMap.put(info.activityInfo.loadLabel(mApkManager).toString(),
 					info.activityInfo.name);
-			
+
 			if (DEBUG) {
-				Log.d(TAG, "AndroidBasicActivity.getTopics() - " + info.activityInfo.name);
+				Log.d(TAG, "AndroidBasicActivity.getTopics() - "
+						+ info.activityInfo.name);
 			}
 		}
 

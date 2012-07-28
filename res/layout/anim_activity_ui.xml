@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:text="@string/hello" />
+
+    <Button
+        android:id="@+id/btn_anim_view"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_anim"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btn_anim_start_translate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:text="translate" />
+
+    <Button
+        android:id="@+id/btn_anim_scale"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_anim_start_translate"
+        android:layout_alignBottom="@+id/btn_anim_start_translate"
+        android:layout_toRightOf="@+id/btn_anim_start_translate"
+        android:text="scale" />
+
+    <Button
+        android:id="@+id/btn_anim_rotate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_anim_scale"
+        android:text="roate" />
+
+    <Button
+        android:id="@+id/btn_anim_alpha"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_anim_rotate"
+        android:text="alpha" />
+
+</RelativeLayout>

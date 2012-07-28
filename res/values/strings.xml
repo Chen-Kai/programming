@@ -2,11 +2,12 @@
 <resources>
 
     <string name="hello">Hello World, Android_DemosActivity!</string>
-    <string name="app_name">Android_Basic</string>
+    <string name="app_name">AndroidBasic</string>
     <string name="activity_label_handler">Handler</string>
     <string name="activity_label_display_info">Display</string>
     <string name="activity_label_sensor">Sensor</string>
     <string name="activity_label_touchevent">TouchEvent</string>
     <string name="activity_label_gesture">Gesture</string>
+    <string name="activity_label_anim">Anim</string>
 
 </resources>

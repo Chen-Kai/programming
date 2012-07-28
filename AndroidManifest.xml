@@ -4,7 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="15" />
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -14,38 +16,58 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".handler.HandlerActivity" android:label="@string/activity_label_handler">
+        <activity
+            android:name=".handler.HandlerActivity"
+            android:label="@string/activity_label_handler" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="org.vhow.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
-        <activity android:name=".display.DisplayInfo" android:label="@string/activity_label_display_info">
+        <activity
+            android:name=".display.DisplayInfo"
+            android:label="@string/activity_label_display_info" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="org.vhow.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
-        <activity android:name=".touch.TouchActivity" android:label="@string/activity_label_touchevent">
+        <activity
+            android:name=".touch.TouchActivity"
+            android:label="@string/activity_label_touchevent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="org.vhow.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
-        <activity android:name=".sensor.SensorActivity" android:label="@string/activity_label_sensor">
+        <activity
+            android:name=".sensor.SensorActivity"
+            android:label="@string/activity_label_sensor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="org.vhow.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
-        <activity android:name=".gesture.GestureActivity" android:label="@string/activity_label_gesture">
+        <activity
+            android:name=".gesture.GestureActivity"
+            android:label="@string/activity_label_gesture" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.AnimActivity"
+            android:label="@string/activity_label_anim" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
