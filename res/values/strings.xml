@@ -9,5 +9,6 @@
     <string name="activity_label_touchevent">TouchEvent</string>
     <string name="activity_label_gesture">Gesture</string>
     <string name="activity_label_anim">Anim</string>
+    <string name="activity_label_view">View</string>
 
 </resources>
