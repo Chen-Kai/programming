@@ -2,6 +2,11 @@ package org.vhow.android.basic.anim;
 
 import org.vhow.android.basic.R;
 
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,25 +19,28 @@ public class AnimActivity extends Activity {
 	private Button mBtnStartScale;
 	private Button mBtnStartRotate;
 	private Button mBtnStartAlpha;
-	private Button mBtnView;
+	private Button mView;
 	private BtnOnClickListener mBtnOnClickListener;
+	private Button mBtnStartProperty;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.anim_activity_ui);
 
-		mBtnView = (Button) findViewById(R.id.btn_anim_view);
+		mView = (Button) findViewById(R.id.btn_anim_view);
 		mBtnStartTranslate = (Button) findViewById(R.id.btn_anim_start_translate);
 		mBtnStartScale = (Button) findViewById(R.id.btn_anim_scale);
 		mBtnStartRotate = (Button) findViewById(R.id.btn_anim_rotate);
 		mBtnStartAlpha = (Button) findViewById(R.id.btn_anim_alpha);
+		mBtnStartProperty = (Button) findViewById(R.id.btn_anim_property);
 
 		mBtnOnClickListener = new BtnOnClickListener();
 		mBtnStartTranslate.setOnClickListener(mBtnOnClickListener);
 		mBtnStartScale.setOnClickListener(mBtnOnClickListener);
 		mBtnStartRotate.setOnClickListener(mBtnOnClickListener);
 		mBtnStartAlpha.setOnClickListener(mBtnOnClickListener);
+		mBtnStartProperty.setOnClickListener(mBtnOnClickListener);
 	}
 
 	class BtnOnClickListener implements View.OnClickListener {
@@ -57,8 +65,14 @@ public class AnimActivity extends Activity {
 				mAnimation = AnimationUtils.loadAnimation(AnimActivity.this,
 						R.anim.alpha);
 				break;
+			case R.id.btn_anim_property:
+				AnimatorSet animation = (AnimatorSet) AnimatorInflater
+						.loadAnimator(AnimActivity.this, R.animator.animator_set);
+				animation.setTarget(mView);
+				animation.start();
+				return;
 			}
-			mBtnView.startAnimation(mAnimation);
+			mView.startAnimation(mAnimation);
 		}
 	}
 }

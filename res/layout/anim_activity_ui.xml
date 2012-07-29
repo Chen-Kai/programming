@@ -21,6 +21,7 @@
         android:layout_below="@+id/tv_anim"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="100dp"
+        
         android:text="View" />
 
     <Button
@@ -59,5 +60,13 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/btn_anim_rotate"
         android:text="alpha" />
+
+    <Button
+        android:id="@+id/btn_anim_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_anim_start_translate"
+        android:layout_alignParentLeft="true"
+        android:text="Property" />
 
 </RelativeLayout>
