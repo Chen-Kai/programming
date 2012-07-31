@@ -63,4 +63,24 @@ git push --all [remote name]
 
 # stop tracking a file
 git rm --cached .project
+
+# ignore files or directories
 .gitignore
+
+# check branch infomation
+git branch -v
+
+# create and switch to a new branch
+git checkout -b [new branch name here]
+
+# delete a branch
+git branch -d [branch_name] # use -D to force delete
+
+# check the branches that have not been merged 
+git branch --no-merged
+
+# check the branches that have been merged 
+git branch --merged
+
+# amend last commit
+git commit --amend
