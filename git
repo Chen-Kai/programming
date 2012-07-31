@@ -84,3 +84,6 @@ git branch --merged
 
 # amend last commit
 git commit --amend
+
+# add tag
+git tag -a [tag_name] -m [tag_description]
