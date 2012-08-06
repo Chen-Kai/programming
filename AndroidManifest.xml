@@ -8,6 +8,9 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="15" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
@@ -77,6 +80,15 @@
         <activity
             android:name=".view.ViewActivity"
             android:label="@string/activity_label_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".net.NetActivity"
+            android:label="@string/activity_label_net" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
