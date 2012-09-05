@@ -22,9 +22,7 @@ public class MyPopupWindow extends PopupWindow {
 
 		setContentView(mView);
 		
-this.setFocusable(true);
-
-//		this.setInputMethodMode(INPUT_METHOD_NEEDED);
+		this.setInputMethodMode(INPUT_METHOD_NOT_NEEDED);
 //		this.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
 		// this.setSoftInputMode(mode)
