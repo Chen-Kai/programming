@@ -1,0 +1,8 @@
+The BitmapFactory clas provides several decoding methods (decodeByteArray(), decodeFile(), decodeResource(), etc.) for creating a Bitmap from various sources. These methods attempt to allocate memory for the constracted bitmap and therefore can easily result in an OutofMemory exception.
+Each type of decode method has additional signatures that let you specify decoding options via the BitmapFactory.Options class.
+
+Setting the inJustDecodeBounds property to true whie decoding avoids memory allocation, returnning null for the bitmap object but setting outWidth, outHeight and outMimeType. This technique allows you to read the dimensions and type of the image data prior to construction (and memory allocation) of the bitmap.
+
+The AsyncTask class provides and easy way to execute soe work in a background thread and publish the results back on the UI thread.
+
+
