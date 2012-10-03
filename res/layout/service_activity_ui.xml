@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service" />
+
+    <Button
+        android:id="@+id/btn_start_service"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_service"
+        android:text="startService" />
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_start_service"
+        android:layout_alignBottom="@+id/btn_start_service"
+        android:layout_toLeftOf="@+id/btn_start_service"
+        android:text="stopService" />
+
+    <TextView
+        android:id="@+id/tv_intent_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_start_service"
+        android:layout_marginTop="38dp"
+        android:text="IntentService" />
+
+    <Button
+        android:id="@+id/btn_start_intent_service"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_intent_service"
+        android:text="startService" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_start_intent_service"
+        android:layout_alignBottom="@+id/btn_start_intent_service"
+        android:layout_alignRight="@+id/btn_stop_service"
+        android:text="Button" />
+
+</RelativeLayout>

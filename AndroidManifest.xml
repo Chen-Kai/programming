@@ -104,6 +104,20 @@
                 <category android:name="org.vhow.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.HelloIntentService" >
+        </service>
+
+        <activity
+            android:name=".service.ServiceActivity"
+            android:label="@string/activity_label_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <service android:name=".service.HelloService"></service>
     </application>
 
 </manifest>
