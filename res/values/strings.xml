@@ -13,5 +13,6 @@
     <string name="activity_label_net">Net</string>
     <string name="activity_label_popup_window">PopupWindow</string>
     <string name="activity_label_service">Service</string>
+    <string name="activity_label_notification">Notification</string>
 
 </resources>
