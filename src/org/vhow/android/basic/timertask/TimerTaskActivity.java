@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +26,7 @@ public class TimerTaskActivity extends Activity {
 	private Handler mHandler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			Toast.makeText(TimerTaskActivity.this,
-					"TimerTask - " + Thread.currentThread().getName(),
+					"TimerTask in thread: " + (String)msg.obj,
 					Toast.LENGTH_SHORT).show();
 		};
 	};
@@ -36,7 +37,7 @@ public class TimerTaskActivity extends Activity {
 		setContentView(R.layout.timer_task_activity_ui);
 		
 		Toast.makeText(TimerTaskActivity.this,
-				"Activity - " + Thread.currentThread().getName(),
+				"Activity in thread: " + Thread.currentThread().getName(),
 				Toast.LENGTH_SHORT).show();
 
 		mTimer = new Timer();
@@ -55,7 +56,9 @@ public class TimerTaskActivity extends Activity {
 		@Override
 		public void run() {
 			Log.d(TAG, "TimerTask" + Thread.currentThread().getName());
-			mHandler.sendEmptyMessage(0);
+			Message msg = Message.obtain();
+			msg.obj = Thread.currentThread().getName();
+			mHandler.sendMessage(msg);
 		}
 	};
 
