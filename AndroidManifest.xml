@@ -137,15 +137,25 @@
 
         <receiver android:name=".receiver.BootCompleteReceiver" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".receiver.InputMethodChangedEventReceiver">
+        <receiver android:name=".receiver.InputMethodChangedEventReceiver" >
             <intent-filter>
-                <action android:name="android.intent.action.INPUT_METHOD_CHANGED"/>
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".timertask.TimerTaskActivity"
+            android:label="@string/activity_timer_task" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

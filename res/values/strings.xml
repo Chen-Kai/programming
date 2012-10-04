@@ -14,5 +14,6 @@
     <string name="activity_label_popup_window">PopupWindow</string>
     <string name="activity_label_service">Service</string>
     <string name="activity_label_notification">Notification</string>
+    <string name="activity_timer_task">TimerTask</string>
 
 </resources>
