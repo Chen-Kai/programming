@@ -15,5 +15,6 @@
     <string name="activity_label_service">Service</string>
     <string name="activity_label_notification">Notification</string>
     <string name="activity_timer_task">TimerTask</string>
-
+    <string name="activity_edittext">Editor</string>
+    
 </resources>
