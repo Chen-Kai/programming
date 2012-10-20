@@ -13,7 +13,7 @@ import android.widget.ArrayAdapter;
 
 public class SensorActivity extends ListActivity {
 	// SensorManager lets you access the device's sensors.
-	private SensorManager mSensorManger;
+	private SensorManager mSensorManager;
 
 	// Use this list to store sensors.
 	private List<Sensor> mSensorList;
@@ -31,10 +31,10 @@ public class SensorActivity extends ListActivity {
 		mSensorNames = new ArrayList<String>();
 
 		// Get an instance of SensorManager.
-		mSensorManger = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
 		// Get the list of all available sensors.
-		mSensorList = mSensorManger.getSensorList(Sensor.TYPE_ALL);
+		mSensorList = mSensorManager.getSensorList(Sensor.TYPE_ALL);
 
 		// Get the names of each sensor.
 		Iterator<Sensor> iterator = mSensorList.iterator();
