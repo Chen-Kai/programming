@@ -22,7 +22,7 @@ public class SensorActivity extends ListActivity {
 	private ArrayAdapter<String> mAdapter;
 
 	// Use this ArrayList to store the names of each sensor.
-	ArrayList<String> mSensorNames;
+	private ArrayList<String> mSensorNames;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
