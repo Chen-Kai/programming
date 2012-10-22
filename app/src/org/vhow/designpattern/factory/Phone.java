@@ -1,0 +1,5 @@
+package org.vhow.designpattern.factory;
+
+public abstract class Phone {
+	public abstract void makePhoneCall();
+}
