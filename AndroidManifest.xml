@@ -149,7 +149,25 @@
 
         <activity
             android:name=".timertask.TimerTaskActivity"
-            android:label="@string/activity_timer_task" >
+            android:label="@string/activity_label_timer_task" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.SeekBarActivity"
+            android:label="@string/activity_label_seekbar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.vhow.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".editor.EditTextActivity"
+            android:label="@string/activity_label_edittext" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
