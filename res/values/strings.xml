@@ -17,5 +17,6 @@
     <string name="activity_label_timer_task">TimerTask</string>
     <string name="activity_label_edittext">Editor</string>
     <string name="activity_label_seekbar">SeekBar</string>
+    <string name="activity_label_screen_orientation">screenOrientation</string>
 
 </resources>
