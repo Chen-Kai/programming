@@ -7,3 +7,6 @@
 
 # bin folder
 app/bin/
+
+# self-defined generated files
+*.obj
