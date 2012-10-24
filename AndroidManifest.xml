@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.vhow.android.basic"
+    package="com.gmail.dailyefforts.android.basic"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -132,7 +132,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".notification.NotificationService" >
+        <service android:name="com.gmail.dailyefforts.android.basic.notification.NotificationService" >
         </service>
 
         <receiver android:name=".receiver.BootCompleteReceiver" >
@@ -141,7 +141,7 @@
                 <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".receiver.InputMethodChangedEventReceiver" >
+        <receiver android:name="com.gmail.dailyefforts.android.basic.receiver.InputMethodChangedEventReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
             </intent-filter>
