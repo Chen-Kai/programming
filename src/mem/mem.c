@@ -9,6 +9,7 @@ void memcpy_test() {
 	assert(strlen(src_p) < 11);
 	memcpy(dest_p, src_p, strlen(src_p));
 	puts(dest_p);
+	free(dest_p);
 }
 
 void memmove_test() {
@@ -17,6 +18,6 @@ void memmove_test() {
 	assert(strlen(src_p) < 11);
 	memmove(dest_p, src_p, strlen(src_p));
 	puts(dest_p);
+	free(dest_p);
 }
-
 
