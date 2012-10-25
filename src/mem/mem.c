@@ -19,3 +19,4 @@ void memmove_test() {
 	puts(dest_p);
 }
 
+
