@@ -64,7 +64,8 @@ public class AnimActivity extends Activity {
 				break;
 			case R.id.btn_anim_property:
 				AnimatorSet animation = (AnimatorSet) AnimatorInflater
-						.loadAnimator(AnimActivity.this, R.animator.animator_set);
+						.loadAnimator(AnimActivity.this,
+								R.animator.animator_set);
 				animation.setTarget(mView);
 				animation.start();
 				return;

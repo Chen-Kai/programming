@@ -47,12 +47,13 @@ public class EditTextActivity extends Activity {
 				Toast.makeText(EditTextActivity.this,
 						"afterTextChanged(): " + s.toString(),
 						Toast.LENGTH_SHORT).show();
-				
+
 				if (mEditText.getImeOptions() == EditorInfo.IME_ACTION_DONE) {
 					mEditText.setImeOptions(EditorInfo.IME_ACTION_GO);
 				}
-//				mInputMethodManager.restartInput(mEditText);
-//				mInputMethodManager.hideSoftInputFromInputMethod(token, flags)
+				// mInputMethodManager.restartInput(mEditText);
+				// mInputMethodManager.hideSoftInputFromInputMethod(token,
+				// flags)
 				mInputMethodManager.showSoftInput(mEditText, 0);
 
 			}

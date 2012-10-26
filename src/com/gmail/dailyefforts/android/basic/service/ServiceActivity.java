@@ -36,11 +36,13 @@ public class ServiceActivity extends Activity {
 		public void onClick(View v) {
 			switch (v.getId()) {
 			case R.id.btn_start_service:
-				mIntentStartService = new Intent(ServiceActivity.this, HelloService.class);
+				mIntentStartService = new Intent(ServiceActivity.this,
+						HelloService.class);
 				startService(mIntentStartService);
 				break;
 			case R.id.btn_start_intent_service:
-				mIntentStartIntentService = new Intent(ServiceActivity.this, HelloIntentService.class);
+				mIntentStartIntentService = new Intent(ServiceActivity.this,
+						HelloIntentService.class);
 				startService(mIntentStartService);
 				break;
 			case R.id.btn_stop_service:

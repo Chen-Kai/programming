@@ -20,9 +20,9 @@ public class MyPopupWindow extends PopupWindow {
 		mView = inflater.inflate(R.layout.my_popup_window_ui, null, false);
 
 		setContentView(mView);
-		
+
 		this.setInputMethodMode(INPUT_METHOD_NOT_NEEDED);
-//		this.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+		// this.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
 		// this.setSoftInputMode(mode)
 

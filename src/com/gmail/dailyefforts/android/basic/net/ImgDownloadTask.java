@@ -43,9 +43,9 @@ public class ImgDownloadTask extends AsyncTask<String, Integer, Bitmap> {
 			if (DEBUG) {
 				Log.d(TAG, "getResponseCode: " + conn.getResponseCode());
 			}
-			
+
 			conn.connect();
-			
+
 			InputStream ins = conn.getInputStream();
 			bitmap = BitmapFactory.decodeStream(ins);
 

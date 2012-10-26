@@ -37,15 +37,15 @@ public class NetActivity extends Activity {
 		mUrlStr = mTextView.getText().toString();
 
 		mImgDownloadTask = new ImgDownloadTask(mImageView);
-		
+
 		mBtnClickedListener = new BtnClickedListener();
-		
+
 		mBtnDownLoadTv.setOnClickListener(mBtnClickedListener);
 		mBtnDownLoadEt.setOnClickListener(mBtnClickedListener);
-		
+
 	}
-	
-	private  class BtnClickedListener implements View.OnClickListener {
+
+	private class BtnClickedListener implements View.OnClickListener {
 
 		@Override
 		public void onClick(View v) {
@@ -58,11 +58,11 @@ public class NetActivity extends Activity {
 				url = mEditText.getText().toString();
 				break;
 			}
-			
+
 			if (mImgDownloadTask != null) {
 				mImgDownloadTask.execute(url);
 			}
 		}
-		
+
 	}
 }

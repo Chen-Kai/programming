@@ -15,16 +15,15 @@ public class NotificationService extends Service {
 
 	private NotificationManager mNotificationManager;
 	private Notification mNotification;
-	
+
 	private static final int NOTIFY_ID = 1;
-	
+
 	@Override
 	public void onCreate() {
 		Toast.makeText(this, "onCreate()", Toast.LENGTH_SHORT).show();
-	
+
 		super.onCreate();
 	}
-	
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
@@ -32,18 +31,20 @@ public class NotificationService extends Service {
 		mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		mNotification = new Notification(R.drawable.ic_launcher,
 				"My notification", System.currentTimeMillis());
-		
+
 		Context context = getApplicationContext();
 		CharSequence contentTitle = "Notification Content Title";
 		CharSequence contentText = "Notification Content Text";
 		Intent notificationIntent = new Intent(this, NotificationActivity.class);
-		PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+		PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
+				notificationIntent, 0);
 
-		mNotification.setLatestEventInfo(context, contentTitle, contentText, contentIntent);
+		mNotification.setLatestEventInfo(context, contentTitle, contentText,
+				contentIntent);
 		mNotificationManager.notify(NOTIFY_ID, mNotification);
 		return super.onStartCommand(intent, flags, startId);
 	}
-	
+
 	@Override
 	public void onStart(Intent intent, int startId) {
 		Toast.makeText(this, "onStart()", Toast.LENGTH_SHORT).show();

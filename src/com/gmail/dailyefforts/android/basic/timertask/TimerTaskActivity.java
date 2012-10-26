@@ -25,7 +25,7 @@ public class TimerTaskActivity extends Activity {
 	private Handler mHandler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			Toast.makeText(TimerTaskActivity.this,
-					"TimerTask in thread: " + (String)msg.obj,
+					"TimerTask in thread: " + (String) msg.obj,
 					Toast.LENGTH_SHORT).show();
 		};
 	};
@@ -34,13 +34,13 @@ public class TimerTaskActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.timer_task_activity_ui);
-		
+
 		Toast.makeText(TimerTaskActivity.this,
 				"Activity in thread: " + Thread.currentThread().getName(),
 				Toast.LENGTH_SHORT).show();
 
 		mTimer = new Timer();
-		
+
 		mBtnScheduleTimer = (Button) findViewById(R.id.btn_schedule_timer);
 		mBtnScheduleTimer.setOnClickListener(new View.OnClickListener() {
 			@Override
