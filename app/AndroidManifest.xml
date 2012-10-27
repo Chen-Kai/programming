@@ -5,7 +5,7 @@
     android:versionName="1.0.1" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="15"
         android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -178,6 +178,15 @@
             android:name=".view.screen.ScreenOrientationActivity"
             android:label="@string/activity_label_screen_orientation"
             android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TranslucentActivity"
+            android:theme="@style/Theme.GreenTranslucent" android:label="@string/activity_label_translucent_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
