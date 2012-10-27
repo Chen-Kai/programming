@@ -26,7 +26,7 @@ public class AndroidBasicActivity extends ListActivity {
 	private PackageManager mApkManager;
 	private Map<String, String> mMap;
 
-	private static final String CATEGORY = "org.vhow.android.intent.categor.BASIC";
+	private static final String CATEGORY = "com.gmail.dailyefforts.android.intent.categor.BASIC";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

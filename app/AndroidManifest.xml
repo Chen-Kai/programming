@@ -30,7 +30,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -39,7 +39,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -48,7 +48,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -57,7 +57,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -66,7 +66,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -75,7 +75,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -84,7 +84,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -93,7 +93,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -102,7 +102,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
 
@@ -115,7 +115,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
 
@@ -128,7 +128,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
 
@@ -153,7 +153,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -162,7 +162,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -171,7 +171,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
         <activity
@@ -181,7 +181,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="org.vhow.android.intent.categor.BASIC" />
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
     </application>

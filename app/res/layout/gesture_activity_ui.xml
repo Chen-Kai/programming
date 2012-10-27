@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="" />
 
-    <org.vhow.android.basic.gesture.GestureView
+    <com.gmail.dailyefforts.android.basic.gesture.GestureView
         android:id="@+id/view_gesture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
