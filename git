@@ -90,10 +90,9 @@ git tag -a [tag_name] -m [tag_description]
 
 # list out the deleted files
 git ls-files deleted
-
 # 1. stage modified new contents of tracked files
 # 2. remove files from the index if the corresponding files in the working tree have been removed.
 git add -u
-
 # read the doc about 'add' command
 man git-add
+git checkout -- app/res/values/strings.xml
