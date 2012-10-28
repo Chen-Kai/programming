@@ -186,7 +186,26 @@
         </activity>
         <activity
             android:name=".activity.TranslucentActivity"
-            android:theme="@style/Theme.GreenTranslucent" android:label="@string/activity_label_translucent_activity">
+            android:label="@string/activity_label_translucent_activity"
+            android:theme="@style/Theme.GreenTranslucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.TextBoundsActivity"
+            android:label="@string/activity_label_text_bounds" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.DrawTextActivity"
+            android:label="@string/activity_label_draw_text" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

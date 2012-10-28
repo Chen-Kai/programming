@@ -19,5 +19,7 @@
     <string name="activity_label_seekbar">SeekBar</string>
     <string name="activity_label_screen_orientation">screenOrientation</string>
     <string name="activity_label_translucent_activity">TranslucentActivity</string>
+    <string name="activity_label_text_bounds">TextBounds</string>
+    <string name="activity_label_draw_text">drawText</string>
 
 </resources>
