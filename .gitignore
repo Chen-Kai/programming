@@ -2,3 +2,6 @@ bin/
 gen/
 proguard-project.txt
 /.settings
+
+# open office temp files
+.~*
