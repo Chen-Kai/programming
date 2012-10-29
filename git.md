@@ -142,5 +142,19 @@ gitk .gitignore
 git log HEAD..origin/master
 git merge origin/master
 
-# unstage a file
-git reset HEAD progit.zh.pdf
+# unstaging a staged file
+git reset HEAD <file>
+
+# unmodifying a modified file
+git checkout -- <file>
+
+# show diff before commtting
+git commit -v
+
+
+# remove all files that have the .log extension in the log/
+git rm log/\*.log
+
+# remove all files that end with ~
+git rm \*~
+git mv README.md r.md
