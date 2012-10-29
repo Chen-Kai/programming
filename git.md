@@ -1,0 +1,146 @@
+# clone a repo
+git clone [remote url] ([local_dir])
+
+# check remote url
+git remote -v
+
+# push to remote
+git push (-f) [remote name]
+
+# cancel local commit
+git reset HEAD~1
+
+# add remote
+git remote add [remote name] [remote url]
+
+# rm remote
+git remote rm [remote name]
+
+# replace local file using file in git repo
+git checkout [file name]
+
+# fetch from remote
+git fetch [remote name]
+
+# merge the local repo and the remote repo
+git merge [remote name]/[remote branch]
+
+# rm from index
+git rm --cached [file to be rm]
+
+# one commit, one line log 
+git log --pretty=oneline
+
+# to see last modifications 
+git log -p -1
+
+# view git repo visually
+gitk
+
+# view detail modification  for this commit
+git log -p
+
+# view the latest commit
+git log -1
+
+# view config infor
+git config --list
+
+# first push to a repo
+git push -u origin master
+
+# set user.name
+git config --global user.name [your name here]
+
+# show remote info
+git remote show [remote name]
+
+# switch to a branch
+git branch [branch name]
+
+# merge a branch to current branch
+git merge test
+
+# push all branches to remote
+git push --all [remote name]
+
+# stop tracking a file
+git rm --cached .project
+
+# ignore files or directories
+.gitignore
+
+# check branch infomation
+git branch -v
+
+# create and switch to a new branch
+git checkout -b [new branch name here]
+
+# delete a branch
+git branch -d [branch_name] # use -D to force delete
+
+# check the branches that have not been merged 
+git branch --no-merged
+
+# check the branches that have been merged 
+git branch --merged
+
+# amend last commit
+git commit --amend
+
+# add tag
+git tag -a [tag_name] -m [tag_description]
+
+# list out the deleted files
+git ls-files deleted
+# 1. stage modified new contents of tracked files
+# 2. remove files from the index if the corresponding files in the working tree have been removed.
+git add -u
+# read the doc about 'add' command
+man git-add
+git checkout -- app/res/values/strings.xml
+
+# unstage a file
+git reset HEAD [file]
+
+# rename remote name
+git remote rename origin github
+
+# show tag
+git show v1.0.1
+
+# see info of a tag
+git tag -v v1.0.1
+
+# add a tag for some commit
+git tag -a [tag_name] [commit_id, like: 5e612c5]
+
+# push some tag to remote
+git push [remote_name] [tag_name]
+
+# push all tags to romote
+git push [remote_name] tags
+
+# check which branches have been merged
+git branch --merged
+
+# check which branches are not merged
+git branch --no-merged
+
+# show all untracked files
+git status -u
+
+# clean all untracked files
+git clean -df
+
+# discard all modified files
+git checkout -- .
+git log -p -1 .gitignore
+gitk .gitignore
+
+# Your branch and 'origin/master' have diverged,
+git log HEAD..origin/master
+git merge origin/master
+
+# unstage a file
+git reset HEAD progit.zh.pdf
