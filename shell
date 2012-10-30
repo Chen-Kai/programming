@@ -1,2 +1,6 @@
 chmod 755 DesignPattern/
 find . -name *.* -mtime -1
+find . -type f -daystart -mtime -2 >> tmp
+
+# find the contains 'git', and modified in 24 hours.
+find . -name *git* -mtime -1
