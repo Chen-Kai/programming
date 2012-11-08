@@ -230,6 +230,16 @@
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".provider.SettingsSystemData"
+            android:label="@string/title_activity_settings_data"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
