@@ -1,7 +1,12 @@
-bin/
-gen/
-proguard-project.txt
-/.settings
+# auto generated
+app/bin/
+app/gen/
 
 # open office temp files
 .~*
+
+# eclipse
+app/.classpath
+app/project.properties
+app/.project
+app/.settings
