@@ -1,6 +1,7 @@
 package com.gmail.dailyefforts.android.basic.provider;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -29,28 +30,42 @@ public class SettingsSystemData extends Activity {
 		mSettingDataBuffer
 				.append("activity tag: \nandroid:theme=\"@android:style/Theme.Holo.Light.NoActionBar.Fullscreen\"\n");
 		mSettingDataBuffer.append("\nCurrent Settings.System data:\n");
-		try {
-			Field[] fields = Settings.System.class.getFields();
-			boolean isPublic = false;
-			boolean isStatic = false;
-			boolean isFinal = false;
-			boolean isString = false;
-			boolean isUpperCase = false;
-			for (Field field : fields) {
-				
-				isPublic = java.lang.reflect.Modifier.isPublic(field.getModifiers());
-				isStatic = java.lang.reflect.Modifier.isStatic(field.getModifiers());
-				isFinal = java.lang.reflect.Modifier.isFinal(field.getModifiers());
-				isString = String.class.getName().equals(field.getType().getName());
-				isUpperCase =  Character.isUpperCase(field.getName().charAt(0));
-				
-				if (isPublic && isStatic && isFinal && isString && isUpperCase) {
-					get((String)field.get(null));
+
+		Field[] fields = Settings.System.class.getFields();
+
+		boolean isPublic = false;
+		boolean isStatic = false;
+		boolean isFinal = false;
+		boolean isString = false;
+		boolean isUpperCase = false;
+		
+		for (Field field : fields) {
+			
+			// Detect if the field is Public.
+			isPublic = Modifier.isPublic(field.getModifiers());
+			
+			// Detect if the field is Static
+			isStatic = Modifier.isStatic(field.getModifiers());
+			
+			// Detect if the field is Final
+			isFinal = Modifier.isFinal(field.getModifiers());
+			
+			// Detect if the field is String type
+			isString = String.class.getName().equals(field.getType().getName());
+			
+			// Detect if the field is started with capital letter
+			isUpperCase = Character.isUpperCase(field.getName().charAt(0));
+
+			if (isPublic && isStatic && isFinal && isString && isUpperCase) {
+				try {
+					get((String) field.get(null));
+				} catch (IllegalArgumentException e) {
+					// Let it go.
+				} catch (IllegalAccessException e) {
+					// Let it go.
 				}
 			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 
 		mTextView.setText(mSettingDataBuffer.toString());
