@@ -158,3 +158,24 @@ git rm log/\*.log
 # remove all files that end with ~
 git rm \*~
 git mv README.md r.md
+
+# reset to some version
+git reset HEAD~1
+
+# push & update
+git push -u origin master
+
+# push to some branch
+git push origin :ongoing
+
+# del a branch of remote repo
+delete remote branch
+
+# rename a remove name
+git remote rename github origin
+
+# list all commits of some author
+git log --author=<author-name or email>
+
+# list all commits of some committer
+git log --committer=<committer-name or email>
