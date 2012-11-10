@@ -1,6 +1,34 @@
+# Change all the files' mode in some dir
 chmod 755 DesignPattern/
+
+# 
 find . -name *.* -mtime -1
 find . -type f -daystart -mtime -2 >> tmp
 
-# find the contains 'git', and modified in 24 hours.
+# Find the contains 'git', and modified in 24 hours.
 find . -name *git* -mtime -1
+
+# Show the file type of some file
+file [file-name-here]
+
+# Compare differences between file-a and file-b
+diff [file-a] [file-b]
+
+vimdiff
+
+gvimdiff
+
+# Show the data on some col
+cut -d[divider-here] -f[col-index-here]
+
+# Check spell correction
+aspell check [file-name-here]
+
+# Delete some characters in some file
+tr -d [characters-to-be-deleted] < [file-name-here] > [file-name-here]
+
+# Translate lower characters to captals
+tr 'a-z' 'A-Z' < [file-name-here]
+
+# Replace some old characters to a new one in some file
+sed 's/[old]/[new]/g' [file-name-here]
