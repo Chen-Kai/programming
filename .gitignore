@@ -1,4 +1,5 @@
 *.swp
+*.o
 .cproject
 .project
-/Debug
+Debug/
