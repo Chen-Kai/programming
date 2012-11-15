@@ -179,3 +179,4 @@ git log --author=<author-name or email>
 
 # list all commits of some committer
 git log --committer=<committer-name or email>
+git commit -p

@@ -32,3 +32,4 @@ tr 'a-z' 'A-Z' < [file-name-here]
 
 # Replace some old characters to a new one in some file
 sed 's/[old]/[new]/g' [file-name-here]
+lscpu
