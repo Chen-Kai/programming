@@ -12,7 +12,7 @@ public class DirBrowser {
 	 * @param list
 	 *            Stores all sub files.
 	 */
-	public void listAllFiles(final File root, List<File> list) {
+	public static void listAllFiles(final File root, List<File> list) {
 
 		File[] subFiles = root.listFiles();
 
@@ -28,5 +28,21 @@ public class DirBrowser {
 
 		}
 
+	}
+
+	/**
+	 * Modify all the sub-directories from upper case to lower case.
+	 * @param root The root directory.
+	 */
+	public static void toLowserCase(final File root) {
+		File[] subFiles = root.listFiles();
+		for (File f : subFiles) {
+			if (f.isDirectory()) {
+				toLowserCase(f);
+			}
+			File newFile = new File(f.getParent() + "/"
+					+ f.getName().toLowerCase());
+			f.renameTo(newFile);
+		}
 	}
 }
