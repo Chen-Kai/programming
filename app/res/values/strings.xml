@@ -27,13 +27,12 @@
     <string name="title_activity_save_settings">SaveSettings</string>
     <string name="title_activity_settings_data">SettingsSystemData</string>
     <string name="title_activity_button_clicked">ButtonClicked</string>
-    <string name="tv_content_button_clicked"><pre>
-        1. in xml: \n
+    <string name="tv_content_button_clicked"><pre>        1. in xml: \n
         android:onClick="btnClickHandler" \n\n
         2. in Java: \n
         public void btnClickHandler(View view){} \n\n\n
         PS:. android:textAppearance=\n
-        ?android:attr/textAppearanceSmall
-    </pre></string>
+        ?android:attr/textAppearanceSmall</pre></string>
+    <string name="title_activity_available_locales">AvailableLocales</string>
 
 </resources>
