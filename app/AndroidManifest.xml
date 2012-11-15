@@ -240,6 +240,16 @@
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
+ 	<activity
+            android:name=".view.ButtonClicked"
+            android:label="@string/title_activity_button_clicked" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
