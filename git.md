@@ -179,4 +179,12 @@ git log --author=<author-name or email>
 
 # list all commits of some committer
 git log --committer=<committer-name or email>
-git commit -p
+
+# see the details before committing
+git commit -v
+
+# checkout some last version of a file
+git checkout HEAD~1 <file name here>
+
+# see last version of a file
+git show HEAD~1:<file name here>
