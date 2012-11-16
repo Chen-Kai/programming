@@ -42,7 +42,12 @@ public class DirBrowser {
 			}
 			File newFile = new File(f.getParent() + "/"
 					+ f.getName().toLowerCase());
+			System.out.println(f.getAbsolutePath());
 			f.renameTo(newFile);
 		}
+	}
+	
+	public static void main(String[] args) {
+//		DirBrowser.toLowserCase(new File("/home/"));
 	}
 }
