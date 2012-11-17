@@ -10,11 +10,11 @@ public class OS {
 			"java.class.version", "java.home", "java.vendor",
 			"java.vendor.url", "java.version", "line.separator", "os.arch",
 			"os.name", "path.separator", "user.dir", "user.home", "user.name" };
+	private static final String CMD = "du -sh";
 
 	public static void main(String[] args) throws IOException {
-		printSystemProperties();
-		String cmd = "ls";
-		exec(cmd);
+//		printSystemProperties();
+		exec(CMD);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class OS {
 			return;
 		}
 
-		// Execute `ls` command.
+		// Execute SHELL command.
 		Runtime runtime = Runtime.getRuntime();
 		Process process = runtime.exec(cmd);
 
