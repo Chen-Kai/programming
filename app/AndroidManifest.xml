@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".AndroidBasicActivity"
+            android:name="com.gmail.dailyefforts.android.basic.AndroidBasicActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".handler.HandlerActivity"
+            android:name="com.gmail.dailyefforts.android.basic.handler.HandlerActivity"
             android:label="@string/activity_label_handler" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".display.DisplayInfo"
+            android:name="com.gmail.dailyefforts.android.basic.display.DisplayInfo"
             android:label="@string/activity_label_display_info" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".touch.TouchActivity"
+            android:name="com.gmail.dailyefforts.android.basic.touch.TouchActivity"
             android:label="@string/activity_label_touchevent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sensor.SensorActivity"
+            android:name="com.gmail.dailyefforts.android.basic.sensor.SensorActivity"
             android:label="@string/activity_label_sensor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,7 +61,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".gesture.GestureActivity"
+            android:name="com.gmail.dailyefforts.android.basic.gesture.GestureActivity"
             android:label="@string/activity_label_gesture" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +70,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".anim.AnimActivity"
+            android:name="com.gmail.dailyefforts.android.basic.anim.AnimActivity"
             android:label="@string/activity_label_anim" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -79,7 +79,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.ViewActivity"
+            android:name="com.gmail.dailyefforts.android.basic.view.ViewActivity"
             android:label="@string/activity_label_view" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,7 +88,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".net.NetActivity"
+            android:name="com.gmail.dailyefforts.android.basic.net.NetActivity"
             android:label="@string/activity_label_net" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,7 +97,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".popup.PopupWindowActivity"
+            android:name="com.gmail.dailyefforts.android.basic.popup.PopupWindowActivity"
             android:label="@string/activity_label_popup_window" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -106,11 +106,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.HelloIntentService" >
+        <service android:name="com.gmail.dailyefforts.android.basic.service.HelloIntentService" >
         </service>
 
         <activity
-            android:name=".service.ServiceActivity"
+            android:name="com.gmail.dailyefforts.android.basic.service.ServiceActivity"
             android:label="@string/activity_label_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -119,11 +119,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.HelloService" >
+        <service android:name="com.gmail.dailyefforts.android.basic.service.HelloService" >
         </service>
 
         <activity
-            android:name=".notification.NotificationActivity"
+            android:name="com.gmail.dailyefforts.android.basic.notification.NotificationActivity"
             android:label="@string/activity_label_notification" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -135,7 +135,7 @@
         <service android:name=".notification.NotificationService" >
         </service>
 
-        <receiver android:name=".receiver.BootCompleteReceiver" >
+        <receiver android:name="com.gmail.dailyefforts.android.basic.receiver.BootCompleteReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
@@ -148,7 +148,7 @@
         </receiver>
 
         <activity
-            android:name=".timertask.TimerTaskActivity"
+            android:name="com.gmail.dailyefforts.android.basic.timertask.TimerTaskActivity"
             android:label="@string/activity_label_timer_task" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -157,7 +157,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".widget.SeekBarActivity"
+            android:name="com.gmail.dailyefforts.android.basic.widget.SeekBarActivity"
             android:label="@string/activity_label_seekbar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -166,7 +166,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".editor.EditTextActivity"
+            android:name="com.gmail.dailyefforts.android.basic.editor.EditTextActivity"
             android:label="@string/activity_label_edittext" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -175,7 +175,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.screen.ScreenOrientationActivity"
+            android:name="com.gmail.dailyefforts.android.basic.view.screen.ScreenOrientationActivity"
             android:label="@string/activity_label_screen_orientation"
             android:screenOrientation="landscape" >
             <intent-filter>
@@ -185,7 +185,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.TranslucentActivity"
+            android:name="com.gmail.dailyefforts.android.basic.activity.TranslucentActivity"
             android:label="@string/activity_label_translucent_activity"
             android:theme="@style/Theme.GreenTranslucent" >
             <intent-filter>
@@ -195,7 +195,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".text.TextBoundsActivity"
+            android:name="com.gmail.dailyefforts.android.basic.text.TextBoundsActivity"
             android:label="@string/activity_label_text_bounds" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -204,7 +204,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".text.DrawTextActivity"
+            android:name="com.gmail.dailyefforts.android.basic.text.DrawTextActivity"
             android:label="@string/activity_label_draw_text" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -213,7 +213,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".widget.ViewFlipperActivity"
+            android:name="com.gmail.dailyefforts.android.basic.widget.ViewFlipperActivity"
             android:label="@string/title_activity_view_flipper" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -222,7 +222,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".data.SaveSettings"
+            android:name="com.gmail.dailyefforts.android.basic.data.SaveSettings"
             android:label="@string/title_activity_save_settings" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -231,7 +231,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".provider.SettingsSystemData"
+            android:name="com.gmail.dailyefforts.android.basic.provider.SettingsSystemData"
             android:label="@string/title_activity_settings_data"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
             <intent-filter>
@@ -241,7 +241,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.ButtonClicked"
+            android:name="com.gmail.dailyefforts.android.basic.view.ButtonClicked"
             android:label="@string/title_activity_button_clicked" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -250,8 +250,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".locale.AvailableLocales"
-            android:label="@string/title_activity_available_locales" android:theme="@style/Theme.TranslucentActionBar">
+            android:name="com.gmail.dailyefforts.android.basic.locale.AvailableLocales"
+            android:label="@string/title_activity_available_locales"
+            android:theme="@style/Theme.TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.system.SystemProperties"
+            android:label="@string/title_activity_system_properties" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
