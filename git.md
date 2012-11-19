@@ -188,3 +188,6 @@ git checkout HEAD~1 <file name here>
 
 # see last version of a file
 git show HEAD~1:<file name here>
+
+# unstage files
+git rm --cached .
