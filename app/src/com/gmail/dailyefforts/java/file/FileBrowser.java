@@ -1,29 +1,31 @@
 package com.gmail.dailyefforts.java.file;
 
 import java.io.File;
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FileBrowser {
+	private static Map<String, String> map = new HashMap<String, String>();
 
 	public static void main(String[] args) {
-		File dir = new File("/home/null/Pictures/png/");
-		File[] files = dir.listFiles();
-		for (File f : files) {
-			if (f.isFile()) {
-				String name = f.getName();
-				char[] namearray = name.toCharArray();
-				Arrays.sort(namearray);
-				if (namearray[namearray.length - 1] > 'z') {
-					f.delete();
-				}
-				
-				File tmp  = null;
-					tmp = new File(f.getParent() + File.separator + f.getName().toLowerCase());
-					f.renameTo(tmp);
+		File root = new File("/");
+		map.clear();
+		walkThrough(root);
 
-				
-//					File tmp = new File(f.getPath());
-//					System.out.println("FileBrowser.main() " + f.getParent());
+		System.out.println(map.toString());
+	}
+
+	public static void walkThrough(File root) {
+		File[] files = root.listFiles();
+		if (files != null) {
+			for (File f : files) {
+				if (f.isFile()) {
+					System.out.println(f.getName());
+					map.put(f.getName(),
+							String.format("%.2f", f.length() / 1000.0F));
+				} else {
+					walkThrough(f);
+				}
 			}
 		}
 	}
