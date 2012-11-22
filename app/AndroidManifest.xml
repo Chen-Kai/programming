@@ -268,6 +268,17 @@
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".net.URL"
+            android:label="@string/activity_label_url"
+            android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+        </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
