@@ -36,5 +36,7 @@
     <string name="title_activity_available_locales">AvailableLocales</string>
     <string name="title_activity_system_properties">System.getProperty()</string>
     <string name="activity_label_url">URL</string>
+    <string name="title_activity_intent_with_action">IntentWithAction</string>
+    <string name="title_activity_handle_the_action">HandleTheAction</string>
 
 </resources>

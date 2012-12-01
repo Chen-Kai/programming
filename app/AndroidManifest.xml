@@ -132,7 +132,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".notification.NotificationService" >
+        <service android:name="com.gmail.dailyefforts.android.basic.notification.NotificationService" >
         </service>
 
         <receiver android:name="com.gmail.dailyefforts.android.basic.receiver.BootCompleteReceiver" >
@@ -141,7 +141,7 @@
                 <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".receiver.InputMethodChangedEventReceiver" >
+        <receiver android:name="com.gmail.dailyefforts.android.basic.receiver.InputMethodChangedEventReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
             </intent-filter>
@@ -269,16 +269,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".net.URL"
+            android:name="com.gmail.dailyefforts.android.basic.net.URL"
             android:label="@string/activity_label_url"
             android:theme="@android:style/Theme.DeviceDefault.Light" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
-        </intent-filter>
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.intent.IntentWithAction"
+            android:label="@string/title_activity_intent_with_action" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.intent.HandleTheAction"
+            android:label="@string/title_activity_handle_the_action" >
+            <intent-filter>
+                <action android:name="android.intent.action.view.sth" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
