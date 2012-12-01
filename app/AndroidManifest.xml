@@ -299,7 +299,16 @@
         <activity
             android:name="com.gmail.dailyefforts.android.basic.media.MediaPlayerMp3"
             android:label="@string/title_activity_media_player_mp3" >
-                        <intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.media.LaunchCamera"
+            android:label="@string/title_activity_launch_camera" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
