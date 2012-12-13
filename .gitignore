@@ -8,3 +8,5 @@
 # bin folder
 app/bin/
 
+# eclipse property file
+app/.classpath
