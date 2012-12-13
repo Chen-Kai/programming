@@ -9,21 +9,25 @@ import java.sql.SQLException;
 public class SqliteDBA {
 	public static void main(String[] args) throws ClassNotFoundException,
 			SQLException {
-		Class.forName("org.sqlite.JDBC"); // Make sure the JDBC.class is
-											// available.
+		// Make sure the JDBC.class is available.
+		Class.forName("org.sqlite.JDBC");
+
 		Connection connection = DriverManager
 				.getConnection("jdbc:sqlite:test.db");
-		String sql = "drop table if exists file_list"; // file_list is the table
-														// name;
+
+		// file_list is the table name.
+		String sql = "drop table if exists file_list";
 		runSql(connection, sql);
 
-		sql = "create table file_list('_id' integer primary key autoincrement not null unique, 'file_name' text, 'file_path' text, 'timestamp' datetime default current_timestamp)";
+		sql = "create table file_list("
+				+ "'_id' integer primary key autoincrement not null unique, "
+				+ "'file_name' text, " + "'file_path' text, "
+				+ "'timestamp' datetime default current_timestamp)";
 		runSql(connection, sql);
 
 		File root = new File("/bin");
 		sql = "insert into file_list(file_name, file_path) values(?, ?)";
 		travel(root, connection, sql);
-
 	}
 
 	private static void travel(File root, Connection connection, String sql)
