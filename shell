@@ -32,4 +32,27 @@ tr 'a-z' 'A-Z' < [file-name-here]
 
 # Replace some old characters to a new one in some file
 sed 's/[old]/[new]/g' [file-name-here]
+
+# print cpu info
 lscpu
+
+# print user id
+id
+
+# add a user
+useradd
+
+# change passwd for a user
+passwd <user-name>
+
+# disable touch pad
+sudo rmmod psmouse
+
+# enable touch pad
+sudo modprobe psmouse
+
+# list the file names
+grep -l <key-string> <file-name>
+
+# grep 2 key strings at one time
+grep 'key1\|key2' <file-name>
