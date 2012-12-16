@@ -191,3 +191,6 @@ git show HEAD~1:<file name here>
 
 # unstage files
 git rm --cached .
+
+# push tags to remote
+git push --tags <remote-name> <branch-name>
