@@ -9,3 +9,9 @@ Ctrl + v > j > d
 
 # upper to lower
 Ctrl + v > [j, k, h, l] > u
+
+# execute shell command
+:! <shell command here>
+
+# highlight key word during searching
+:set hlsearch
