@@ -192,5 +192,5 @@ git rm --cached .
 ### push tags to remote
 git push --tags <remote-name> <branch-name>
 
-# git add . & git add -u
+### git add . & git add -u
 git add -A
