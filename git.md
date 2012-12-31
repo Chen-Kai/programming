@@ -1,193 +1,193 @@
-# clone a repo
+### clone a repo
 git clone [remote url] ([local_dir])
 
-# check remote url
+### check remote url
 git remote -v
 
-# push to remote
+### push to remote
 git push (-f) [remote name]
 
-# cancel local commit
+### cancel local commit
 git reset HEAD~1
 
-# add remote
+### add remote
 git remote add [remote name] [remote url]
 
-# rm remote
+### rm remote
 git remote rm [remote name]
 
-# replace local file using file in git repo
+### replace local file using file in git repo
 git checkout [file name]
 
-# fetch from remote
+### fetch from remote
 git fetch [remote name]
 
-# merge the local repo and the remote repo
+### merge the local repo and the remote repo
 git merge [remote name]/[remote branch]
 
-# rm from index
+### rm from index
 git rm --cached [file to be rm]
 
-# one commit, one line log 
+### one commit, one line log 
 git log --pretty=oneline
 
-# to see last modifications 
+### to see last modifications 
 git log -p -1
 
-# view git repo visually
+### view git repo visually
 gitk
 
-# view detail modification  for this commit
+### view detail modification  for this commit
 git log -p
 
-# view the latest commit
+### view the latest commit
 git log -1
 
-# view config infor
+### view config infor
 git config --list
 
-# first push to a repo
+### first push to a repo
 git push -u origin master
 
-# set user.name
+### set user.name
 git config --global user.name [your name here]
 
-# show remote info
+### show remote info
 git remote show [remote name]
 
-# switch to a branch
+### switch to a branch
 git branch [branch name]
 
-# merge a branch to current branch
+### merge a branch to current branch
 git merge test
 
-# push all branches to remote
+### push all branches to remote
 git push --all [remote name]
 
-# stop tracking a file
+### stop tracking a file
 git rm --cached .project
 
-# ignore files or directories
+### ignore files or directories
 .gitignore
 
-# check branch infomation
+### check branch infomation
 git branch -v
 
-# create and switch to a new branch
+### create and switch to a new branch
 git checkout -b [new branch name here]
 
-# delete a branch
-git branch -d [branch_name] # use -D to force delete
+### delete a branch
+git branch -d [branch_name] ### use -D to force delete
 
-# check the branches that have not been merged 
+### check the branches that have not been merged 
 git branch --no-merged
 
-# check the branches that have been merged 
+### check the branches that have been merged 
 git branch --merged
 
-# amend last commit
+### amend last commit
 git commit --amend
 
-# add tag
+### add tag
 git tag -a [tag_name] -m [tag_description]
 
-# list out the deleted files
+### list out the deleted files
 git ls-files deleted
-# 1. stage modified new contents of tracked files
-# 2. remove files from the index if the corresponding files in the working tree have been removed.
+### 1. stage modified new contents of tracked files
+### 2. remove files from the index if the corresponding files in the working tree have been removed.
 git add -u
-# read the doc about 'add' command
+### read the doc about 'add' command
 man git-add
 git checkout -- app/res/values/strings.xml
 
-# unstage a file
+### unstage a file
 git reset HEAD [file]
 
-# rename remote name
+### rename remote name
 git remote rename origin github
 
-# show tag
+### show tag
 git show v1.0.1
 
-# see info of a tag
+### see info of a tag
 git tag -v v1.0.1
 
-# add a tag for some commit
+### add a tag for some commit
 git tag -a [tag_name] [commit_id, like: 5e612c5]
 
-# push some tag to remote
+### push some tag to remote
 git push [remote_name] [tag_name]
 
-# push all tags to romote
+### push all tags to romote
 git push [remote_name] tags
 
-# check which branches have been merged
+### check which branches have been merged
 git branch --merged
 
-# check which branches are not merged
+### check which branches are not merged
 git branch --no-merged
 
-# show all untracked files
+### show all untracked files
 git status -u
 
-# clean all untracked files
+### clean all untracked files
 git clean -df
 
-# discard all modified files
+### discard all modified files
 git checkout -- .
 git log -p -1 .gitignore
 gitk .gitignore
 
-# Your branch and 'origin/master' have diverged,
+### Your branch and 'origin/master' have diverged,
 git log HEAD..origin/master
 git merge origin/master
 
-# unstaging a staged file
+### unstaging a staged file
 git reset HEAD <file>
 
-# unmodifying a modified file
+### unmodifying a modified file
 git checkout -- <file>
 
-# show diff before commtting
+### show diff before commtting
 git commit -v
 
 
-# remove all files that have the .log extension in the log/
+### remove all files that have the .log extension in the log/
 git rm log/\*.log
 
-# remove all files that end with ~
+### remove all files that end with ~
 git rm \*~
 git mv README.md r.md
 
-# reset to some version
+### reset to some version
 git reset HEAD~1
 
-# push & update
+### push & update
 git push -u origin master
 
-# del a branch of remote repo
+### del a branch of remote repo
 git push <remote-name> :<branch-you-want-to-delete>
 
-# rename a remove name
+### rename a remove name
 git remote rename github origin
 
-# list all commits of some author
+### list all commits of some author
 git log --author=<author-name or email>
 
-# list all commits of some committer
+### list all commits of some committer
 git log --committer=<committer-name or email>
 
-# see the details before committing
+### see the details before committing
 git commit -v
 
-# checkout some last version of a file
+### checkout some last version of a file
 git checkout HEAD~1 <file name here>
 
-# see last version of a file
+### see last version of a file
 git show HEAD~1:<file name here>
 
-# unstage files
+### unstage files
 git rm --cached .
 
-# push tags to remote
+### push tags to remote
 git push --tags <remote-name> <branch-name>
