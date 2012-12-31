@@ -165,11 +165,8 @@ git reset HEAD~1
 # push & update
 git push -u origin master
 
-# push to some branch
-git push origin :ongoing
-
 # del a branch of remote repo
-delete remote branch
+git push <remote-name> :<branch-you-want-to-delete>
 
 # rename a remove name
 git remote rename github origin

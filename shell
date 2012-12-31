@@ -56,3 +56,21 @@ grep -l <key-string> <file-name>
 
 # grep 2 key strings at one time
 grep 'key1\|key2' <file-name>
+
+# find files by size [k, M, B]
+find . -size +2k -name "*.java"
+
+# find files newer than some file
+find . -newer <file-name>
+
+# find all directories 
+find . -type d
+
+# fine all files (not dir)
+find . -type f
+
+# issue other command on the resulte of find command
+# 1. start with by using `-exec`
+# 2. refer to the result by using `{}`
+# 3. close the exec statement by using `\;`
+find . -exec ls -l {} \;
