@@ -1,7 +1,6 @@
-This is a open source project (you can use eclipse with CDT plug in import this project).
-You are welcome to add any c language basics to this project.
+### 项目内容
+- C语言基础知识
+- 阐释基础知识的C语言代码
 
-I'm using "Eclipse IDE for C/C++ Linux Developers" 
-http://www.eclipse.org/downloads/packages/eclipse-ide-cc-linux-developers-includes-incubating-components/indigosr2
-
-And My OS is Ubuntu
+### 联系作者
+发邮件到 <DailyEfforts@gmail.com>
