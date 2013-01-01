@@ -74,3 +74,6 @@ find . -type f
 # 2. refer to the result by using `{}`
 # 3. close the exec statement by using `\;`
 find . -exec ls -l {} \;
+
+# grep the lines start with a number (0-9)
+grep -r '^0-9' *
