@@ -1,25 +1,23 @@
-- italic text
-*<content here>*
+*italic text*
 
-- bold
-**<content here>**
+**bold text**
 
-- bold and italic
-***<content here>***
+***bold and italic***
 
-- list
-* <item 1 here>
-* <item 2 here>
-* <item 3 here>
+- list item 01
+- list item 02
+  - sub item here
+- list item 03
 
-- link
-[<discription here>](<url here>)
-e.g.
-[Google](http://www.google.com/)
 
-- headers
-# header 1 huge
-## header 2 smaller than header 1
-### header 3 smaller than header 2
+[Google Link](http://www.google.com/)
 
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
+> quotes here (moved leftward)
 
