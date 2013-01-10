@@ -1,7 +1,7 @@
 # Change all the files' mode in some dir
 chmod 755 DesignPattern/
 
-# 
+# find the files modified in 24 hours
 find . -name *.* -mtime -1
 find . -type f -daystart -mtime -2 >> tmp
 
@@ -80,3 +80,29 @@ grep '^[0-9]' *
 
 # grep the lines start with two numbers
 grep '^[0-9]\{2\}' *
+
+# get the return value of last command
+> !$
+
+# run last command as admin
+> sudo !!
+
+# show the arguments of last command or the command itself
+> <Alt> + .
+
+# replace char in last command
+E.g.
+> echo 'hallo'
+> ^a^e            # equals to echo 'hello'
+
+# get date from millisecond
+> date -d@<long number here>
+
+# run some command at midnight
+$ echo `date` | at midnight
+
+# show ASCII table
+$ man ascii
+
+# view cpu info
+$ cat /proc/cpuinfo
