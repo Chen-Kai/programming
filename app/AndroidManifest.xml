@@ -6,12 +6,14 @@
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -319,6 +321,15 @@
             android:name="com.gmail.dailyefforts.android.basic.sms.ReadSMS"
             android:label="@string/title_activity_read_sms" >
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.message.MessageActivity"
+            android:label="@string/title_activity_message" >
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
