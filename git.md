@@ -194,3 +194,10 @@ git push --tags <remote-name> <branch-name>
 
 ### git add . & git add -u
 git add -A
+
+### rm a file in repo
+1. git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' --prune-empty --tag-name-filter cat -- --all
+2. rm -rf .git/refs/original/
+3. git reflog expire --expire=now --all
+4. git gc --prune=now
+5. git gc --aggressive --prune=now
