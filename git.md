@@ -201,3 +201,6 @@ git add -A
 3. git reflog expire --expire=now --all
 4. git gc --prune=now
 5. git gc --aggressive --prune=now
+
+### Show information about files in the index and the working tree
+git ls-files
