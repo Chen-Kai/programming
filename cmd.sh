@@ -1,3 +1,5 @@
 for f in `ls | grep -v '[.]'`; do
-	mv $f ${f}.md
+	if [ -f f ]; then 
+		mv $f ${f}.md
+	fi
 done
