@@ -5,3 +5,4 @@
 - [Gson](https://code.google.com/p/google-gson/)
 - [Apache Commons Codec](https://commons.apache.org/codec/download_codec.cgi)
 - [oauth-signpost](http://code.google.com/p/oauth-signpost/)
+- [Remove sensitive data from GitHub](https://help.github.com/articles/remove-sensitive-data)
