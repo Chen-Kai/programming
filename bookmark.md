@@ -4,3 +4,4 @@
 - [Json](http://json.org/)
 - [Gson](https://code.google.com/p/google-gson/)
 - [Apache Commons Codec](https://commons.apache.org/codec/download_codec.cgi)
+- [oauth-signpost](http://code.google.com/p/oauth-signpost/)
