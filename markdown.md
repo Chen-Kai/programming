@@ -9,6 +9,9 @@
   - sub item here
 - list item 03
 
+two spaces  
+a new line
+
 
 [Bing](http://www.bing.com/)
 
