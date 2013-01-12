@@ -204,3 +204,6 @@ git add -A
 
 ### Show information about files in the index and the working tree
 git ls-files
+
+### let git cache your user name & password for an hour
+git config --global credential.helper 'cache --timeout=3600'
