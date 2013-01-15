@@ -338,11 +338,15 @@
         <activity
             android:name="com.gmail.dailyefforts.android.basic.service.PreferenceSummary"
             android:label="@string/title_activity_preference_summary" >
-               <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.PreferenceSummarySevice" >
+        </service>
     </application>
 
 </manifest>
