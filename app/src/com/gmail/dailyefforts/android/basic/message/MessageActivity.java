@@ -18,24 +18,24 @@ public class MessageActivity extends Activity {
 	}
 
 	public void sendMsg(View view) {
-		
+
 		SmsManager smsManager = SmsManager.getDefault();
-		
+
 		String address = "address here";
 		String text = "text message here";
-		
+
 		// Send text message to the address.
 		smsManager.sendTextMessage(address, null, text, null, null);
-		
+
 		Uri uri = Uri.parse("content://sms/sent/");
-		
+
 		ContentValues values = new ContentValues();
 		values.put("address", address);
 		values.put("body", text);
-		
-		// Insert the sent message to the "sent" box 
-		getContentResolver().insert(uri, values );
-		
+
+		// Insert the sent message to the "sent" box
+		getContentResolver().insert(uri, values);
+
 	}
 
 }
