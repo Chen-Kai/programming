@@ -42,5 +42,6 @@
     <string name="title_activity_launch_camera">LaunchCamera</string>
     <string name="title_activity_read_sms">ReadSMS</string>
     <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_preference_summary">PreferenceSummary</string>
 
 </resources>

@@ -329,9 +329,17 @@
         <activity
             android:name="com.gmail.dailyefforts.android.basic.message.MessageActivity"
             android:label="@string/title_activity_message" >
-             <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.service.PreferenceSummary"
+            android:label="@string/title_activity_preference_summary" >
+               <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.gmail.dailyefforts.android.intent.categor.BASIC" />
             </intent-filter>
         </activity>
