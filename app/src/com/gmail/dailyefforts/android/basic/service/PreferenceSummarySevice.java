@@ -3,6 +3,7 @@ package com.gmail.dailyefforts.android.basic.service;
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
@@ -71,19 +72,23 @@ public class PreferenceSummarySevice extends IntentService {
 			} catch (RemoteException e) {
 				e.printStackTrace();
 			}
-			
+
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
-		
+
 		System.out.println("PreferenceSummarySevice.onHandleIntent()");
 		Notification notification = new Notification(R.drawable.ic_launcher,
 				"onHandleIntent", System.currentTimeMillis());
+		
+		PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
+				new Intent(this, PreferenceSummary.class), 0);
+		
 		notification.setLatestEventInfo(this, "contentTitle", "contentText",
-				null);
+				pendingIntent);
 
 		mngr.notify(0, notification);
 	}
