@@ -1,4 +1,8 @@
 *.swp
 
-# untrack eclipse file
+
+# eclipse file
 .project
+
+# vim cache files
+programming.md~
