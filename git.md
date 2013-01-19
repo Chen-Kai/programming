@@ -208,3 +208,8 @@
 
 ### let git cache your user name & password for an hour
 > git config --global credential.helper 'cache --timeout=3600'
+
+### merge project proB in to project proA
+> 1. git remote add proB <remote url of proB>
+> 2. git merge proB
+> 3. git remote remove proB
