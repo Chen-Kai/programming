@@ -22,3 +22,16 @@ note/.project
 
 # vim cache files
 *~
+
+# auto generated
+android/app/bin/
+android/app/gen/
+
+# open office temp files
+.~*
+
+# eclipse
+android/app/.classpath
+android/app/project.properties
+android/app/.project
+android/app/.settings

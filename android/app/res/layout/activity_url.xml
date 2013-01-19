@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="http://www.163.com" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_url_go"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_url"
+        android:onClick="onBtnGoClicked"
+        android:text="Go" />
+
+    <TextView
+        android:id="@+id/tv_url_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_url_go"
+        android:layout_alignBottom="@+id/btn_url_go"
+        android:layout_alignParentLeft="true"
+        android:text="InetAddress: " />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_url_go"
+        >
+
+        <TextView
+            android:id="@+id/tv_url_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+    </ScrollView>
+
+</RelativeLayout>
