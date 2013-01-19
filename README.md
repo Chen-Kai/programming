@@ -1,4 +1,4 @@
-Algorithm
+Programming
 ==========
 This project records my daily programs:  
 * `java/` project demonstrates some algorithms using Java programming language.  
