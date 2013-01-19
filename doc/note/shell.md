@@ -134,3 +134,5 @@ $ date -d@<long number here>
 ### view cpu info
 > $ cat /proc/cpuinfo
 
+### get total size of a dir
+		du -sh <dir name>
