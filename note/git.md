@@ -204,13 +204,13 @@
   5. git gc --aggressive --prune=now
 
 ### Show information about files in the index and the working tree
-  git ls-files
+> git ls-files
 
 ### let git cache your user name & password for an hour
 > git config --global credential.helper 'cache --timeout=3600'
 
 ### merge project pro_x in to project pro_main
-  1. git remote add <pro_x name> <remote url of pro_b>
+> 1. git remote add <pro_x name> <remote url of pro_b>
   2. git fetch <pro_x name> 
   3. git merge <pro_x name>/<pro_x branch name>
   4. deal with conflict files manually
