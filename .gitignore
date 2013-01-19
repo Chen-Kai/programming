@@ -1,12 +1,12 @@
 # auto generated
-app/bin/
-app/gen/
+android/app/bin/
+android/app/gen/
 
 # open office temp files
 .~*
 
 # eclipse
-app/.classpath
-app/project.properties
-app/.project
-app/.settings
+android/app/.classpath
+android/app/project.properties
+android/app/.project
+android/app/.settings
