@@ -14,7 +14,11 @@
 # bin folder
 java/bin/
 
-# eclipse c
+# eclipse
 c/.cproject
 c/.project
 c/Debug/
+note/.project
+
+# vim cache files
+*~
