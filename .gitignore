@@ -7,3 +7,10 @@
 # bin folder
 app/bin/
 
+*.swp
+*.o
+
+# eclipse c
+c/.cproject
+c/.project
+c/Debug/
