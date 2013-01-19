@@ -16,6 +16,9 @@
 ### rm remote
 > git remote rm <remote name>
 
+### remove a remote
+> git remote remove <remote name>
+
 ### replace local file using file in git repo
 > git checkout <file name>
 
