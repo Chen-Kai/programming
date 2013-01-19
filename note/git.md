@@ -211,8 +211,8 @@
 
 ### merge project pro_x in to project pro_main
 > 1. git remote add <pro_x name> <remote url of pro_b>
-  2. git fetch <pro_x name> 
-  3. git merge <pro_x name>/<pro_x branch name>
-  4. deal with conflict files manually
-  5. git remote remove <pro_x name>
+2. git fetch <pro_x name> 
+3. git merge <pro_x name>/<pro_x branch name>
+4. deal with conflict files manually
+5. git remote remove <pro_x name>
 
