@@ -35,3 +35,6 @@ android/app/.classpath
 android/app/project.properties
 android/app/.project
 android/app/.settings
+
+# bakeup file
+*.bak
