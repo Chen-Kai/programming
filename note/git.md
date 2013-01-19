@@ -197,20 +197,22 @@
 > git add -A
 
 ### rm a file in repo
-1. git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' --prune-empty --tag-name-filter cat -- --all
-2. rm -rf .git/refs/original/
-3. git reflog expire --expire=now --all
-4. git gc --prune=now
-5. git gc --aggressive --prune=now
+  1. git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' --prune-empty --tag-name-filter cat -- --all
+  2. rm -rf .git/refs/original/
+  3. git reflog expire --expire=now --all
+  4. git gc --prune=now
+  5. git gc --aggressive --prune=now
 
 ### Show information about files in the index and the working tree
-> git ls-files
+  git ls-files
 
 ### let git cache your user name & password for an hour
 > git config --global credential.helper 'cache --timeout=3600'
 
-### merge project pro_b in to project proA
-> 1. git remote add pro_b <remote url of pro_b>
-> 2. git fetch pro_b 
-> 3. git merge pro_b
-> 4. git remote remove pro_b
+### merge project pro_x in to project pro_main
+  1. git remote add <pro_x name> <remote url of pro_b>
+  2. git fetch <pro_x name> 
+  3. git merge <pro_x name>/<pro_x branch name>
+  4. deal with conflict files manually
+  5. git remote remove <pro_x name>
+
