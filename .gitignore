@@ -1,14 +1,18 @@
+# java byte code
 *.class
+
+# c binary
+*.o
+
+# tmp file
+*.swp
 
 # Package Files #
 *.war
 *.ear
 
 # bin folder
-app/bin/
-
-*.swp
-*.o
+java/bin/
 
 # eclipse c
 c/.cproject
