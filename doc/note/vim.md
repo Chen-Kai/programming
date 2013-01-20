@@ -15,7 +15,7 @@
     
 ###### execute shell command
     :shell
-    <shell command here>
+    $ <shell command here>
     $ exit
 
 ###### highlight key word during searching
