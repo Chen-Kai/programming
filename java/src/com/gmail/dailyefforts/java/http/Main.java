@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -12,8 +14,10 @@ import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.HttpVersion;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicHttpRequest;
@@ -24,28 +28,46 @@ import com.sun.org.apache.regexp.internal.recompile;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-//		request();
-//		response();
-//		header();
-//		testStringEntity();
-		HttpClient client = new DefaultHttpClient();
-		HttpGet httpGet = new HttpGet("http://weibo.com/?retcode=6102");
-		String name = "name";
-		HttpResponse response = client.execute(httpGet);
+		// request();
+		// response();
+		// header();
+		// testStringEntity();
+//		testHttpClient();
+		testURIBuilder();
+	}
+
+	private static void testURIBuilder() throws URISyntaxException {
+		URIBuilder builder = new URIBuilder();
+		builder.setScheme("http");
+		builder.setHost("www.baidu.com");
+		builder.setPath("/");
+		builder.setParameter("key", "value");
+		builder.setParameter("callback", "https://github.com/DailyEfforts/");
+		
+		URI uri = builder.build();
+		HttpGet httpGet = new HttpGet(uri);
+		
+		System.out.println(httpGet.getURI());
+	}
+
+	private static void testHttpClient() throws IOException,
+			ClientProtocolException {
+		HttpClient httpclient = new DefaultHttpClient();
+		HttpGet httpget = new HttpGet("http://www.google.com.hk/");
+		HttpResponse response = httpclient.execute(httpget);
 		HttpEntity entity = response.getEntity();
 		if (entity != null) {
-			InputStream is = entity.getContent();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-			String line = null;
-			while ((line = reader.readLine()) != null) {
-				System.out.println(line);
-			}
-			
-			if (reader != null) {
-				reader.close();
+			InputStream instream = entity.getContent();
+			try {
+				BufferedReader reader = new BufferedReader(new InputStreamReader(instream));
+				String line = null;
+				while ((line = reader.readLine()) != null) {
+					System.out.println(line);
+				}
+			} finally {
+				instream.close();
 			}
 		}
-		
 	}
 
 	private static void testStringEntity() throws UnsupportedEncodingException,
