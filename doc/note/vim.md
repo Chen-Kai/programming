@@ -12,6 +12,11 @@
 
 ###### execute shell command
     :! <shell command here>
+    
+###### execute shell command
+    :shell
+    <shell command here>
+    $ exit
 
 ###### highlight key word during searching
     :set hlsearch
@@ -26,3 +31,42 @@
     1. v  
     2. e
     3. u (U)
+    
+###### go to match "()" or "[]" or "{}"
+    %
+
+###### go to defined place
+    gd
+    
+###### to to next (pre) one
+    * (#)
+
+###### indent all lines
+    1. gg
+    2. v
+    3. G
+    4. =
+
+
+###### delete all lines
+    1. gg
+    2. v
+    3. G
+    4. :d
+
+###### repeat last command
+    .
+
+###### switch positions of the words next to each other
+    xp
+
+###### switch positions of the lines next to each other
+    ddp
+    
+###### insert a header for some lines
+    1. Ctrl + v
+    2. [hjkl]
+    3. I
+    4. edit
+    5. Esc
+    6. Esc
