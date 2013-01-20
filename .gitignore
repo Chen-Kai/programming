@@ -38,3 +38,7 @@ android/app/.settings
 
 # bakeup file
 *.bak
+
+# secret files
+Secret.java
+secret.properties
