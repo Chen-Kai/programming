@@ -43,5 +43,6 @@
     <string name="title_activity_read_sms">ReadSMS</string>
     <string name="title_activity_message">MessageActivity</string>
     <string name="title_activity_preference_summary">PreferenceSummary</string>
+    <string name="title_activity_weibo_webview">WeiboWebviewActivity</string>
 
 </resources>

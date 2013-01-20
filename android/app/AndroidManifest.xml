@@ -345,8 +345,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.PreferenceSummarySevice" >
+        <service android:name="com.gmail.dailyefforts.android.basic.service.PreferenceSummarySevice" >
         </service>
+
+        <activity
+            android:name="com.gmail.dailyefforts.android.basic.service.WeiboWebviewActivity"
+            android:label="@string/title_activity_weibo_webview" android:theme="@android:style/Theme.DeviceDefault.Dialog">
+        </activity>
     </application>
 
 </manifest>
