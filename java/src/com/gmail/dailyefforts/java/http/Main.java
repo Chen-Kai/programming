@@ -24,48 +24,56 @@ import org.apache.http.message.BasicHttpRequest;
 import org.apache.http.message.BasicHttpResponse;
 import org.apache.http.util.EntityUtils;
 
-import com.sun.org.apache.regexp.internal.recompile;
-
 public class Main {
 	public static void main(String[] args) throws Exception {
-		// request();
-		// response();
-		// header();
-		// testStringEntity();
-//		testHttpClient();
+		request();
+		response();
+		header();
+		testStringEntity();
+		testHttpClient();
 		testURIBuilder();
 	}
 
 	private static void testURIBuilder() throws URISyntaxException {
 		URIBuilder builder = new URIBuilder();
 		builder.setScheme("http");
-		builder.setHost("www.baidu.com");
+		builder.setHost("www.apache.org");
 		builder.setPath("/");
 		builder.setParameter("key", "value");
 		builder.setParameter("callback", "https://github.com/DailyEfforts/");
-		
+
 		URI uri = builder.build();
 		HttpGet httpGet = new HttpGet(uri);
-		
+
 		System.out.println(httpGet.getURI());
 	}
 
-	private static void testHttpClient() throws IOException,
-			ClientProtocolException {
+	private static void testHttpClient() {
 		HttpClient httpclient = new DefaultHttpClient();
-		HttpGet httpget = new HttpGet("http://www.google.com.hk/");
-		HttpResponse response = httpclient.execute(httpget);
-		HttpEntity entity = response.getEntity();
-		if (entity != null) {
-			InputStream instream = entity.getContent();
-			try {
-				BufferedReader reader = new BufferedReader(new InputStreamReader(instream));
+		HttpGet httpget = new HttpGet("http://www.apache.org/");
+		HttpResponse response;
+		try {
+			response = httpclient.execute(httpget);
+			HttpEntity entity = response.getEntity();
+			if (entity != null) {
+				InputStream instream = entity.getContent();
+				BufferedReader reader = new BufferedReader(
+						new InputStreamReader(instream));
 				String line = null;
 				while ((line = reader.readLine()) != null) {
 					System.out.println(line);
 				}
-			} finally {
-				instream.close();
+			}
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (httpclient != null) {
+				// When HttpClient instance is no longer needed,
+				// shut down the connection manager to ensure
+				// immediate deallocation of all system resources
+				httpclient.getConnectionManager().shutdown();
 			}
 		}
 	}
@@ -75,7 +83,6 @@ public class Main {
 		StringEntity myEntity = new StringEntity("important message", "UTF-8");
 		System.out.println(myEntity.getContentType());
 		System.out.println(myEntity.getContentLength());
-		System.out.println(EntityUtils.getContentCharSet(myEntity));
 		System.out.println(EntityUtils.toString(myEntity));
 		System.out.println(EntityUtils.toByteArray(myEntity).length);
 	}
