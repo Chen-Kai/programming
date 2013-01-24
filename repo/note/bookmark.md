@@ -8,3 +8,5 @@
 - [Remove sensitive data from GitHub](https://help.github.com/articles/remove-sensitive-data)
 - [Apache HttpComponents](http://hc.apache.org/index.html)
 - [Apache Commons Codec](http://commons.apache.org/codec/)
+- [Udacity](http://www.udacity.com/)
+- [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
