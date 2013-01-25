@@ -219,3 +219,5 @@
     deal with conflict files manually
     $ git remote remove <pro_x name>
 
+### List all files in last commit.
+    $ git diff --name-only HEAD^ HEAD
