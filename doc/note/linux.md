@@ -6,3 +6,5 @@
 ### install Gnome in Ubuntu 12.04
     $ sudo apt-get install gnome-panel
 
+### comparing text files with `diff` 
+    $ diff --side-by-side <txt-file-a> <txt-file-b> 
