@@ -6,7 +6,7 @@
 ---
 
 ### Mutiple threads share same resource
-Thread-A trys to access the resource.
+Thread X trys to access the resource.
 * If it is not cloked:
   1. lock it  
   2. do the things  
