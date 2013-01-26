@@ -4,14 +4,22 @@
 
 ***bold and italic***
 
-- list item 01
-- list item 02
-  - sub item here
-- list item 03
+* list item 01
+* list item 02
+  * sub item here
+* list item 03
 
 two spaces  
 a new line
 
+`code`
+
+``code includes ` character``
+
+### multiple code blocks
+    code line 1
+    code line 2
+    code line 3
 
 [Bing](http://www.bing.com/)
 
@@ -23,7 +31,15 @@ a new line
 ###### h6
 
 > quotes here (moved leftward)
+ 
+<http://www.bing.com/>
 
+![](http://www.w3schools.com/images/compatible_firefox.gif)
+
+sent email to <dailyefforts@gmail.com>
+
+HTML
+---------
 
 <table>
   <tr>
@@ -36,8 +52,6 @@ a new line
   </tr>
 </table>
 
-<http://www.bing.com/>
-
-<img src="http://www.w3schools.com/images/compatible_firefox.gif" alt="Firefox" width="42" height="42">
+<img src="http://www.w3schools.com/images/compatible_firefox.gif" alt="Firefox" width="42" height="42">  
 
 <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>
