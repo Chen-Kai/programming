@@ -138,7 +138,7 @@ $ date -d@<long number here>
     $ du -sh <dir name>
 
 ### generate a patch
-    $ diff <file_old> <file_new> `>` <patch-file>
+    $ diff <file_old> <file_new> > <patch-file>
 
 ### merge a patch
-    $ patch <file_old> `<` <patch-file>
+    $ patch <file_old> < <patch-file>
