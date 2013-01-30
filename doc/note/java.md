@@ -23,7 +23,7 @@ A **Class** defines two things for an object of this class:
 ---
 
 ##### Garbage collector
-> GC looks at all the objects that were created with **new** and figures out which ones are not being referenced anymore. Then it releases that memory for those objects, so the memory can be used for new object.
+> GC looks at all the objects that were created with **new** and figures out which ones are not being referenced anymore. Then it releases that memory for those objects, so the memory can be used for new object. (from "Thinking in Java")
 
 ---
 
