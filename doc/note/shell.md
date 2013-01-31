@@ -135,4 +135,10 @@ $ date -d@<long number here>
 > $ cat /proc/cpuinfo
 
 ### get total size of a dir
-		du -sh <dir name>
+    $ du -sh <dir name>
+
+### generate a patch
+    $ diff <file_old> <file_new> > <patch-file>
+
+### merge a patch
+    $ patch <file_old> < <patch-file>
