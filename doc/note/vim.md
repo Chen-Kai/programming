@@ -76,3 +76,6 @@
 
 ##### read the help doc of `spell` command
     :help spell
+
+##### replace all 'key' with 'keyword'
+    :%s/key/&word/g
