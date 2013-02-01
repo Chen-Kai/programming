@@ -3,13 +3,13 @@ package com.gmail.dailyefforts.designpattern.singleton;
 public class AppMain {
 	public static void main(String[] args) {
 		
-		SingletonClass eagerSingleton1 = SingletonClass.getInstance();
-		SingletonClass eagerSingleton2 = SingletonClass.getInstance();
+		Sun eagerSingleton1 = Sun.getInstance();
+		Sun eagerSingleton2 = Sun.getInstance();
 		System.out.println(eagerSingleton1.hashCode());
 		System.out.println(eagerSingleton2.hashCode());
 		
-		SingletonFixed singletonFixed1 = SingletonFixed.INSTANCE;
-		SingletonFixed singletonFixed2 = SingletonFixed.INSTANCE;
+		Moon singletonFixed1 = Moon.INSTANCE;
+		Moon singletonFixed2 = Moon.INSTANCE;
 		System.out.println(singletonFixed1.hashCode());
 		System.out.println(singletonFixed2.hashCode());
 		
