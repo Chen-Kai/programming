@@ -1,13 +1,8 @@
 package com.gmail.dailyefforts.java.serialization;
 
-import java.io.File;
-
-import org.vhow.java.serialization.Book;
-import org.vhow.java.serialization.BookObjectSerializer;
-
 import junit.framework.TestCase;
 
-public class BookObjectSerializerTest extends TestCase {
+public class BookObjectSerializerTest extends TestCase {/*
 	private BookObjectSerializer mBookObjectSerializer;
 
 	protected void setUp() throws Exception {
@@ -39,4 +34,4 @@ public class BookObjectSerializerTest extends TestCase {
 		}
 	}
 
-}
+*/}
