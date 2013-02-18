@@ -1,5 +1,7 @@
 #include <string.h>
 #include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #define STRING_TO_BE_COPIED "source"
 

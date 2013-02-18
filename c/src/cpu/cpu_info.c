@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <stdio.h>
 char cpu_info(void) {
 	unsigned short int i = (unsigned short int) 0XFF01;
 	assert(sizeof(short int) >= 2);
