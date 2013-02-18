@@ -3,7 +3,9 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-void printEOF();
-int getMax(int a, int b);
+void
+printEOF();
+int
+getMax(int a, int b);
 
 #endif /* BASIC_H_ */

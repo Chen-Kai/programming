@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, char* argv[])
-{
+void print_args(int argc, char* argv[]) {
 	int i = 0;
 
-	for (i = 0; i < argc; i++)
-	{
+	for (i = 0; i < argc; i++) {
 		printf("arg-%d is %s\n", i, argv[i]);
 	}
-
-	return 0;
 }

@@ -13,5 +13,6 @@
 #include "cpu/cpu_info.h"
 #include "mem/mem.h"
 #include "pointer/pointer.h"
+#include "main/main_arg.h"
 
 #endif /* MAIN_H_ */

@@ -21,10 +21,10 @@ void memmove_test() {
 	free(dest_p);
 }
 
-
 void get_malloc_addr() {
 	char* ptr = malloc(100 * sizeof(int));
-	printf("\nmalloc(100 * sizeof(int) returns start address: %p\n", (char*) ptr);
+	printf("\nmalloc(100 * sizeof(int) returns start address: %p\n",
+			(char*) ptr);
 	free(ptr);
 }
 
