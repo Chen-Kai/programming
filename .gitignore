@@ -3,6 +3,7 @@
 
 # c binary
 *.o
+*.out
 
 # tmp file
 *.swp
@@ -15,10 +16,7 @@
 java/bin/
 
 # eclipse
-c/.cproject
-c/.project
 c/Debug/
-note/.project
 
 # vim cache files
 *~
@@ -31,9 +29,7 @@ android/app/gen/
 .~*
 
 # eclipse
-android/app/.classpath
 android/app/project.properties
-android/app/.project
 android/app/.settings
 
 # bakeup file
