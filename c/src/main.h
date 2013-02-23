@@ -14,5 +14,6 @@
 #include "mem/mem.h"
 #include "pointer/pointer.h"
 #include "main/main_arg.h"
+#include "struct/struct.h"
 
 #endif /* MAIN_H_ */

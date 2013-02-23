@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
 //	struct_pointer();
 //	print_mem_addr();
 //	test_swap();
-	print_null();
+//	print_null();
+	structInit();
 	return EXIT_SUCCESS;
 }

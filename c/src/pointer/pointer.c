@@ -33,6 +33,9 @@ void struct_pointer() {
 	printf("ptr->x = %.2f, ptr->y = %.2f\n", ptr->x, ptr->y);
 }
 
+/**
+ * swap is a local method that can not be seen outside.
+ */
 static void swap(int* ptr1, int* ptr2) {
 	int tmp = *ptr1;
 	*ptr1 = *ptr2;
