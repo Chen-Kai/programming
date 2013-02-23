@@ -11,6 +11,7 @@ int main(int argc, char **argv) {
 //	print_mem_addr();
 //	test_swap();
 //	print_null();
-	structInit();
+//	structInit();
+	structAssign();
 	return EXIT_SUCCESS;
 }

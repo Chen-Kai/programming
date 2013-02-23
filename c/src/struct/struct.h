@@ -2,5 +2,6 @@
 #define STRUCT_H_
 
 void structInit();
+void structAssign();
 
 #endif
