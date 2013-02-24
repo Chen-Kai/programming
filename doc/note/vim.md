@@ -79,3 +79,6 @@
 
 ##### replace all 'key' with 'keyword'
     :%s/key/&word/g
+
+##### delete from current character to matching character
+    d%
