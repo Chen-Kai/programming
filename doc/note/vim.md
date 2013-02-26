@@ -88,3 +88,9 @@
 
 ##### replace all ".", "..", "...", "....", ".....", "......" with "..."
     :%s[\.]\+/.../g
+
+##### match non Chinese
+    /[\x00-\xfff]
+
+##### replace more than one spaces with one space
+    :%s/[ ]\+/ /g
