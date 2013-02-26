@@ -92,5 +92,14 @@
 ##### match non Chinese
     /[\x00-\xfff]
 
-##### replace more than one spaces with one space
+##### replace multiple spaces with one space
     :%s/[ ]\+/ /g
+
+##### show character under cursor as ascii
+    ga
+
+##### show character under cursor as utf8, including Unicode stuff, hex codes etc
+    g8
+
+##### replace unicode 160 with unicode 32 (space)
+    :%s/[\xa0-\xa0]/ /g
