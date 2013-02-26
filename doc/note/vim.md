@@ -85,3 +85,6 @@
 
 ##### set encoding
     :set encoding=utf-8
+
+##### replace all ".", "..", "...", "....", ".....", "......" with "..."
+    :%s[\.]\+/.../g
