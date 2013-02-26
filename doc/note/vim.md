@@ -82,3 +82,6 @@
 
 ##### delete from current character to matching character
     d%
+
+##### set encoding
+    :set encoding=utf-8
