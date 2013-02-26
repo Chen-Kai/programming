@@ -86,8 +86,8 @@
 ##### set encoding
     :set encoding=utf-8
 
-##### replace all ".", "..", "...", "....", ".....", "......" with "..."
-    :%s[\.]\+/.../g
+##### replace all "..", "...", "....", ".....", "......" with "..."
+    :%s[.]\{2,6}/.../g
 
 ##### match non Chinese
     /[\x00-\xfff]
