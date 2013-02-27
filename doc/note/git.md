@@ -228,3 +228,23 @@
 ##### Show differences of a file between `index` and `git repository`  
     $ git diff --cached <file-path-goes-here>
 
+##### List all commits that changed a specific file:
+    $ git log --follow <file-name>
+
+##### List all changed files in last commit
+    $ git whatchanged -1
+
+##### View commit hash after checking out an old version:
+    $ git reflog
+
+##### Rollback a file to earlier version
+    $ 
+
+##### Extract three topmost commits from the current branch and format them as e-mailable patches:
+    $ git format-patch -3
+
+##### Generate patch file from some commits
+    $ git format-patch HEAD@{1}..HEAD
+    
+##### Apply a patch file
+    $ git apply <patch-file-name>
