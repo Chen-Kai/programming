@@ -103,3 +103,15 @@
 
 ##### replace unicode 160 with unicode 32 (space)
     :%s/[\xa0-\xa0]/ /g
+
+##### format corrent line
+    ==
+
+##### format the whole file
+    gg=G
+
+##### add a indent
+    >>
+
+##### delete a indent
+    <<
