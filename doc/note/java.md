@@ -40,10 +40,14 @@ A **Class** defines two things for an object of this class:
 ##### `final` class
 > An **final class** is simply a class whose instances can not be modified. All of the information contained in each instance is provided when it is created and fixed for lifetime of the object. (from "Effective Java")
 
+---
+
 ##### How to serialize an object?
 1. The Java the class is Serializable.
 2. Create an ObjectOutputStream object.
 3. Ask oos to execute writeObject()
+
+---
 
 ##### Principles:
 > 1. We should attempt to detect errors as soon as possible after they occur.
