@@ -248,3 +248,15 @@
     
 ##### Apply a patch file
     $ git apply <patch-file-name>
+
+##### Revert last commit
+    $ git revert HEAD
+
+##### Count your commits
+    $ git shortlog
+
+##### Create a tag against some commit
+    $ git tag <tag-name> <commit>
+
+##### Cleanup
+    $ git gc
