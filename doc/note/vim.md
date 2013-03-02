@@ -115,3 +115,6 @@
 
 ##### delete a indent
     <<
+
+##### indent automatically
+    :set smartindent
