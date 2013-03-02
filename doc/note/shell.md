@@ -124,3 +124,6 @@ $ date -d@<long number here>
 
 ##### append the content of file_source to the line(s) contain(s) 'key' in file_target
     $ sed '/key/r file_target' file_source 
+
+##### replace 'old' with 'new' in *.java files.
+    $ sed -i 's/<old>/<new>/g' `fine . -name '*.java'`
