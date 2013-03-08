@@ -126,4 +126,4 @@ $ date -d@<long number here>
     $ sed '/key/r file_target' file_source 
 
 ##### replace 'old' with 'new' in *.java files.
-    $ sed -i 's/<old>/<new>/g' `fine . -name '*.java'`
+    $ sed -i 's/<old>/<new>/g' `find . -name '*.java'`
