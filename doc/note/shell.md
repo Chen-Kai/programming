@@ -127,3 +127,7 @@ $ date -d@<long number here>
 
 ##### replace 'old' with 'new' in *.java files.
     $ sed -i 's/<old>/<new>/g' `find . -name '*.java'`
+    
+##### delete all lines contain "jsapi"
+    sed -i "/jsapi/d" `find . -name '*.html'`
+
