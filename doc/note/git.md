@@ -260,3 +260,12 @@
 
 ##### Cleanup
     $ git gc
+
+##### show all changed files between two commits
+    $ git diff --name-only <commit> <commit>
+
+##### checkout a file in some commit
+    $ git checkout <commit> <file>
+
+##### show diff of a file between two commits
+    $ git diff <commit> <commit> <file>
