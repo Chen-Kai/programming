@@ -5,7 +5,9 @@ Setting the inJustDecodeBounds property to true whie decoding avoids memory allo
 
 The AsyncTask class provides and easy way to execute soe work in a background thread and publish the results back on the UI thread.
 
-### add log in JNI
+---
+
+##### add log in JNI
 	#include <android/log.h>
 	#define TAG "you tag here"
 	#define LOGE(...)	__android_log_write(ANDROID_LOG_ERROR, TAG, __VA_ARGS__);
@@ -14,4 +16,18 @@ The AsyncTask class provides and easy way to execute soe work in a background th
 		// add log info in code
 		LOGE("fun() is called at %d\n", __LINE__);
 	}
+	
+---
 
+##### set attributes to a button
+###### in XML file  
+	style="?android:attr/buttonStyleSmall"
+###### in Java file  
+	Button btn = new Button(this, null, android.R.attr.buttonStyleSmall);
+
+---
+
+##### measure a view
+	contentView.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+	contentView.getMeasuredWidth()
+	contentView.getMeasuredWidth()
