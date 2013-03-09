@@ -16,7 +16,7 @@ The AsyncTask class provides and easy way to execute soe work in a background th
 	}
 
 ##### set attributes to a button
-1. in XML file
-	style="?android:attr/buttonStyleSmall"
-2. in Java file
-	Button btn = new Button(this, null, android.R.attr.buttonStyleSmall);
+1. in XML file  
+	`style="?android:attr/buttonStyleSmall"`
+2. in Java file  
+	`Button btn = new Button(this, null, android.R.attr.buttonStyleSmall);`
