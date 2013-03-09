@@ -125,3 +125,5 @@ $ <Alt	$ + .
 ##### delete all lines contain "jsapi"
     sed -i "/jsapi/d" `find . -name '*.html'`
 
+##### rm all empty directories
+    find -type d -empty -delete
