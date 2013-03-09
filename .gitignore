@@ -31,6 +31,8 @@ android/app/gen/
 # eclipse
 android/app/project.properties
 android/app/.settings
+android/app/.classpath
+android/app/.project
 
 # bakeup file
 *.bak

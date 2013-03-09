@@ -11,7 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.gmail.dailyefforts.android.basic.R;
-import com.gmail.dailyefforts.android.basic.Secret;
 
 public class WeiboWebviewActivity extends Activity {
 	private static final String TAG = WeiboWebviewActivity.class
@@ -51,15 +50,15 @@ public class WeiboWebviewActivity extends Activity {
 		public void onPageStarted(WebView view, String url, Bitmap favicon) {
 			Log.d(TAG, "onPageStarted() url: " + url);
 			super.onPageStarted(view, url, favicon);
-			Log.d(TAG, (url != null && url.startsWith(Secret.WEIBO_APP_REDIRECT_URL)) + "");
-			if (url != null && url.startsWith(Secret.WEIBO_APP_REDIRECT_URL)) {
-				view.stopLoading();
-				Intent data = new Intent();
-				data.putExtra("key", url);
-				setResult(Activity.RESULT_OK, data );
-				Log.d(TAG, "onPageStarted() finishing... : " + data.getExtras().getString("key"));
-				finish();
-			}
+//			Log.d(TAG, (url != null && url.startsWith(Secret.WEIBO_APP_REDIRECT_URL)) + "");
+//			if (url != null && url.startsWith(Secret.WEIBO_APP_REDIRECT_URL)) {
+//				view.stopLoading();
+//				Intent data = new Intent();
+//				data.putExtra("key", url);
+//				setResult(Activity.RESULT_OK, data );
+//				Log.d(TAG, "onPageStarted() finishing... : " + data.getExtras().getString("key"));
+//				finish();
+//			}
 		}
 
 		@Override
