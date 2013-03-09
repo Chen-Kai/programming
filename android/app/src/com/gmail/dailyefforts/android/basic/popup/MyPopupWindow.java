@@ -18,7 +18,7 @@ public class MyPopupWindow extends PopupWindow {
 		LayoutInflater inflater = (LayoutInflater) mContext
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		mView = inflater.inflate(R.layout.my_popup_window_ui, null, false);
-
+		
 		setContentView(mView);
 
 		this.setInputMethodMode(INPUT_METHOD_NOT_NEEDED);

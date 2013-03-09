@@ -21,9 +21,9 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/et_popup_window"
-        android:text="show popup" />
+        android:text="show_popup" />
 
     <Button
         android:id="@+id/btn_show_popup_input_mode"
@@ -31,7 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_popup_window"
-        android:layout_toLeftOf="@+id/btn_show_popup"
-        android:text="show popup ime" />
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:text="hide" />
 
 </RelativeLayout>
