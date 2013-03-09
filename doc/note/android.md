@@ -29,5 +29,5 @@ The AsyncTask class provides and easy way to execute soe work in a background th
 
 ##### measure a view
 	contentView.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
-	contentView.getMeasuredWidth()
-	contentView.getMeasuredWidth()
+	contentView.getMeasuredWidth();
+	contentView.getMeasuredWidth();
