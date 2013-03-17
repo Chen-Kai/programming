@@ -108,22 +108,27 @@ $ <Alt	$ + .
 	$ du -sh <dir name>
 
 ##### generate a patch
-    $ diff <file_old	$ <file_new	$ 	$ <patch-file>
+	$ diff <file_old	$ <file_new	$ 	$ <patch-file>
 
 ##### merge a patch
-    $ patch <file_old	$ < <patch-file>
+	$ patch <file_old	$ < <patch-file>
 
 ##### write the lines contain "key" from file_source into file_target
-    $ sed -n '/key/w file_target' file_source
+	$ sed -n '/key/w file_target' file_source
 
 ##### append the content of file_source to the line(s) contain(s) 'key' in file_target
-    $ sed '/key/r file_target' file_source 
+	$ sed '/key/r file_target' file_source 
 
 ##### replace 'old' with 'new' in *.java files.
-    $ sed -i 's/<old>/<new>/g' `find . -name '*.java'`
+	$ sed -i 's/<old>/<new>/g' `find . -name '*.java'`
     
 ##### delete all lines contain "jsapi"
-    sed -i "/jsapi/d" `find . -name '*.html'`
+	$ sed -i "/jsapi/d" `find . -name '*.html'`
 
 ##### rm all empty directories
-    find -type d -empty -delete
+	$ find -type d -empty -delete
+    
+##### replace all "\" with "/"
+	$ echo 'F:\dev\android\sdk\platforms\android-8' | sed 's/\\/\//g'
+	F:/dev/android/sdk/platforms/android-8
+
