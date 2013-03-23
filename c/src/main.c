@@ -13,6 +13,7 @@ int main(int argc, char **argv) {
 //	print_null();
 //	structInit();
 //	structAssign();
-	testMaxMacro();
+//	testMaxMacro();
+	displayTheIntValue(9);
 	return EXIT_SUCCESS;
 }

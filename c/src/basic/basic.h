@@ -3,9 +3,10 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-void
-printEOF();
-int
-getMax(int a, int b);
+
+void printEOF();
+int getMax(int a, int b);
+
+void displayTheIntValue(const int i);
 
 #endif /* BASIC_H_ */
