@@ -55,3 +55,7 @@ HTML
 <img src="http://www.w3schools.com/images/compatible_firefox.gif" alt="Firefox" width="42" height="42">  
 
 <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>
+
+~~deleted~~
+
+&copy;
