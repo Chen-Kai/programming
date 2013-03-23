@@ -118,3 +118,11 @@
 
 ##### indent automatically
     :set smartindent
+
+##### Backward cursor position
+    ``
+
+##### Add bookmark
+    : ma <bookmark-name>
+##### Goto some bookmark 
+    '<bookmark-name>
