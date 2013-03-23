@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
 //	test_swap();
 //	print_null();
 //	structInit();
-	structAssign();
+//	structAssign();
+	testMaxMacro();
 	return EXIT_SUCCESS;
 }
