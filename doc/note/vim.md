@@ -119,6 +119,9 @@
 ##### indent automatically
     :set smartindent
 
+##### show tab
+    : set list
+
 ##### Backward cursor position
     ``
 
