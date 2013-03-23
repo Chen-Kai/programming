@@ -269,3 +269,26 @@
 
 ##### show diff of a file between two commits
     $ git diff <commit> <commit> <file>
+
+##### check the configurations
+    $ git config -l
+
+##### Compare working dir with the index
+    $ git diff
+
+##### Compare index and last commit
+    $ git diff --cached
+
+##### Compare working dir with last commit
+    $ git diff HEAD
+
+##### unstage all files
+    $ git reset
+
+##### unstage some file
+    $ git reset -- <file> 
+
+##### show what changed between last 6 and last 2 commits
+	$ git diff HEAD~6..HEAD~2
+git log --grep=update
+git log --since=2013-03-22

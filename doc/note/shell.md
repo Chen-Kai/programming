@@ -132,3 +132,6 @@ $ <Alt	$ + .
 	$ echo 'F:\dev\android\sdk\platforms\android-8' | sed 's/\\/\//g'
 	F:/dev/android/sdk/platforms/android-8
 
+##### execute two commands at the same time
+	$ mkdir <name> && cd <name>
+	e.g. mkdir dir && cd dir
