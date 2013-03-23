@@ -120,12 +120,12 @@
     :set smartindent
 
 ##### show tab
-    : set list
+    :set list
 
 ##### Backward cursor position
     ``
 
 ##### Add bookmark
-    : ma <bookmark-name>
+    :ma <bookmark-name>
 ##### Goto some bookmark 
     '<bookmark-name>
