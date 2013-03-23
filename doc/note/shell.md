@@ -86,7 +86,7 @@ passwd <user-name>
 	$ $ sudo !!
 
 ##### show the arguments of last command or the command itself
-$ <Alt	$ + .
+	$ <Alt	$ + .
 
 ##### replace char in last command
 	$ echo 'hallo'
@@ -135,3 +135,6 @@ $ <Alt	$ + .
 ##### execute two commands at the same time
 	$ mkdir <name> && cd <name>
 	e.g. mkdir dir && cd dir
+
+##### change all the files' mode in some dir recursively
+	$ chmod -R 755
