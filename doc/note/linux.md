@@ -13,3 +13,10 @@
 * Kazam Screencaster
 * astah
 
+### Solutions
+> The package system is broken.
+Check if you are using third party repositories. If so disable them, since they are a common source of problems.
+Furthermore run the following command in a Terminal: apt-get install -f
+
+    $ sudo apt-get install -f
+
