@@ -8,3 +8,8 @@
 
 ### comparing text files with `diff` 
     $ diff --side-by-side <txt-file-a> <txt-file-b> 
+    
+### app
+* Kazam Screencaster
+* astah
+
