@@ -20,3 +20,9 @@ Furthermore run the following command in a Terminal: apt-get install -f
 
     $ sudo apt-get install -f
 
+> Requires installation of untrusted packages.
+The action would require the installation of packages from not authenticated sources.
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
