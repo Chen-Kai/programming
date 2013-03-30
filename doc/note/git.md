@@ -292,3 +292,6 @@
 	$ git diff HEAD~6..HEAD~2
 git log --grep=update
 git log --since=2013-03-22
+
+##### reset using remote HEAD
+	$ git reset origin/HEAD
