@@ -1,146 +1,137 @@
-##### clone a repo
+##### 从远端下载
     $ git clone <remote url> (<local_dir>)
 
-##### check remote url
+##### 显示远端URL
     $ git remote -v
 
-##### push to remote
+##### 向远端推送
     $ git push (-f) <remote name>
 
-##### cancel local commit
+##### 重置到之前的某个版本
     $ git reset HEAD~1
 
-##### add remote
+##### 增加一个远端
     $ git remote add <remote name> <remote url>
 
-##### rm remote
+##### 删除一个远端
     $ git remote rm <remote name>
-
-##### remove a remote
     $ git remote remove <remote name>
 
-##### replace local file using file in git repo
-    $ git checkout <file name>
-
-##### fetch from remote
-    $ git fetch <remote name>
-
-##### merge the local repo and the remote repo
-    $ git merge <remote name>/<remote branch>
-
-##### rm from index
-    $ git rm --cached <file to be rm>
-
-##### one commit, one line log 
-    $ git log --pretty=oneline
-
-##### to see last modifications 
-    $ git log -p -1
-
-##### view git repo visually
-    $ gitk
-
-##### view detail modification  for this commit
-    $ git log -p
-
-##### view the latest commit
-    $ git log -1
-
-##### view config infor
-    $ git config --list
-
-##### first push to a repo
-    $ git push -u origin master
-
-##### set user.name
-    $ git config --global user.name <your name here>
-
-##### show remote info
-    $ git remote show <remote name>
-
-##### switch to a branch
-    $ git branch <branch name>
-
-##### merge a branch to current branch
-    $ git merge test
-
-##### push all branches to remote
-    $ git push --all <remote name>
-
-##### stop tracking a file
-    $ git rm --cached .project
-
-##### check branch infomation
-    $ git branch -v
-
-##### create and switch to a new branch
-    $ git checkout -b <new branch name here>
-
-##### delete a branch
-    $ git branch -d(D) <branch_name>
-
-##### check the branches that have not been merged 
-    $ git branch --no-merged
-
-##### check the branches that have been merged 
-    $ git branch --merged
-
-##### amend last commit
-    $ git commit --amend
-
-##### add tag
-    $ git tag -a <tag_name>
-
-##### list out the deleted files
-    $ git ls-files deleted
-
-##### 1.stage modified new contents of tracked files
-##### 2.remove files from the index if the corresponding files in the working tree have been removed.
-    $ git add -u
-
-##### checkout a file in repo
-    $ git checkout -- app/res/values/strings.xml
-
-##### unstage a file
-    $ git reset HEAD <file full path>
-
-##### rename remote name
+##### 重命名远端
     $ git remote rename origin github
 
-##### show tag
-    $ git show <tag name>
+##### 从git仓库中取出一个文件
+    $ git checkout <file name>
 
-##### see info of a tag
-    $ git tag -v <tag name>
+##### 从远端获取最新文件
+    $ git fetch <remote name>
 
-##### add a tag for some commit
-    $ git tag -a <tag_name> <commit_id, like: 5e612c5>
+##### merge从远端获取的文件
+    $ git merge <remote name>/<remote branch>
 
-##### push some tag to remote
-    $ git push <remote_name> <tag_name>
+##### 从index区中删除某个文件
+    $ git rm --cached <file to be rm>
 
-##### push all tags to romote
-    $ git push <remote_name> tags
+##### 显示log，一次提交占一行
+    $ git log --pretty=oneline
 
-##### check which branches have been merged
-    $ git branch --merged
+##### 查看最后一次更改的细节
+    $ git log -p -1
 
-##### check which branches are not merged
+##### 启动gitk
+    $ gitk
+
+##### 查看这次更改的详细内容
+    $ git log -p
+
+##### 查看上一次更改
+    $ git log -1
+
+##### 查看git配置信息
+    $ git config --list
+
+##### 将本地git仓库推送到远端
+    $ git push -u origin master
+
+##### 设置用户名
+    $ git config --global user.name <your name here>
+
+##### 显示远端信息
+    $ git remote show <remote name>
+
+##### 切换到某个分支
+    $ git branch <branch name>
+
+##### 将某个分支merge到当前分支
+    $ git merge <branch-name>
+
+##### 将本地的所有分支都push到远端
+    $ git push --all <remote-name>
+
+##### 让git停止追踪某个文件
+    $ git rm --cached .project
+
+##### 查看分支信息
+    $ git branch -v
+
+##### 创建一个新分支并切换到该分支
+    $ git checkout -b <branch-name>
+
+##### 删除某个分支
+    $ git branch -d(D) <branch_name>
+
+##### 列出没有被merge的分支
     $ git branch --no-merged
 
-##### show all untracked files
+##### 列出已经merge好了的分支
+    $ git branch --merged
+
+##### 修改最近一次提交
+    $ git commit --amend
+
+##### 提交一个tag
+    $ git tag -a <tag-name>
+
+##### 列出所有被删除了的文件
+    $ git ls-files deleted
+
+##### 更新index目录（添加或删除了文件）
+    $ git add -u
+
+##### 从git仓库中取出一个文件
+    $ git checkout -- app/res/values/strings.xml
+
+##### unstage某个文件（从index区移除）
+    $ git reset HEAD <file>
+
+##### 显示某个标签
+    $ git show <tag-name>
+
+##### 显示某个标签的详细信息
+    $ git tag -v <tag-name>
+
+##### 为某次提交添加一个tag
+    $ git tag -a <tag-name> <commit-id>
+
+##### 将某个tag推送到远端
+    $ git push <remote-name> <tag-name>
+
+##### 将所有tag都推送到远端
+    $ git push <remote-name> tags
+
+##### 显示所有新添加的文件
     $ git status -u
 
-##### clean all untracked files
+##### 删除所有尚未被git追踪的新添加的文件
     $ git clean -df
 
-##### discard all modified files
+##### 放弃尚未commit的所有修改
     $ git checkout -- .
 
-##### show the modification in last commit
-    $ git log -p -1 .gitignore
+##### 显示上次commit对某个文件做的修改细节
+    $ git log -p -1 <file-name>
 
-##### view a file visually
+##### 使用gitk工具查看某个文件
     $ gitk .gitignore
 
 ##### Your branch and 'origin/master' have diverged,
@@ -150,10 +141,10 @@
 ##### unstaging a staged file
     $ git reset HEAD <file>
 
-##### unmodifying a modified file
+##### 放弃对某个文件的修改
     $ git checkout -- <file>
 
-##### show diff before commtting
+##### 在commit之前显示修改细节
     $ git commit -v
 
 ##### remove all files that have the .log extension in the log/
@@ -293,5 +284,5 @@
 git log --grep=update
 git log --since=2013-03-22
 
-##### reset using remote HEAD
+##### 根据远端仓库进行重置
 	$ git reset origin/HEAD
