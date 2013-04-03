@@ -284,3 +284,6 @@
 
 ##### 根据远端仓库进行重置
 	$ git reset origin/HEAD
+
+##### 删除本地tag
+	$ git tag -d <tag-name>
