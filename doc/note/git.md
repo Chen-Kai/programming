@@ -1,288 +1,286 @@
 ##### 从远端下载
-    $ git clone <remote url> (<local_dir>)
+	$ git clone <remote url> (<local_dir>)
 
 ##### 显示远端URL
-    $ git remote -v
+	$ git remote -v
 
 ##### 向远端推送
-    $ git push (-f) <remote name>
+	$ git push (-f) <remote name>
 
 ##### 重置到之前的某个版本
-    $ git reset HEAD~1
+	$ git reset HEAD~1
 
 ##### 增加一个远端
-    $ git remote add <remote name> <remote url>
+	$ git remote add <remote name> <remote url>
 
 ##### 删除一个远端
-    $ git remote rm <remote name>
-    $ git remote remove <remote name>
+	$ git remote rm <remote name>
+	$ git remote remove <remote name>
 
 ##### 重命名远端
-    $ git remote rename origin github
+	$ git remote rename origin github
 
 ##### 从git仓库中取出一个文件
-    $ git checkout <file name>
+	$ git checkout <file name>
 
 ##### 从远端获取最新文件
-    $ git fetch <remote name>
+	$ git fetch <remote name>
 
 ##### merge从远端获取的文件
-    $ git merge <remote name>/<remote branch>
+	$ git merge <remote name>/<remote branch>
 
 ##### 从index区中删除某个文件
-    $ git rm --cached <file to be rm>
+	$ git rm --cached <file to be rm>
 
 ##### 显示log，一次提交占一行
-    $ git log --pretty=oneline
+	$ git log --pretty=oneline
 
 ##### 查看最后一次更改的细节
-    $ git log -p -1
+	$ git log -p -1
 
 ##### 启动gitk
-    $ gitk
+	$ gitk
 
 ##### 查看这次更改的详细内容
-    $ git log -p
+	$ git log -p
 
 ##### 查看上一次更改
-    $ git log -1
+	$ git log -1
 
 ##### 查看git配置信息
-    $ git config --list
+	$ git config --list
 
 ##### 将本地git仓库推送到远端
-    $ git push -u origin master
+	$ git push -u origin master
 
 ##### 设置用户名
-    $ git config --global user.name <your name here>
+	$ git config --global user.name <your name here>
 
 ##### 显示远端信息
-    $ git remote show <remote name>
+	$ git remote show <remote name>
 
 ##### 切换到某个分支
-    $ git branch <branch name>
+	$ git branch <branch name>
 
 ##### 将某个分支merge到当前分支
-    $ git merge <branch-name>
+	$ git merge <branch-name>
 
 ##### 将本地的所有分支都push到远端
-    $ git push --all <remote-name>
+	$ git push --all <remote-name>
 
 ##### 让git停止追踪某个文件
-    $ git rm --cached .project
+	$ git rm --cached .project
 
 ##### 查看分支信息
-    $ git branch -v
+	$ git branch -v
 
 ##### 创建一个新分支并切换到该分支
-    $ git checkout -b <branch-name>
+	$ git checkout -b <branch-name>
 
 ##### 删除某个分支
-    $ git branch -d(D) <branch_name>
+	$ git branch -d(D) <branch_name>
 
 ##### 列出没有被merge的分支
-    $ git branch --no-merged
+	$ git branch --no-merged
 
 ##### 列出已经merge好了的分支
-    $ git branch --merged
+	$ git branch --merged
 
 ##### 修改最近一次提交
-    $ git commit --amend
+	$ git commit --amend
 
 ##### 提交一个tag
-    $ git tag -a <tag-name>
+	$ git tag -a <tag-name>
 
 ##### 列出所有被删除了的文件
-    $ git ls-files deleted
+	$ git ls-files deleted
 
 ##### 更新index目录（添加或删除了文件）
-    $ git add -u
+	$ git add -u
 
 ##### 从git仓库中取出一个文件
-    $ git checkout -- app/res/values/strings.xml
+	$ git checkout -- app/res/values/strings.xml
 
 ##### unstage某个文件（从index区移除）
-    $ git reset HEAD <file>
+	$ git reset HEAD <file>
 
 ##### 显示某个标签
-    $ git show <tag-name>
+	$ git show <tag-name>
 
 ##### 显示某个标签的详细信息
-    $ git tag -v <tag-name>
+	$ git tag -v <tag-name>
 
 ##### 为某次提交添加一个tag
-    $ git tag -a <tag-name> <commit-id>
+	$ git tag -a <tag-name> <commit-id>
 
 ##### 将某个tag推送到远端
-    $ git push <remote-name> <tag-name>
+	$ git push <remote-name> <tag-name>
 
 ##### 将所有tag都推送到远端
-    $ git push <remote-name> tags
+	$ git push <remote-name> tags
 
 ##### 显示所有新添加的文件
-    $ git status -u
+	$ git status -u
 
 ##### 删除所有尚未被git追踪的新添加的文件
-    $ git clean -df
+	$ git clean -df
 
 ##### 放弃尚未commit的所有修改
-    $ git checkout -- .
+	$ git checkout -- .
 
 ##### 显示上次commit对某个文件做的修改细节
-    $ git log -p -1 <file-name>
+	$ git log -p -1 <file-name>
 
 ##### 使用gitk工具查看某个文件
-    $ gitk .gitignore
+	$ gitk .gitignore
 
 ##### Your branch and 'origin/master' have diverged,
-    $ git log HEAD..origin/master
-    $ git merge origin/master
+	$ git log HEAD..origin/master
+	$ git merge origin/master
 
 ##### unstaging a staged file
-    $ git reset HEAD <file>
+	$ git reset HEAD <file>
 
 ##### 放弃对某个文件的修改
-    $ git checkout -- <file>
+	$ git checkout -- <file>
 
 ##### 在commit之前显示修改细节
-    $ git commit -v
+	$ git commit -v
 
-##### remove all files that have the .log extension in the log/
-    $ git rm log/\*.log
+##### 删除log文件夹下所有以log为后缀的文件
+	$ git rm log/\*.log
 
-##### remove all files that end with ~
-    $ git rm \*~
+##### 删除所有以~为后缀的文件
+	$ git rm \*~
 
-##### rename a file
-    $ git mv <old name> <new name>
+##### 重命名某个文件
+	$ git mv <old-name> <new-name>
 
-##### reset to some version
-    $ git reset HEAD~1
+##### reset至前一次提交时的版本
+	$ git reset HEAD~1
 
-##### push & update
-    $ git push -u origin master
+##### push并且update
+	$ git push -u origin master
 
-##### del a branch of remote repo
-    $ git push <remote-name> :<branch-you-want-to-delete>
+##### 删除远端某个分支
+	$ git push <remote-name> :<branch-name>
 
-##### rename a remove name
-    $ git remote rename <old name> <new name>
+##### 重命名某个远端
+	$ git remote rename <old-name> <new-name>
 
-##### list all commits of some author
-    $ git log --author=<author-name or email>
+##### 列出某个程序员的所有提交
+	$ git log --author=<author-name or email>
 
-##### list all commits of some committer
-    $ git log --committer=<committer-name or email>
+##### 列出某个提交者的所有提交
+	$ git log --committer=<committer-name or email>
 
-##### checkout some last version of a file
-    $ git checkout HEAD~1 <file name here>
+##### 获取某个文件之前的版本
+	$ git checkout HEAD~1 <file-name>
 
-##### see last version of a file
-    $ git show HEAD~1:<file name here>
+##### 查看某个文件在上次提交时的样子
+	$ git show HEAD~1:<file-name>
 
-##### unstage files
-    $ git rm --cached .
+##### unstage 所有文件
+	$ git rm --cached .
 
 ##### push tags to remote
-    $ git push --tags <remote-name> <branch-name>
+	$ git push --tags <remote-name> <branch-name>
 
 ##### git add . & git add -u
-    $ git add -A
+	$ git add -A
 
-##### rm a file in repo
-    $ git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' \
-    --prune-empty --tag-name-filter cat -- --all
-    $ rm -rf .git/refs/original/
-    $ git reflog expire --expire=now --all
-    $ git gc --prune=now
-    $ git gc --aggressive --prune=now
+##### 彻底从git仓库中移除某个文件
+	$ git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' \
+	--prune-empty --tag-name-filter cat -- --all
+	$ rm -rf .git/refs/original/
+	$ git reflog expire --expire=now --all
+	$ git gc --prune=now
+	$ git gc --aggressive --prune=now
 
-##### Show information about files in the index and the working tree
-    $ git ls-files
+##### 显示所有git正在追踪的文件
+	$ git ls-files
 
-##### let git cache your user name & password for an hour
-    $ git config --global credential.helper 'cache --timeout=3600'
+##### 在3600秒内记住密码
+	$ git config --global credential.helper 'cache --timeout=3600'
 
 ##### merge project pro_x in to project pro_main
-    $ git remote add <pro_x name> <remote url of pro_b>
-    $ git fetch <pro_x name>
-    $ git merge <pro_x name>/<pro_x branch name>
-    deal with conflict files manually
-    $ git remote remove <pro_x name>
+	$ git remote add <pro_x name> <remote url of pro_b>
+	$ git fetch <pro_x name>
+	$ git merge <pro_x name>/<pro_x branch name>
+	deal with conflict files manually
+	$ git remote remove <pro_x name>
 
 ##### List all files in last commit.
-    $ git diff --name-only HEAD^ HEAD
+	$ git diff --name-only HEAD^ HEAD
 
 ##### Show differences of a file between `working dir` and `index`  
-    $ git diff <file-path-goes-here>
+	$ git diff <file-path-goes-here>
 
 ##### Show differences of a file between `index` and `git repository`  
-    $ git diff --cached <file-path-goes-here>
+	$ git diff --cached <file-path-goes-here>
 
 ##### List all commits that changed a specific file:
-    $ git log --follow <file-name>
+	$ git log --follow <file-name>
 
 ##### List all changed files in last commit
-    $ git whatchanged -1
+	$ git whatchanged -1
 
 ##### View commit hash after checking out an old version:
-    $ git reflog
+	$ git reflog
 
 ##### Rollback a file to earlier version
-    $ 
+	$ 
 
 ##### Extract three topmost commits from the current branch and format them as e-mailable patches:
-    $ git format-patch -3
+	$ git format-patch -3
 
 ##### Generate patch file from some commits
-    $ git format-patch HEAD@{1}..HEAD
-    
+	$ git format-patch HEAD@{1}..HEAD
+	
 ##### Apply a patch file
-    $ git apply <patch-file-name>
+	$ git apply <patch-file-name>
 
 ##### Revert last commit
-    $ git revert HEAD
+	$ git revert HEAD
 
 ##### Count your commits
-    $ git shortlog
+	$ git shortlog
 
 ##### Create a tag against some commit
-    $ git tag <tag-name> <commit>
+	$ git tag <tag-name> <commit>
 
 ##### Cleanup
-    $ git gc
+	$ git gc
 
 ##### show all changed files between two commits
-    $ git diff --name-only <commit> <commit>
+	$ git diff --name-only <commit> <commit>
 
 ##### checkout a file in some commit
-    $ git checkout <commit> <file>
+	$ git checkout <commit> <file>
 
 ##### show diff of a file between two commits
-    $ git diff <commit> <commit> <file>
+	$ git diff <commit> <commit> <file>
 
 ##### check the configurations
-    $ git config -l
+	$ git config -l
 
 ##### Compare working dir with the index
-    $ git diff
+	$ git diff
 
 ##### Compare index and last commit
-    $ git diff --cached
+	$ git diff --cached
 
 ##### Compare working dir with last commit
-    $ git diff HEAD
+	$ git diff HEAD
 
-##### unstage all files
-    $ git reset
-
-##### unstage some file
-    $ git reset -- <file> 
-
-##### show what changed between last 6 and last 2 commits
+##### 显示HEAD之前的第6次提交同HEAD之前的第2次提交之间的差别
 	$ git diff HEAD~6..HEAD~2
-git log --grep=update
-git log --since=2013-03-22
+
+##### 显示那些包含“update”字符串的log 
+	$ git log --grep=update
+
+##### 显示那些包含“update”字符串的log 
+	$ git log --since=2013-03-22
 
 ##### 根据远端仓库进行重置
 	$ git reset origin/HEAD
