@@ -127,5 +127,12 @@
 
 ##### Add bookmark
     :ma <bookmark-name>
+
 ##### Goto some bookmark 
     '<bookmark-name>
+
+##### 删除所有空行
+    :g/^$/d
+    
+##### 删除所有空行（包含那些只有空格、Tab符的行）
+    :g/^\s*$/d
