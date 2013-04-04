@@ -1,7 +1,7 @@
 ##### replace old str with new str
     :%s/<old>/<new>/gc 
 
-##### insert timestamp  
+##### 插入时间戳
     :r !date
 
 ##### del comments
@@ -129,3 +129,16 @@
     :ma <bookmark-name>
 ##### Goto some bookmark 
     '<bookmark-name>
+
+##### 删除所有行首的数字
+e.g.
+1. 
+12. 
+	:%s/^\d\+\.\s\?//g 
+
+##### 从当前行开始,在中文字符前面加--
+	:,$s/[ ]\?[^\x00-\xff]\+/--&/gc
+
+##### 从某一行开始替换
+	:n,$s/<old>/<new>/gc
+

@@ -138,3 +138,9 @@ passwd <user-name>
 
 ##### change all the files' mode in some dir recursively
 	$ chmod -R 755
+
+##### 删除所有空行
+	$ sed '/^$/d'
+
+##### grep 不包含@的行
+	$ grep -v -n "@" <file>
