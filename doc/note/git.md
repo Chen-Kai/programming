@@ -200,8 +200,8 @@
 ##### 显示所有git正在追踪的文件
 	$ git ls-files
 
-##### 在3600秒内记住密码
-	$ git config --global credential.helper 'cache --timeout=3600'
+##### 在7200秒(2个小时)内记住密码
+	$ git config --global credential.helper 'cache --timeout=7200'
 
 ##### merge project pro_x in to project pro_main
 	$ git remote add <pro_x name> <remote url of pro_b>
