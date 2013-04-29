@@ -210,67 +210,64 @@
 	deal with conflict files manually
 	$ git remote remove <pro_x name>
 
-##### List all files in last commit.
+##### 显示上次提交更新的文件
 	$ git diff --name-only HEAD^ HEAD
 
-##### Show differences of a file between `working dir` and `index`  
+##### 显示某个文件在工作区和缓存区的差别
 	$ git diff <file-path-goes-here>
 
-##### Show differences of a file between `index` and `git repository`  
+##### 显示某个文件在缓存区和git仓库的差别
 	$ git diff --cached <file-path-goes-here>
 
-##### List all commits that changed a specific file:
+##### 显示改动过某个文件的所有提交
 	$ git log --follow <file-name>
 
-##### List all changed files in last commit
+##### 显示上次提交改动了什么文件
 	$ git whatchanged -1
 
-##### View commit hash after checking out an old version:
+##### 显示HEAD履历信息
 	$ git reflog
 
-##### Rollback a file to earlier version
-	$ 
-
-##### Extract three topmost commits from the current branch and format them as e-mailable patches:
+##### 将最近三次提交打成patch
 	$ git format-patch -3
 
-##### Generate patch file from some commits
+##### 生成某两次提交之间的patch
 	$ git format-patch HEAD@{1}..HEAD
 	
-##### Apply a patch file
+##### merge某个patch
 	$ git apply <patch-file-name>
 
-##### Revert last commit
+##### 回退上次提交
 	$ git revert HEAD
 
-##### Count your commits
+##### 查看所有提交
 	$ git shortlog
 
-##### Create a tag against some commit
+##### 为某次提交补加一个patch
 	$ git tag <tag-name> <commit>
 
-##### Cleanup
+##### 清理垃圾
 	$ git gc
 
-##### show all changed files between two commits
+##### 显示两次提交中有差别的文件
 	$ git diff --name-only <commit> <commit>
 
-##### checkout a file in some commit
+##### 取出某个文件在某次提交时的版本
 	$ git checkout <commit> <file>
 
-##### show diff of a file between two commits
+##### 显示某个文件在两次提交中的差别
 	$ git diff <commit> <commit> <file>
 
-##### check the configurations
+##### 显示配置信息
 	$ git config -l
 
-##### Compare working dir with the index
+##### 比较工作去和缓存区的差别
 	$ git diff
 
-##### Compare index and last commit
+##### 比较缓存区和上次提交的差别
 	$ git diff --cached
 
-##### Compare working dir with last commit
+##### 比较当前工作区中内容和上次提交时的差别
 	$ git diff HEAD
 
 ##### 显示HEAD之前的第6次提交同HEAD之前的第2次提交之间的差别
@@ -287,3 +284,6 @@
 
 ##### 删除本地tag
 	$ git tag -d <tag-name>
+
+##### 重命名某个分支
+	$ git branch -m <old-name> <new-name>
