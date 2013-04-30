@@ -26,9 +26,5 @@ The action would require the installation of packages from not authenticated sou
     $ sudo apt-get update
     $ sudo apt-get upgrade
     
-##### install jdk on Ubuntu 12.04
-    $ sudo add-apt-repository ppa:sun-java-community-team/sun-java6
-    $ sudo apt-get update
-    $ sudo apt-get install sun-java6-jdk
-
-
+##### install ia32-libs on 64-bit Ubuntu OS (12.04)
+    $ sudo apt-get install ia32-libs
