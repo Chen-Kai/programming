@@ -28,3 +28,6 @@ The action would require the installation of packages from not authenticated sou
     
 ##### install ia32-libs on 64-bit Ubuntu OS (12.04)
     $ sudo apt-get install ia32-libs
+
+##### how to install *.deb file
+    $ sudo dpkg -i *.deb
