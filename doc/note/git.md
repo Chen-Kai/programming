@@ -117,7 +117,7 @@
 	$ git push <remote-name> <tag-name>
 
 ##### 将所有tag都推送到远端
-	$ git push <remote-name> tags
+	$ git push <remote-name> --tags
 
 ##### 显示所有新添加的文件
 	$ git status -u
