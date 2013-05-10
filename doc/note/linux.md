@@ -31,3 +31,8 @@ The action would require the installation of packages from not authenticated sou
 
 ##### how to install *.deb file
     $ sudo dpkg -i *.deb
+
+##### install Java 7 on Ubuntu 12.04
+    $ sudo add-apt-repository ppa:webupd8team/java
+    $ sudo apt-get update
+    $ sudo apt-get install oracle-java7-installer
