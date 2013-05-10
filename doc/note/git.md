@@ -293,3 +293,6 @@
 	
 ##### hard push
 	$ git push origin --force master 
+	
+##### 
+	$ git push -u origin --all   # to push up the repo for the first time
