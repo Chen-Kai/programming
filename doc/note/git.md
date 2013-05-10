@@ -287,3 +287,9 @@
 
 ##### 重命名某个分支
 	$ git branch -m <old-name> <new-name>
+	
+##### reset merge
+	$ git reset --merge
+	
+##### hard push
+	$ git push origin --force master 
