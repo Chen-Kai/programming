@@ -117,7 +117,7 @@
 	$ git push <remote-name> <tag-name>
 
 ##### 将所有tag都推送到远端
-	$ git push <remote-name> tags
+	$ git push <remote-name> --tags
 
 ##### 显示所有新添加的文件
 	$ git status -u
@@ -287,4 +287,15 @@
 
 ##### 重命名某个分支
 	$ git branch -m <old-name> <new-name>
-git config --global core.editor vim
+
+##### 设置默认编辑器
+	$ git config --global core.editor vim
+	
+##### 重置本次merge（当merge失败时）
+	$ git reset --merge
+	
+##### 强制推送至远端，即使存在冲突、没merge好
+	$ git push origin --force master 
+	
+##### 第一次向远端推送
+	$ git push -u origin --all   # to push up the repo for the first time
