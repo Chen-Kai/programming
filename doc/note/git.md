@@ -287,3 +287,4 @@
 
 ##### 重命名某个分支
 	$ git branch -m <old-name> <new-name>
+git config --global core.editor vim
