@@ -136,7 +136,7 @@ passwd <user-name>
 	$ mkdir <name> && cd <name>
 	e.g. mkdir dir && cd dir
 
-##### change all the files' mode in some dir recursively
+##### change all the files mode in some dir recursively
 	$ chmod -R 755
 
 ##### 删除所有空行
@@ -144,3 +144,6 @@ passwd <user-name>
 
 ##### grep 不包含@的行
 	$ grep -v -n "@" <file>
+
+##### grep所有不包含Tab字符（'\t'）的行
+	$ grep -vn $'\t' a.txt
