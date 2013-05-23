@@ -299,3 +299,6 @@
 	
 ##### 第一次向远端推送
 	$ git push -u origin --all   # to push up the repo for the first time
+
+##### 初始化一个远程仓库
+	$ git --bare init

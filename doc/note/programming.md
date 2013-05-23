@@ -1,3 +1,8 @@
+##### 原则
+永远不用让debug开关影响代码的逻辑，例如:
+if (DEBUG) {
+	return; // 糟糕的逻辑！
+}
 ##### DON'Ts in synchronization
 * Don't read while writing;
 * Don't write while reading;

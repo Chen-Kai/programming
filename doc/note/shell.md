@@ -147,3 +147,6 @@ passwd <user-name>
 
 ##### grep所有不包含Tab字符（'\t'）的行
 	$ grep -vn $'\t' a.txt
+
+##### 找到所有不以.md结尾的文件并删除之
+	$ find . ! -name '*.md' -type f
