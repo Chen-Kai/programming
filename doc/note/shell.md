@@ -1,23 +1,16 @@
-##### Change all mode of files in some dir
-	$ chmod 755 DesignPattern/
+##### 更改某个目录下所有文件的属性（读写模式）
+	$ chmod 755 -R <dir-name>
 
-##### find the files modified in 24 hours
-	$ find . -name *.* -mtime -1
+##### 找到1天（24小时）内被修改过的文件
+	$ find . -type f -mtime -1
 
-find . -type f -daystart -mtime -2 >	$ tmp
+##### 查看某个文件的文件类型
+	$ file <file-name>
 
-##### Find the contains 'git', and modified in last 24 hours.
-	$ find . -name *git* -mtime -1
-
-##### Show the file type of some file
-	$ file [file-name-here]
-
-##### Compare differences between file-a and file-b
-	$ diff [file-a] [file-b]
-
-	$ vimdiff
-
-	$ gvimdiff
+##### 比较两个文件
+	$ diff <file-a> <file-b>
+	$ vimdiff <file-a> <file-b>
+	$ gvimdiff <file-a> <file-b>
 
 ##### Show the data on some col
 	$ cut -d[divider-here] -f[col-index-here]
@@ -28,43 +21,43 @@ find . -type f -daystart -mtime -2 >	$ tmp
 ##### Delete some characters in some file
 tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
-##### Translate lower characters to captals
-	$ tr 'a-z' 'A-Z' < [file-name-here]
+##### 将某个文件中的所有小写字母变成大写字母
+	$ tr 'a-z' 'A-Z' < <file-name-here>
 
 ##### Replace some old characters to a new one in some file
-	$ sed 's/[old]/[new]/g' [file-name-here]
+	$ sed 's/[old]/[new]/g' <file-name-here>
 
-##### print cpu info
+##### 显示CPU信息
 	$ lscpu
 
-##### print user id
+##### 显示用户id信息
 	$ id
 
-##### add a user
+##### 添加一个用户
 	$ useradd
 
-##### change passwd for a user
-passwd <user-name>
+##### 修改某个用户的密码
+	$ passwd <user-name>
 
-##### disable touch pad
+##### 禁用触摸板
 	$ sudo rmmod psmouse
 
-##### enable touch pad
+##### 启动触摸板
 	$ sudo modprobe psmouse
 
-##### grep 2 key strings at one time
+##### 查找包含key1或key2的行
 	grep 'key1\|key2' <file-name>
 
 ##### find files by size [k, M, B]
 	$ find . -size +2k -name "*.java"
 
-##### find files newer than some file
+##### 找到比某个文件更新的文件
 	$ find . -newer <file-name>
 
-##### find all directories 
+##### 找到所有的文件夹
 	$ find . -type d
 
-##### fine all files (not dir)
+##### 找到所有的文件（非文件夹）
 	$ find . -type f
 
 ##### issue other command on the resulte of find command
@@ -73,13 +66,13 @@ passwd <user-name>
 ##### 3. close the exec statement by using `\;`
 	$ find . -exec ls -l {} \;
 
-##### grep the lines start with a number (0-9)
+##### 找到不是以数字开头的行
 	$ grep '^[0-9]' *
 
 ##### grep the lines start with two numbers
 	$ grep '^[0-9]\{2\}' *
 
-##### get the return value of last command
+##### 显示上条命令的返回值
 	$ !$
 
 ##### run last command as admin
