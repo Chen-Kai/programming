@@ -8,7 +8,7 @@
 	$ file <file-name>
 
 ##### 比较两个文件
-	$ diff <file-a> <file-b>
+	$ diff --side-by-side <file-a> <file-b>
 	$ vimdiff <file-a> <file-b>
 	$ gvimdiff <file-a> <file-b>
 
@@ -143,3 +143,24 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
 ##### 找到所有不以.md结尾的文件并删除之
 	$ find . ! -name '*.md' -type f
+
+##### 查看进程树
+	$ pstree
+
+##### 查看硬盘使用情况
+	$ df -h
+
+##### 查看某个文件夹占用地盘空间大小
+	$ du -sh
+
+##### 查看某个文件夹及其所有子文件夹占用磁盘空间大小
+	$ du -h
+
+##### 列出莫个文件中不重复的行
+	$ uniq users
+
+##### 以mb为单位查看内存使用情况
+	$ free -m
+
+##### 将所有文件名中的空格替换为下划线
+	$ find . -type f | rename 's/ /_/g'
