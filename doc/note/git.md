@@ -183,9 +183,6 @@
 ##### unstage 所有文件
 	$ git rm --cached .
 
-##### push tags to remote
-	$ git push --tags <remote-name> <branch-name>
-
 ##### git add . & git add -u
 	$ git add -A
 
@@ -203,7 +200,7 @@
 ##### 在7200秒(2个小时)内记住密码
 	$ git config --global credential.helper 'cache --timeout=7200'
 
-##### merge project pro_x in to project pro_main
+##### merge project pro_x into project pro_main
 	$ git remote add <pro_x name> <remote url of pro_b>
 	$ git fetch <pro_x name>
 	$ git merge <pro_x name>/<pro_x branch name>
@@ -302,3 +299,15 @@
 
 ##### 初始化一个远程仓库
 	$ git --bare init
+
+##### 比较当前工作区与上次提交之间的差别
+	$ git diff HEAD
+
+##### 使用HEAD重置所有文件
+	$ git reset (--hard)
+
+##### 使用HEAD重置某个文件 
+	$ git reset -- <file-name>
+
+##### 查看上次commit做了哪些修改
+	$ git diff HEAD^^
