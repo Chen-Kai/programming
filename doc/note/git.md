@@ -98,7 +98,7 @@
 ##### 更新index目录（添加或删除了文件）
 	$ git add -u
 
-##### 从git仓库中取出一个文件
+##### 从git仓库中取出一个文件, 替换掉本地改动
 	$ git checkout -- app/res/values/strings.xml
 
 ##### unstage某个文件（从index区移除）
@@ -240,7 +240,7 @@
 ##### 查看所有提交
 	$ git shortlog
 
-##### 为某次提交补加一个patch
+##### 为某次提交补加一个tag
 	$ git tag <tag-name> <commit>
 
 ##### 清理垃圾
@@ -305,6 +305,10 @@
 
 ##### 使用HEAD重置所有文件
 	$ git reset (--hard)
+
+##### 放弃本地改动&提交，获取远端服务器最新版本
+	$ git fetch origin
+	$ git reset --hard origin/master
 
 ##### 使用HEAD重置某个文件 
 	$ git reset -- <file-name>
