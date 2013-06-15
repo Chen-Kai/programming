@@ -241,7 +241,7 @@
 	$ git shortlog
 
 ##### 为某次提交补加一个tag
-	$ git tag <tag-name> <commit>
+	$ git tag -a <tag-name> <commit> -m 'messag-here'
 
 ##### 清理垃圾
 	$ git gc
@@ -318,3 +318,27 @@
 
 ##### 匹配以@开头，以#结尾的字符串（如：“@abc#”）
 	$ @.*#
+
+##### 删除标签
+	$ git tag -d v1.16.6
+
+##### 推送所有分支
+	$ git push origin --all
+
+##### 启动图形化merge工具
+	$ git mergetool
+
+##### 让git忘记某个文件
+	$ git rm <file-name>
+
+##### 让git忘记某个文件夹
+	$ git rm -r <folder-name>/
+
+##### 重命名某个文件
+	$ git mv <old-name> <new-name>
+
+##### 撤销某次提交
+	$ git revert <commit-hash> 
+
+##### 
+git diff '@{yesterday}'
