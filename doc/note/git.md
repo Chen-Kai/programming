@@ -340,5 +340,11 @@
 ##### 撤销某次提交
 	$ git revert <commit-hash> 
 
-##### 
-git diff '@{yesterday}'
+##### 查看自昨天的改动细节 
+	$ git diff '@{yesterday}'
+
+##### 查看两天内的提交记录
+	$ git whatchanged --since='2 days ago'
+
+##### 列出包含"featured"的标签
+	$ git tag -l '*featured*'

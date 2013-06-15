@@ -3,6 +3,10 @@
 if (DEBUG) {
 	return; // 糟糕的逻辑！
 }
+
+如果提供了配置选项，一定要提供“一键重置默认配置”功能
+
+除非必须，否则不要添加配置项目以保持简介
 ##### DON'Ts in synchronization
 * Don't read while writing;
 * Don't write while reading;

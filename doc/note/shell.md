@@ -164,3 +164,13 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
 ##### 将所有文件名中的空格替换为下划线
 	$ find . -type f | rename 's/ /_/g'
+
+##### 整词匹配"look", look匹配，looking不匹配
+	$ grep -r -w 'look' shell.md
+
+##### zip某个文件夹
+	$ zip -r a.zip a/
+
+##### unzip某个压缩包
+	$ unzip -d a/ a.zip # or 
+	$ unzip a.zip
