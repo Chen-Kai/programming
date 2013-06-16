@@ -348,3 +348,9 @@
 
 ##### 列出包含"featured"的标签
 	$ git tag -l '*featured*'
+
+##### 列出在某次commit中所修改的所有文件
+	$ git show --name-only <commit-hash>
+
+##### 列出修改了某个文件的所有commit
+	$ git log -p <file-name>
