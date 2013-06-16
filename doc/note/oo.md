@@ -1,6 +1,6 @@
 For each object that you see, ask yourself two questions:
-1. What possible states can this object in?
-2. What possible behavior can this object perform?
+1. What possible states can this object in?（何所有）
+2. What possible behavior can this object perform?（何所为）
 
 Take desktop lamp as an example:
 1. states: on and off

@@ -174,3 +174,10 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 ##### unzip某个压缩包
 	$ unzip -d a/ a.zip # or 
 	$ unzip a.zip
+
+##### 查看日历
+	$ cal
+
+##### 使用`diff`命令比较连个文件
+    $ diff --side-by-side <txt-file-a> <txt-file-b>
+
