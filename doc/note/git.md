@@ -66,7 +66,7 @@
 	$ git merge <branch-name>
 
 ##### 将本地的所有分支都push到远端
-	$ git push --all <remote-name>
+	$ git push <remote-name> --all
 
 ##### 让git停止追踪某个文件
 	$ git rm --cached .project
@@ -354,3 +354,15 @@
 
 ##### 列出修改了某个文件的所有commit
 	$ git log -p <file-name>
+
+##### 列出两个commit之间变化了的文件
+	$ git diff --name-only <hash-1> <hash-2>
+
+##### 遇到以下错误
+	$ git status
+	error: bad index file sha1 signature
+	fatal: index file corrupt
+	解决方案：
+	1. 备份
+	2. rm -f .git/index
+	3. git reset

@@ -115,7 +115,7 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 ##### replace 'old' with 'new' in *.java files.
 	$ sed -i 's/<old>/<new>/g' `find . -name '*.java'`
     
-##### delete all lines contain "jsapi"
+##### 删除包含"jsapi"的行
 	$ sed -i "/jsapi/d" `find . -name '*.html'`
 
 ##### rm all empty directories
