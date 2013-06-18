@@ -366,3 +366,9 @@
 	1. 备份
 	2. rm -f .git/index
 	3. git reset
+
+###### merge错误：
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+解决方案：
+	$ git reset --merge 
