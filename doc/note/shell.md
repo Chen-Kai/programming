@@ -181,3 +181,5 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 ##### 使用`diff`命令比较连个文件
     $ diff --side-by-side <txt-file-a> <txt-file-b>
 
+##### 查找到某些文件并移动到某一路径
+	$ find . -type f -exec mv -t .backup/ {} \+

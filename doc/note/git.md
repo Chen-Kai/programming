@@ -372,3 +372,16 @@ fatal: You have not concluded your merge (MERGE_HEAD exists).
 Please, commit your changes before you can merge.
 解决方案：
 	$ git reset --merge 
+
+###### 缓存(隐藏)变更
+	$ git stash
+
+###### 查看所有缓存变更列表
+	$ git stash list
+
+###### 应用缓存的变更
+	$ git stash apply
+
+###### 应用缓存的变更后将其从缓存栈中取走
+	$ git stash pop
+
