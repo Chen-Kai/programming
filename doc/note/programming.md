@@ -32,3 +32,8 @@ Thread X tries to access the resource.
 
 ##### URL
 > A URL is a pointer to a resource on the World Wide Web.
+
+##### 最小化变量作用域
+> 要让变量的作用域小到不能再小。也就是说，要隐藏临时变量，让尽量少的环节知道它，防止被误用。-- Keep methods small and focused.
+
+##### 

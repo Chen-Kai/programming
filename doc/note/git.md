@@ -385,3 +385,5 @@ Please, commit your changes before you can merge.
 ###### 应用缓存的变更后将其从缓存栈中取走
 	$ git stash pop
 
+###### 撤销`git add <file>`
+	$ git reset <file>

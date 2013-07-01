@@ -183,3 +183,6 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
 ##### 查找到某些文件并移动到某一路径
 	$ find . -type f -exec mv -t .backup/ {} \+
+
+##### 产出所有空文件夹
+	$ find . -type d -empty -delete
