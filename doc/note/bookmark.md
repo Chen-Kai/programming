@@ -10,3 +10,4 @@
 - [Apache Commons Codec](http://commons.apache.org/codec/)
 - [Udacity](http://www.udacity.com/)
 - [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
+- [IT eBooks](http://it-ebooks.info)
