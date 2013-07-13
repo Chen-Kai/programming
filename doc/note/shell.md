@@ -186,3 +186,18 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
 ##### 产出所有空文件夹
 	$ find . -type d -empty -delete
+
+##### 查看上条命令的返回值
+	$ echo $?
+
+##### 查看a.out
+	$ hexdump -C a.out
+
+##### 阅读elf文件
+	$ readelf -a a.out
+
+##### 提取a.out的指令到text.bin中
+	$ objcopy -O binary -j .text a.out text.bin
+
+##### 提取a.out的数据到data.bin中
+	$ objcopy -O binary -j .data a.out data.bin

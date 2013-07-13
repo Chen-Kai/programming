@@ -71,11 +71,17 @@ Software entities should be open for extension, but closed for modification.
 实现一个接口就时向外界宣告一种能力，告诉外界你能做某事 -- 这是一份承诺，他人随时都可能给你发消息，让你做这件事。
 把关系密切、相互合作的一些类和接口放到一个包（文件夹）中。
 
-
 对象：
 1. 各司其职 -- 数据和行为封装
 2. 相互协作 -- 通过传递消息
 各对象实体通过消息进行沟通。
 
+An object is defined by two terms: attributes and behaviors.
+
+An object is an entity that contains both data and behavior.
+
+Encapsulation is when you protect information in your code from being used incorrectly.
+
+Encapsulation separates your data from your app's behavior. Then you can control how each part is used by the rest of your application.
 
 

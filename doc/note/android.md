@@ -35,3 +35,9 @@ The AsyncTask class provides and easy way to execute soe work in a background th
 ---
 
 *  close the Cursor!
+
+---
+
+View - 手机屏幕上可见的东西都是view
+Activity - 应用于用户交互的窗口
+Intent - 一个信息包，表达了你的意图（请愿）
