@@ -41,3 +41,11 @@ The AsyncTask class provides and easy way to execute soe work in a background th
 View - 手机屏幕上可见的东西都是view
 Activity - 应用于用户交互的窗口
 Intent - 一个信息包，表达了你的意图（请愿）
+
+---
+
+Activities are organized as a stack:
+1. Top Activity is visiable;
+2. Other Activities are stopped;
+3. BACK button to traverse the Activities stack;
+4. Long press HOME button shows the content of the stack.
