@@ -6,7 +6,8 @@
 * Whenever you do an indirection, check NULL!
 * malloc, free!
 
-##### 打印变量地址使用%p
+##### 打印变量地址或指针值使用%p
+
 	#include <stdio.h>
 
 	int global = 99;
@@ -25,8 +26,12 @@
 2. 使得链表、树等数据结构成为可能
 
 ##### & and *
+
 	int i = 1;
 	int *ptr = &i;
+
 &操作符取出变量i在内存中的地址
+	
 	printf("%d\n", *ptr);
+
 *操作符被用来提取ptr所指向的值
