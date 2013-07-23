@@ -53,7 +53,7 @@ A **Class** defines two things for an object of this class:
 ---
 
 ##### Principles:
-> 1. We should attempt to detect errors as soon as possible after they occur.
+1. We should attempt to detect errors as soon as possible after they occur.
 2. Nonpublic methods should generally check their parameters using assertions rather than normal check.
 3. It is very important to check the validity of parameters to constructors to prevent the construction of an object that violates class invariants.
-
+4. 及时发现错误、报告错误、合理处理错误；不可以哑处理。
