@@ -7,7 +7,7 @@
 ##### del comments
     Ctrl + v > j > d
 
-##### upper to lower
+##### 大小写转换
     Ctrl + v > [j, k, h, l] > u
 
 ##### execute shell command
