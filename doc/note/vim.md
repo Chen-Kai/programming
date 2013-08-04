@@ -37,30 +37,30 @@
 
 ##### go to defined place
     gd
-    
-##### to to next (pre) one
+   
+##### 跳转到下一个该字符串出现的地方
     * (#)
 
-##### indent all lines
+##### 格式化所有行
     1. gg
     2. v
     3. G
     4. =
 
 
-##### delete all lines
+##### 删除所有行
     1. gg
     2. v
     3. G
     4. :d
 
-##### repeat last command
+##### 重复执行上一命令
     .
 
-##### switch positions of the words next to each other
+##### 交换相邻的两个字符
     xp
 
-##### switch positions of the lines next to each other
+##### 交换相邻的两行
     ddp
     
 ##### insert a header for some lines
@@ -71,10 +71,10 @@
     5. Esc
     6. Esc
 
-##### check spell
+##### 打开拼写检查
     :set spell
 
-##### read the help doc of `spell` command
+##### 查看spell命令的帮助文档
     :help spell
 
 ##### replace all 'key' with 'keyword'
@@ -119,8 +119,11 @@
 ##### indent automatically
     :set smartindent
 
-##### show tab
+##### 显示空白字符，tab, $等
     :set list
+
+##### 隐藏空白字符
+    :set list!
 
 ##### Backward cursor position
     ``
@@ -149,3 +152,9 @@ e.g.
 ##### 删除所有空行（包含那些只有空格、Tab符的行）
     :g/^\s*$/d
 ,$s/[\x00-\xff]\+\s\+/&@/gc
+
+##### 跳转到函数头{
+	[[
+
+##### 跳转到函数尾}
+	]]
