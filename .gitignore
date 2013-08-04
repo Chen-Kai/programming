@@ -5,6 +5,12 @@
 *.o
 *.out
 
+# python class byte
+*.pyc
+
+# python bin
+*.pyo
+
 # tmp file
 *.swp
 
