@@ -201,3 +201,12 @@ tr -d [characters-to-be-deleted] < [file-name-here] 	$ [file-name-here]
 
 ##### 提取a.out的数据到data.bin中
 	$ objcopy -O binary -j .data a.out data.bin
+
+##### list block devices 
+	$ lsblk
+
+##### 查看之前使用过的shell命令
+	$ history
+
+##### 在历史shell命令中查找
+	Ctrl + R
