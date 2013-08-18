@@ -18,11 +18,11 @@
 ###### 对某文件进行拼写检查
 	$ aspell check 文件名
 
-###### 删除某文件中的某字符
-	$ tr -d 要删除的字符  文件名 	$ [file-name-here]
+###### 删除某文件中的某个字符
+	$ tr -d 要删除的字符 文件名
 
 ###### 将某个文件中的空白字符都替换成'\t'
-	$ tr [:space:] '\t'  文件名
+	$ tr [:space:] '\t' 文件名
 
 ###### 将某个文件中的所有小写字母变成大写字母
 	$ tr 'a-z' 'A-Z' < 文件名
@@ -174,7 +174,7 @@
 ###### 整词匹配"look", look匹配，looking不匹配
 	$ grep -r -w 'look' shell.md
 
-###### zip某个文件夹
+###### zip某个文件夹（a）
 	$ zip -r a.zip a/
 
 ###### unzip某个压缩包
@@ -185,7 +185,7 @@
 	$ cal
 
 ###### 使用`diff`命令比较连个文件
-    $ diff --side-by-side <txt-文件名> <txt-文件名>
+	$ diff --side-by-side <txt-文件名> <txt-文件名>
 
 ###### 查找到某些文件并移动到某一路径
 	$ find . -type f -exec mv -t .backup/ {} \+
@@ -216,3 +216,6 @@
 
 ###### 在历史shell命令中查找并执行
 	Ctrl + R
+
+###### 在当前目录查找java或xml文件
+	$ find . -name '*.java' -or -name '*.xml'
