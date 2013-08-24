@@ -387,3 +387,6 @@ Please, commit your changes before you can merge.
 
 ###### 撤销`git add <file>`
 	$ git reset <file>
+
+###### 在将dev分支merge都master分支时，保留一个节点
+	$ git merge --no-ff dev
