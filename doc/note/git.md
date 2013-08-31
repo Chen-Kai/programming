@@ -390,3 +390,6 @@ Please, commit your changes before you can merge.
 
 ###### 在将dev分支merge都master分支时，保留一个节点
 	$ git merge --no-ff dev
+
+###### 查看hash对应的内容
+	$ git cat-file -p <hash>

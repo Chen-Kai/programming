@@ -83,5 +83,16 @@ An object is an entity that contains both data and behavior.
 Encapsulation is when you protect information in your code from being used incorrectly.
 
 Encapsulation separates your data from your app's behavior. Then you can control how each part is used by the rest of your application.
+---
+oo原则：
+*封装变化
+*多用组合，少用继承
+*针对接口编程，不针对实现编程
+*保持对象之间的松耦合——有事儿发消息
+*类应该对扩展开放、对修改关闭
+*依赖抽象，不要依赖具体类
+*只和朋友交谈
+*别找我，我会找你
+*类应该只有一个改变的理由
 
-
+对象之间要相互独立，松耦合，通过传递消息进行互动，每个object都应该控制好自己的行为。
