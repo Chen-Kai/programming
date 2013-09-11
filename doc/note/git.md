@@ -298,6 +298,10 @@
 	$ git push -u origin --all   # to push up the repo for the first time
 
 ##### 初始化一个远程仓库
+	$ mkdir <project name>
+	$ cd <project name>
+	$ mkdir .git
+	$ cd .git/
 	$ git --bare init
 
 ##### 比较当前工作区与上次提交之间的差别
