@@ -49,3 +49,22 @@ Activities are organized as a stack:
 2. Other Activities are stopped;
 3. BACK button to traverse the Activities stack;
 4. Long press HOME button shows the content of the stack.
+
+---
+
+创建notification的步骤
+1. 创建一个PendingIntent
+2. 创建一个Notification.Builder
+3. 将1中对象传给2中对象，通过2的setContentIntent接口
+4. build
+5. 获得系统服务NotificationManager并把4中构建的notification通过其notify接口传给它
+
+---
+
+添加动画步骤
+1. 在 res/animator/id.xml定义一个set
+2. 在代码中AnimatorInflator.loadAnimator()加载这个动画
+3. setTarget()
+4. start()
+
+

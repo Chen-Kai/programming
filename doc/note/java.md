@@ -57,3 +57,19 @@ A **Class** defines two things for an object of this class:
 2. Nonpublic methods should generally check their parameters using assertions rather than normal check.
 3. It is very important to check the validity of parameters to constructors to prevent the construction of an object that violates class invariants.
 4. 及时发现错误、报告错误、合理处理错误；不可以哑处理。
+
+---
+
+>Objects are at the heart of Java programming. An object consists of data and methods that access (and possibly manipulate) the data. An object also has a state, which consists of the values for the object's data at a particular time. Objects are modeled with classes.
+
+>The difference between static and instance methods is that static methods do not require being associated with an object. 
+
+>Declaring data as private prevents the data from being manipulated from outside the class. 
+
+>The Java keyword `this` provides an object a reference to itself. It is useful when an object needs to pass itself to another object.
+
+> Whenever object are passed as parameters to methods, they are passed by reference.
+
+---
+
+`switch(枚举变量)`要进行非空判断.因为枚举`枚举变量.ordinal()`可能为空
