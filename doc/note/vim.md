@@ -1,157 +1,165 @@
-###### replace old str with new str
-    :%s/<old>/<new>/gc
+###### 替换字符串 
+	:%s/<old>/<new>/gc
 
 ###### 插入时间戳
-    :r !date
+	:r !date
 
-###### del comments
-    Ctrl + v > j > d
+###### 删除某些行
+	<Ctrl> + v
+	j
+	:d
 
 ###### 大小写转换
-    Ctrl + v > [j, k, h, l] > u
+	<Ctrl> + v
+	[hjkl]
+	[uU]
 
-###### execute shell command
-    :! <shell command here>
+###### 直接执行shell命令
+	:! <shell command here>
 
-###### execute shell command
-    :shell
-    $ <shell command here>
-    $ exit
+###### 执行shell命令
+	:sh
+	$ <shell command here>
+	$ exit
 
 ###### highlight key word during searching
-    :set hlsearch
+	:set hlsearch
 
-###### find matches number
-    :%s/<key-string-here>//gn
+###### 打开拼写检查
+	:set spell
 
-###### lower2upper or upper2lower
-    ~
+###### 设置编码格式
+	:set encoding=utf-8
 
-###### change a word to lowercase (uppercase)
-    1. v
-    2. e
-    3. u (U)
+###### 智能缩进
+	:set smartindent
 
-###### go to match "()" or "[]" or "{}"
-    %
+###### 自动缩进
+	:set ai
 
-###### go to defined place
-    gd
+###### 忽略大小写
+	:set ic
+
+###### 显示空白字符，tab, $等
+	:set list
+
+###### 隐藏空白字符
+	:set list!
+
+###### 显示匹配项总数
+	:%s/<key-string-here>//gn
+
+###### 大小写互换
+	~
+
+###### 切换一个单词的大小写
+	1. v
+	2. e
+	3. u (U)
+
+###### 在配对符号之间跳转
+	%
+
+###### 跳转到函数定义处
+	gd
 
 ###### 跳转到下一个该字符串出现的地方
-    * (#)
+	*
+
+###### 跳转到上一个该字符串出现的地方
+	#
 
 ###### 格式化所有行
-    1. gg
-    2. v
-    3. G
-    4. =
+	1. gg
+	2. v
+	3. G
+	4. =
 
 
 ###### 删除所有行
-    1. gg
-    2. v
-    3. G
-    4. :d
+	ggVG
+	:d
 
 ###### 重复执行上一命令
-    .
+	.
 
 ###### 交换相邻的两个字符
-    xp
+	xp
 
 ###### 交换相邻的两行
-    ddp
+	ddp
 
-###### insert a header for some lines
-    1. Ctrl + v
-    2. [hjkl]
-    3. I
-    4. edit
-    5. Esc
-    6. Esc
-
-###### 打开拼写检查
-    :set spell
+###### 在某些行的行首统一加上某些字符
+	1. Ctrl + v
+	2. [hjkl]
+	3. I
+	4. edit
+	5. Esc
+	6. Esc
 
 ###### 查看spell命令的帮助文档
-    :help spell
+	:help spell
 
-###### replace all 'key' with 'keyword'
-    :%s/key/&word/g
+###### &代表找到的匹配项
+	:%s/key/&word/g
 
-###### delete from current character to matching character
-    d%
+###### 删除至匹配的符号处
+	d%
 
-###### set encoding
-    :set encoding=utf-8
+###### 把2至6个连续的.变成...
+	:%s[.]\{2,6}/.../g
 
-###### replace all "..", "...", "....", ".....", "......" with "..."
-    :%s[.]\{2,6}/.../g
+###### 查找非中文字符
+	/[\x00-\xfff]
 
-###### match non Chinese
-    /[\x00-\xfff]
+###### 使用一个空格替换多个空格
+	:%s/[ ]\+/ /g
 
-###### replace multiple spaces with one space
-    :%s/[ ]\+/ /g
+###### 显示光标所在字符的编码
+	ga
 
-###### show character under cursor as ascii
-    ga
+###### 显示管表所在字符的UTF-8编码（16进制）
+	g8
 
-###### show character under cursor as utf8, including Unicode stuff, hex codes etc
-    g8
+###### 将Unicode为a0的字符替换为空格
+	:%s/[\xa0-\xa0]/ /g
 
-###### replace unicode 160 with unicode 32 (space)
-    :%s/[\xa0-\xa0]/ /g
+###### 格式化当前行代码
+	== 
 
-###### format corrent line
-    ==
+###### 格式化所有代码
+	ggVG
+	=
 
-###### format the whole file
-    gg=G
+###### 增加缩进
+	>>
 
-###### add a indent
-    >>
+###### 减少缩进
+	<<
 
-###### delete a indent
-    <<
+###### 回到上次光标所在位置
+	``
 
-###### indent automatically
-    :set smartindent
+###### 添加一个书签a
+	:ma
 
-###### 显示空白字符，tab, $等
-    :set list
+###### 跳转至书签a处
+	'a
 
-###### 隐藏空白字符
-    :set list!
-
-###### Backward cursor position
-    ``
-
-###### Add bookmark
-    :ma <bookmark-name>
-
-###### Goto some bookmark
-    '<bookmark-name>
-
-###### 删除所有行首的数字
-e.g.
-1.
-12.
+###### 删除所有行首的数字，如： "1."，"12."等
 	:%s/^\d\+\.\s\?//g
 
 ###### 从当前行开始,在中文字符前面加--
 	:,$s/[ ]\?[^\x00-\xff]\+/--&/gc
 
-###### 从某一行开始替换
-	:n,$s/<old>/<new>/gc
+###### 从第6行开始替换
+	:6,$s/<old>/<new>/gc
 
 ###### 删除所有空行
 	:g/^\s*$/d
 
 ###### 删除所有空行（包含那些只有空格、Tab符的行）
-    :g/^\s*$/d
-,$s/[\x00-\xff]\+\s\+/&@/gc
+	:g/^\s*$/d,$s/[\x00-\xff]\+\s\+/&@/gc
 
 ###### 跳转到函数头{
 	[[
@@ -175,10 +183,10 @@ e.g.
 	L
 
 ###### 跳出
-	Ctrl + o
+	<Ctrl> + o
 
 ###### 跳入
-	Ctrl + i
+	<Ctrl> + i
 
 ###### 开始替换
 	R
@@ -228,12 +236,6 @@ e.g.
 
 ###### 删除行尾多余的空格
 	:%s= *%==
-
-###### 自动缩进
-	:set ai
-
-###### 忽略大小写
-	:set ic
 
 ###### 删除当前行并进入插入模式
 	cc
