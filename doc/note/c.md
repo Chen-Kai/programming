@@ -43,3 +43,18 @@ C语言程序可能使用三种内存区域：
 方法体内的临时变量被放置在这个区域
 3. 动态区
 
+---
+可`建议`编译器把频繁使用的临时变量（例如计数器）放于`寄存器`中
+	registers int counter = 0;
+不过，就不能用&操作符取该变量的地址了。
+---
+`static`的local变量只被初始化一次
+`static`的local变量不会在每次函数被呼叫时都被重新赋值（也就是说会保留原来的值）
+`static`的global变量和函数是文件私有的，只在文件内可见
+---
+The `&` operator takes a piece of data and tells you where it is stored.
+The `*` operator takes an address and tells you what is stored there.
+---
+`sizeof`是一个操作符，其值在编译时期就已经计算完成了。
+
+
