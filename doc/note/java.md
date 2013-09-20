@@ -73,3 +73,31 @@ A **Class** defines two things for an object of this class:
 ---
 
 `switch(枚举变量)`要进行非空判断.因为枚举`枚举变量.ordinal()`可能为空
+
+---
+
+`final`关键字有3方面用途：
+1. 修饰变量，说明其为只读的。
+2. 修饰方法，说明子类不可覆盖之。
+3. 修饰类，说明其它类不可继承之。
+总之，`final`了的变量、方法、类就是最终版本，不可再做更改了。
+
+---
+
+编译器看到`final`的原始类型变量或者String对象，会进行常量替换。例如：
+编译前：
+	private static final int MAX_HEIGHT = 100;
+	
+	public int getMaxHeight () {
+		return MAX_HEIGHT;
+	}
+编译后：
+	private static final int MAX_HEIGHT = 100;
+	
+	public int getMaxHeight () {
+		return 100;
+	}
+
+---
+
+

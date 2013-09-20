@@ -36,4 +36,5 @@ Thread X tries to access the resource.
 ##### 最小化变量作用域
 > 要让变量的作用域小到不能再小。也就是说，要隐藏临时变量，让尽量少的环节知道它，防止被误用。-- Keep methods small and focused.
 
-##### 
+##### 尽量将逻辑错误在编译阶段发现（例如：在Java中多使用`final`）。
+
