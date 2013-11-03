@@ -426,4 +426,4 @@ Please, commit your changes before you can merge.
 	$ git config --unset --global user.name
 
 ###### 修改提交者
-	$ git commit --amend --author='name 
+	$ git commit --amend --author='name'
