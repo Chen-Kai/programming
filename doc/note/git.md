@@ -416,3 +416,14 @@ Please, commit your changes before you can merge.
 ###### 重置暂存区，即，undo 'git add' 命令
 	$ git reset HEAD
 
+###### 查看总提交次数
+	$ git rev-list HEAD | wc -l
+
+###### 显示中文文件名(而非Unicode)
+	$ git config --global core.quotepath false
+
+###### 删除设置
+	$ git config --unset --global user.name
+
+###### 修改提交者
+	$ git commit --amend --author='name 
