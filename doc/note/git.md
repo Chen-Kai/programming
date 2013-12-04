@@ -397,3 +397,33 @@ Please, commit your changes before you can merge.
 
 ###### 查看hash对应的内容
 	$ git cat-file -p <hash>
+
+###### 查看每次提交文件变化（增、删行数）
+	$ git log --stat
+
+###### 查看HEAD中的目录树
+	$ git ls-tree HEAD
+
+###### 打印文件内容
+	$ git cat-file -p
+
+###### 工作区和HEAD比较
+	$ git diff HEAD
+
+###### 一行显示log
+	$ git log --oneline
+
+###### 重置暂存区，即，undo 'git add' 命令
+	$ git reset HEAD
+
+###### 查看总提交次数
+	$ git rev-list HEAD | wc -l
+
+###### 显示中文文件名(而非Unicode)
+	$ git config --global core.quotepath false
+
+###### 删除设置
+	$ git config --unset --global user.name
+
+###### 修改提交者
+	$ git commit --amend --author='name'
