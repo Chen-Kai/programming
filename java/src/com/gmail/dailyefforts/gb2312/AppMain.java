@@ -3,16 +3,16 @@ package com.gmail.dailyefforts.gb2312;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -23,117 +23,72 @@ public class AppMain {
 		StringBuffer buffer = new StringBuffer();
 		HttpClient httpclient = new DefaultHttpClient();
 		String url = fetch(hanzi);
-		if (url == null) {
-			return null;
-		}
 		HttpGet httpget = new HttpGet(url);
 		HttpResponse response;
-		try {
-			response = httpclient.execute(httpget);
-			HttpEntity entity = response.getEntity();
-			if (entity != null) {
-				InputStream instream = entity.getContent();
-				BufferedReader reader = new BufferedReader(
-						new InputStreamReader(instream));
-				String line = null;
-				boolean knowit = false;
-				String pinyin = null;
-				String key = null;
-				String meaning = null;
-				String backupMeaning = null;
-				boolean hasBackup = false;
-				while ((line = reader.readLine()) != null) {
-					// System.out.println(line);
-					if (line.contains("～") && !hasBackup) {
-						// System.out.println(line);
-						if (line.contains("｜")) {
-							backupMeaning = line
-									.substring(0, line.indexOf("｜"));
-						}
-						if (backupMeaning != null
-								&& backupMeaning.contains("：")) {
-							backupMeaning = backupMeaning.substring(line
-									.indexOf("：") + 1);
-							if (backupMeaning.contains("。")) {
-								backupMeaning = backupMeaning.substring(0,
-										backupMeaning.indexOf("。"));
-							} else if (backupMeaning.contains("｜")) {
-								backupMeaning = backupMeaning.substring(0,
-										backupMeaning.indexOf("｜"));
-							}
-						}
-						hasBackup = true;
-					}
-					if (line.contains("js11") && line.contains("js12")) {
-						int idx = line.indexOf("js11");
-						if (key == null) {
-							key = line.substring(idx + 6, idx + 7);
-							buffer.append(key);
-						}
+		response = httpclient.execute(httpget);
+		HttpEntity entity = response.getEntity();
+		if (entity != null) {
+			InputStream instream = entity.getContent();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					instream));
+			String line = null;
 
-						idx = line.indexOf("js12");
-						String yin = line.substring(idx + 6, idx + 6 + 10);
-						yin = yin.substring(0, yin.indexOf("</"));
+			buffer.append(hanzi);
+
+			Pattern pattern = Pattern.compile("\\[(.*?)\\]");
+			Pattern pattern2 = Pattern.compile("：(.*?)～(.*?)[。！？]");
+			Pattern pattern3 = Pattern.compile("〔(.*?)〕");
+			Matcher matcher = null;
+
+			String pinyin = null;
+			String meaning = "-";
+			while ((line = reader.readLine()) != null) {
+				line = line.trim();
+				if (line.contains(String.format("<strong>%s</strong>", hanzi))) {
+					matcher = pattern.matcher(line);
+					while (matcher.find()) {
+						String group = matcher.group();
 						if (pinyin == null) {
-							if (yin != null && yin.length() > 0) {
-								pinyin = yin;
-							}
-						} else if (!pinyin.equals(yin)) {
-							pinyin = pinyin + " | " + yin;
-						}
-					} else if (line.contains("cizu") && !knowit) {
-						String str = line.substring(line.indexOf("cizu") + 4);
-						buffer.append("\t"
-								+ str.subSequence(str.indexOf(">") + 1,
-										str.indexOf("<")));
-						knowit = true;
-						buffer.append("\t-1 ");
-					} else if (line.contains("js211") && line.contains("①")) {
-						if (line.contains("～")) {
-							meaning = line.substring(line.indexOf("～"));
-							if (meaning.contains("|")) {
-								meaning = meaning.substring(0,
-										meaning.indexOf("|"));
-							} else if (meaning.contains("。")) {
-								meaning = meaning.substring(0,
-										meaning.indexOf("。"));
-							} else if (meaning.contains("）")) {
-								meaning = meaning.substring(0,
-										meaning.indexOf("）"));
-							} else {
-								meaning = "-";
-							}
+							pinyin = group;
 						} else {
-							meaning = "-";
+							pinyin = pinyin + group;
 						}
 					}
-				}
+				} else if (line.contains("dict-cn-basicmean-char")) {
+					matcher = pattern3.matcher(line);
 
-				if (reader != null) {
-					reader.close();
-				}
-
-				if (knowit == false) {
-					if (hasBackup && meaning == null && backupMeaning != null) {
-						buffer.append("\t" + backupMeaning.trim());
-					} else {
-						buffer.append("\t" + meaning);
+					if (matcher.find()) {
+						String group = matcher.group();
+						if (group != null && group.length() > 3) {
+							meaning = group.substring(1, group.length() - 1);
+							break;
+						}
 					}
-					buffer.append("\t-1");
+					matcher = pattern2.matcher(line);
+					if (matcher.find()) {
+						String group = matcher.group();
+						if (group != null && group.length() > 3) {
+							meaning = group.substring(1, group.length() - 1);
+						}
+					}
+					break;
 				}
-
-				buffer.append("\t" + pinyin);
 			}
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (httpclient != null) {
-				httpclient.getConnectionManager().shutdown();
+
+			buffer.append("\t" + meaning);
+
+			buffer.append("\t" + "-1");
+
+			buffer.append("\t" + pinyin);
+
+			if (reader != null) {
+				reader.close();
 			}
 		}
 
+		if (httpclient != null) {
+			httpclient.getConnectionManager().shutdown();
+		}
 		return buffer.toString();
 	}
 
@@ -170,44 +125,6 @@ public class AppMain {
 	}
 
 	private static String fetch(String hanzi) {
-		String url = null;
-		HttpClient httpclient = new DefaultHttpClient();
-		HttpGet httpget = new HttpGet("http://hanyu.iciba.com/hy/" + hanzi);
-		HttpResponse response;
-		try {
-			response = httpclient.execute(httpget);
-			HttpEntity entity = response.getEntity();
-			if (entity != null) {
-				InputStream instream = entity.getContent();
-				BufferedReader reader = new BufferedReader(
-						new InputStreamReader(instream));
-				String line = null;
-				while ((line = reader.readLine()) != null) {
-					if (!line.contains("/hanzi/")) {
-						break;
-					}
-					url = "http://hanyu.iciba.com/"
-							+ line.substring(line.indexOf("/hanzi/"),
-									line.indexOf("shtml") + 5);
-				}
-
-				if (reader != null) {
-					reader.close();
-				}
-
-			}
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (httpclient != null) {
-				// When HttpClient instance is no longer needed,
-				// shut down the connection manager to ensure
-				// immediate deallocation of all system resources
-				httpclient.getConnectionManager().shutdown();
-			}
-		}
-		return url;
+		return "http://dict.baidu.com/s?wd=" + hanzi;
 	}
 }
