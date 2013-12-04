@@ -9,7 +9,7 @@ public class AppMain {
 		// Get the unicode of 'a'
 		int unicode = Character.codePointAt(a, 0);
 
-		System.out.println("AppMain.main() unicode: 0X"
+		System.out.println("AppMain.main() unicode: 0x"
 				+ Integer.toHexString(unicode));
 
 	}
