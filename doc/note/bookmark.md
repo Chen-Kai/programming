@@ -11,3 +11,4 @@
 - [Udacity](http://www.udacity.com/)
 - [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
 - [IT eBooks](http://it-ebooks.info)
+- [regual expression test](http://regexpal.com/)
