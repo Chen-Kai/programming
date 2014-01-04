@@ -1,3 +1,7 @@
+##### Don't repeat code, create a function.
+
+---
+
 ##### 原则
 * 永远不用让debug开关影响代码的逻辑，例如:
 	if (DEBUG) {

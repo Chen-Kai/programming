@@ -23,3 +23,4 @@
 	hang on a second
 	night prayer
 	i've never hearted of ...
+	Before you get started, this document makes the assumptions:
