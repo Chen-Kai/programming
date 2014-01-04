@@ -12,3 +12,8 @@
 - [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
 - [IT eBooks](http://it-ebooks.info)
 - [regual expression test](http://regexpal.com/)
+- [typing](http://typing.io/)
+- [learning git](http://speckyboy.com/2013/06/03/resources-for-learning-git/)
+- [dom4j](http://jaxen.codehaus.org/)
+
+
