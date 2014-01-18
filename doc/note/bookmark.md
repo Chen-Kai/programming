@@ -16,4 +16,5 @@
 - [learning git](http://speckyboy.com/2013/06/03/resources-for-learning-git/)
 - [dom4j](http://jaxen.codehaus.org/)
 - [Data Structure](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [Apache Http](http://hc.apache.org/)
 
