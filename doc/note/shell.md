@@ -219,3 +219,6 @@
 
 ###### 在当前目录查找java或xml文件
 	$ find . -name '*.java' -or -name '*.xml'
+	
+###### 在删除文件前进行问询
+	$ rm -i 文件名

@@ -96,10 +96,10 @@ public class AppMain {
 		BufferedReader reader = new BufferedReader(
 				new FileReader(
 						new File(
-								"/home/null/workspace/programming/java/src/com/gmail/dailyefforts/gb2312/gb2312-hanzi-vertical")));
+								"F:/workspace/programming/java/src/com/gmail/dailyefforts/gb2312/gb2312-hanzi-vertical")));
 		BufferedWriter writer = new BufferedWriter(
 				new FileWriter(
-						"/home/null/workspace/programming/java/src/com/gmail/dailyefforts/gb2312/gb2312-hanzi-dictionary"));
+						"F:/workspace/programming/java/src/com/gmail/dailyefforts/gb2312/gb2312-hanzi-dictionary"));
 
 		String line = null;
 		String explain = null;
