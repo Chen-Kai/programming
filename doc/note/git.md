@@ -427,3 +427,6 @@ Please, commit your changes before you can merge.
 
 ###### 修改提交者
 	$ git commit --amend --author='name'
+
+###### 查看某一文件的修改记录
+	$ git blame 文件名
