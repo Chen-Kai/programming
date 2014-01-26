@@ -1,16 +1,7 @@
-###### 更改某个目录下所有文件的属性（读写模式）
-	$ chummed 755 -R 路径名
-
-###### 找到1天（24小时）内被修改过的文件
-	$ find . -type f -mtime -1
-
-###### 查看某个文件的文件类型
-	$ file 文件名
-
-###### 比较两个文件之间的不同
-	$ diff --side-by-side 文件名 文件名
+###### 查看不同
 	$ vimdiff 文件名 文件名
 	$ gvimdiff 文件名 文件名
+	$ diff --side-by-side 文件名 文件名
 
 ###### Show the data on some col
 	$ cut -d<divider-here> -f<col-index-here>
@@ -228,3 +219,9 @@
 
 ###### 查找以end结尾的字符串
 	$ grep 'end\>' 文件名
+
+###### 隐藏路径
+	$ export PS1="~$ "
+
+###### 查看图片文件
+	$ eog 文件名

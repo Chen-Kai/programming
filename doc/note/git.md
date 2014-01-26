@@ -430,3 +430,12 @@ Please, commit your changes before you can merge.
 
 ###### 查看某一文件的修改记录
 	$ git blame 文件名
+
+###### 基于master分支，将dev分支的零散提交合并起来
+	$ git rebase -i master
+
+###### 在向推送前整合提交
+	$ git rebase -i origin/master
+
+###### 安装tig
+	$ sudo apt-get install tig
