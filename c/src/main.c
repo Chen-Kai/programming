@@ -1,19 +1,9 @@
 #include "main.h"
+#include "limits.h"
 
 int main(int argc, char **argv) {
-//	run_test();
-//	cpu_info();
-//	get_malloc_addr();
-//	printEOF();
-//	assert(1 == getMax(0, 1));
-//	point_basic();
-//	struct_pointer();
-//	print_mem_addr();
-//	test_swap();
-//	print_null();
-//	structInit();
-//	structAssign();
-//	testMaxMacro();
-	displayTheIntValue(9);
+	int a[10];
+	printf("%d\n", sizeof(a)); // 40
+	printf("%d\n", sizeof(&a)); // 8
 	return EXIT_SUCCESS;
 }
