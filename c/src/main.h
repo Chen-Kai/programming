@@ -16,5 +16,6 @@
 #include "main/main_arg.h"
 #include "struct/struct.h"
 #include "macro/macro.h"
+#include "debug/debug.h"
 
 #endif /* MAIN_H_ */
