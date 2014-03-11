@@ -3,5 +3,6 @@
 
 void structInit();
 void structAssign();
+void testBookStruct();
 
 #endif

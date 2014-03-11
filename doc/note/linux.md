@@ -33,3 +33,6 @@ The action would require the installation of packages from not authenticated sou
     $ sudo add-apt-repository ppa:webupd8team/java
     $ sudo apt-get update
     $ sudo apt-get install oracle-java7-installer
+
+##### 查看Ubuntu版本
+	$ lsb_release -a
