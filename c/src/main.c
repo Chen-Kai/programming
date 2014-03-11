@@ -1,7 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-#include "struct/struct.h"
 
 int main(int argc, char **argv) {
-	testBookStruct();
+	allocateMem();
 	return EXIT_SUCCESS;
 }

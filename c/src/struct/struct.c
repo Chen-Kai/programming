@@ -50,3 +50,13 @@ void testBookStruct() {
 	printf("%s, %s, %f\n", books[0].id, books[0].name, books[0].price);
 	printf("%s, %s, %f\n", pBook->id, pBook->name, pBook->price);
 }
+
+void allocateMem() {
+	struct point *p;
+	p = (struct point *) malloc(sizeof(struct point));
+	p->x = 3.0F;
+	p->y = 4.0F;
+
+	printf("point: (%.1f, %.1f)\n", p->x, p->y);
+	free(p);
+}
