@@ -36,3 +36,6 @@ The action would require the installation of packages from not authenticated sou
 
 ##### 查看Ubuntu版本
 	$ lsb_release -a
+
+##### 下载文件
+	$ wget -c https://github.com/cstrap/monaco-font/raw/master/Monaco_Linux.ttf
