@@ -446,3 +446,12 @@ Please, commit your changes before you can merge.
 	$ git add -i
 	$ git checkout -p
 	$ git reset -p
+
+###### Problem:
+	fatal: You have not concluded your merge (MERGE_HEAD exists).
+	Please, commit your changes before you can merge.
+	Solution-1:
+	$ rm -rf .git/MERGE*
+	Solution-2:
+	$ git reset --merge
+
