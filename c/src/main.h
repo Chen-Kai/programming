@@ -17,5 +17,6 @@
 #include "struct/struct.h"
 #include "macro/macro.h"
 #include "debug/debug.h"
+#include "enum/enum.h"
 
 #endif /* MAIN_H_ */
