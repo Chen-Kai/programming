@@ -35,6 +35,9 @@ void testEnum() {
 	case SAT:
 		puts("Saturday");
 		break;
+	default:
+		puts("UNKNOWN");
+		break;
 	}
 }
 
