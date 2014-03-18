@@ -9,4 +9,6 @@ int getMax(int a, int b);
 
 void displayTheIntValue(const int i);
 
+void displayTypes();
+
 #endif /* BASIC_H_ */

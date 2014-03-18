@@ -3,6 +3,6 @@
 #include "main.h"
 
 int main(int argc, char **argv) {
-	printDebugInfo();
+	displayTypes();
 	return EXIT_SUCCESS;
 }
