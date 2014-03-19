@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void printDebugInfo() {
 	printf("file: %s\n", __FILE__);
 	printf("function: %s\n", __FUNCTION__);

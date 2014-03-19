@@ -18,5 +18,6 @@
 #include "macro/macro.h"
 #include "debug/debug.h"
 #include "enum/enum.h"
+#include "env/env.h"
 
 #endif /* MAIN_H_ */
