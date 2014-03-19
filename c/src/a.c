@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "a.h"
 
 int main(int argc, char **argv) {
 	// displayTypes();

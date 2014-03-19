@@ -1,45 +1,46 @@
-a: main.c main.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
-	@gcc -o a $^
+a: a.c a.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
+	@cc -o a $^
 	@rm *.o
+	@echo "> a"
 
 arr.o: ./array/arr.c ./array/arr.h
-	gcc -c ./array/arr.c
+	cc -c ./array/arr.c
 
 basic.o: ./basic/basic.c ./basic/basic.h
-	gcc -c ./basic/basic.c
+	cc -c ./basic/basic.c
 
 eof.o: ./basic/eof.c
-	gcc -c ./basic/eof.c 
+	cc -c ./basic/eof.c 
 
 float.o: ./basic/float.c
-	gcc -c ./basic/float.c
+	cc -c ./basic/float.c
 
 macro.o: ./basic/macro.c
-	gcc -c ./basic/macro.c
+	cc -c ./basic/macro.c
 
 cpu_info.o: ./cpu/cpu_info.c ./cpu/cpu_info.h
-	gcc -c ./cpu/cpu_info.c
+	cc -c ./cpu/cpu_info.c
 
 debug.o: ./debug/debug.c ./debug/debug.h
-	gcc -c ./debug/debug.c
+	cc -c ./debug/debug.c
 
 enum.o: ./enum/enum.c ./enum/enum.h
-	gcc -c ./enum/enum.c
+	cc -c ./enum/enum.c
 
 env.o: ./env/env.c ./env/env.h
-	gcc -c ./env/env.c
+	cc -c ./env/env.c
 
 mem.o: ./mem/mem.c ./mem/mem.h
-	gcc -c ./mem/mem.c
+	cc -c ./mem/mem.c
 
 pointer.o: ./pointer/pointer.c ./pointer/pointer.h
-	gcc -c ./pointer/pointer.c
+	cc -c ./pointer/pointer.c
 
 struct.o: ./struct/struct.c ./struct/struct.h
-	gcc -c ./struct/struct.c
+	cc -c ./struct/struct.c
 
 io.o: ./file/io.c ./file/io.h
-	gcc -c ./file/io.c
+	cc -c ./file/io.c
 
 arg.o: ./arg/main_arg.c ./arg/main_arg.h
-	gcc -c ./arg/main_arg.c -o arg.o
+	cc -c ./arg/main_arg.c -o arg.o
