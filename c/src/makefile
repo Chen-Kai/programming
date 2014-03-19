@@ -1,5 +1,5 @@
-a: main.c main.h basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o 
-	gcc -o a $^
+a: main.c main.h basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
+	@gcc -o a $^
 	@rm *.o
 
 arr.o: ./array/arr.c ./array/arr.h
@@ -37,3 +37,6 @@ pointer.o: ./pointer/pointer.c ./pointer/pointer.h
 
 struct.o: ./struct/struct.c ./struct/struct.h
 	gcc -c ./struct/struct.c
+
+io.o: ./file/io.c ./file/io.h
+	gcc -c ./file/io.c

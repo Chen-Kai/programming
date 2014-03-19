@@ -19,5 +19,6 @@
 #include "debug/debug.h"
 #include "enum/enum.h"
 #include "env/env.h"
+#include "file/io.h"
 
 #endif /* MAIN_H_ */

@@ -3,7 +3,8 @@
 #include "main.h"
 
 int main(int argc, char **argv) {
-//	displayTypes();
-	testEnum();
+	// displayTypes();
+	// testEnum();
+	testIO();
 	return EXIT_SUCCESS;
 }
