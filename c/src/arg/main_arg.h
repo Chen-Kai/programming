@@ -8,7 +8,6 @@
 #ifndef MAIN_ARG_H_
 #define MAIN_ARG_H_
 
-void
-print_args(int argc, char* argv[]);
+void print_args(int argc, char* argv[]);
 
 #endif /* MAIN_ARG_H_ */

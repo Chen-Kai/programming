@@ -1,4 +1,4 @@
-a: main.c main.h basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
+a: main.c main.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
 	@gcc -o a $^
 	@rm *.o
 
@@ -40,3 +40,6 @@ struct.o: ./struct/struct.c ./struct/struct.h
 
 io.o: ./file/io.c ./file/io.h
 	gcc -c ./file/io.c
+
+arg.o: ./arg/main_arg.c ./arg/main_arg.h
+	gcc -c ./arg/main_arg.c -o arg.o
