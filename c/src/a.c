@@ -6,6 +6,7 @@ int main(int argc, char **argv) {
 	// displayTypes();
 	// testEnum();
 	// testIO();
-	print_args(argc, argv);
+	// print_args(argc, argv);
+	printf("sum_of_args(3, 1, 2, 3) == %d\n", sum_of_args(3, 1, 2, 3));
 	return EXIT_SUCCESS;
 }

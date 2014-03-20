@@ -1,4 +1,4 @@
-a: a.c a.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o
+a: a.c a.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o changeable_arg.o
 	@cc -o a $^
 	@rm *.o
 	@echo "> a"
@@ -44,3 +44,6 @@ io.o: ./file/io.c ./file/io.h
 
 arg.o: ./arg/main_arg.c ./arg/main_arg.h
 	cc -c ./arg/main_arg.c -o arg.o
+
+changeable_arg.o: ./arg/changeable_arg.c ./arg/changeable_arg.h
+	cc -c ./arg/changeable_arg.c
