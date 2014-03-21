@@ -1,4 +1,4 @@
-a: a.c a.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o changeable_arg.o
+a: a.c a.h arg.o basic.o eof.o float.o cpu_info.o debug.o enum.o env.o macro.o mem.o pointer.o struct.o  io.o changeable_arg.o arr_queue.o
 	@cc -o a $^
 	@rm *.o
 	@echo "> a"
@@ -47,3 +47,6 @@ arg.o: ./arg/main_arg.c ./arg/main_arg.h
 
 changeable_arg.o: ./arg/changeable_arg.c ./arg/changeable_arg.h
 	cc -c ./arg/changeable_arg.c
+
+arr_queue.o: ./ds/queue/arr_queue.c ./ds/queue/arr_queue.h 
+	cc -c ./ds/queue/arr_queue.c

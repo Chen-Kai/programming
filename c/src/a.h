@@ -21,5 +21,6 @@
 #include "enum/enum.h"
 #include "env/env.h"
 #include "file/io.h"
+#include "ds/queue/arr_queue.h"
 
 #endif /* MAIN_H_ */
