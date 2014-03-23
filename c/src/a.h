@@ -22,5 +22,6 @@
 #include "env/env.h"
 #include "file/io.h"
 #include "ds/queue/arr_queue.h"
+#include "fp/fp.h"
 
 #endif /* MAIN_H_ */
