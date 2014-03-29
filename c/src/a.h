@@ -5,8 +5,8 @@
  *      Author: DailyEfforts
  */
 
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef A_H_
+#define A_H_
 
 #include "array/arr.h"
 #include "basic/basic.h"
@@ -24,4 +24,4 @@
 #include "ds/queue/arr_queue.h"
 #include "fp/fp.h"
 
-#endif /* MAIN_H_ */
+#endif /* A_H_ */
