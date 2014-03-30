@@ -4,15 +4,15 @@
 int sum_of_args(int n, ...) {
 	int sum = 0;
 	int i;
-	va_list list;
+	va_list ap;
 	
-	va_start(list, n);
+	va_start(ap, n);
 	
 	for (i = 0; i < n; i++) {
-		sum += va_arg(list, int);
+		sum += va_arg(ap, int);
 	}
 	
-	va_end(list);
+	va_end(ap);
 	
 	return sum;
 }
