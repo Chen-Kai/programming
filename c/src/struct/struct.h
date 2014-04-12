@@ -3,5 +3,7 @@
 
 void structInit();
 void structAssign();
+void testBookStruct();
+void allocateMem();
 
 #endif

@@ -177,6 +177,9 @@
 ##### 获取某个文件之前的版本
 	$ git checkout HEAD~1 <file-name>
 
+##### 直接从git仓库检出某个文件（跳过缓存区）
+	$ git checkout HEAD 文件名
+
 ##### 查看某个文件在上次提交时的样子
 	$ git show HEAD~1:<file-name>
 
@@ -218,7 +221,6 @@
 
 ##### 显示改动过某个文件的所有提交
 	$ git log --follow <file-name>
-
 ##### 显示上次提交改动了什么文件
 	$ git whatchanged -1
 
@@ -427,3 +429,29 @@ Please, commit your changes before you can merge.
 
 ###### 修改提交者
 	$ git commit --amend --author='name'
+
+###### 查看某一文件的修改记录
+	$ git blame 文件名
+
+###### 基于master分支，将dev分支的零散提交合并起来
+	$ git rebase -i master
+
+###### 在向推送前整合提交
+	$ git rebase -i origin/master
+
+###### 安装tig
+	$ sudo apt-get install tig
+
+###### 询问式add, checkout, reset
+	$ git add -i
+	$ git checkout -p
+	$ git reset -p
+
+###### Problem:
+	fatal: You have not concluded your merge (MERGE_HEAD exists).
+	Please, commit your changes before you can merge.
+	Solution-1:
+	$ rm -rf .git/MERGE*
+	Solution-2:
+	$ git reset --merge
+

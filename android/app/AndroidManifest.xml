@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -37,8 +38,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gmail.dailyefforts.android.basic.display.DisplayInfo"
-            android:label="@string/activity_label_display_info" >
+            android:name="com.gmail.dailyefforts.android.basic.phone.info.PhoneInfo"
+            android:label="@string/activity_label_phone_info" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
