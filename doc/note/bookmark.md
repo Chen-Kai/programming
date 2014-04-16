@@ -24,3 +24,4 @@
 - Android Blog
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
+  - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
