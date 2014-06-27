@@ -28,3 +28,5 @@
 - [在线编译](http://www.compileonline.com)
 - 常用软件
   - [xmind](http://www.xmind.net/)
+  - [Search Everything](http://www.voidtools.com/)
+  - [eclipse theme](http://eclipse-color-theme.github.io/update/)
