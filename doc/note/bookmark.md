@@ -26,3 +26,5 @@
   - [http://www.trinea.cn/](http://www.trinea.cn/)
   - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
 - [在线编译](http://www.compileonline.com)
+- 常用软件
+  - [xmind](http://www.xmind.net/)
