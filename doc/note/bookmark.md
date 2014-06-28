@@ -27,11 +27,12 @@
   - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
   - [好用的库](http://moodroid.com/)
 - [在线编译](http://www.compileonline.com)
-- 常用软件
+- 软件
   - [xmind](http://www.xmind.net/)
   - [Search Everything](http://www.voidtools.com/)
   - [eclipse theme](http://eclipse-color-theme.github.io/update/)
   - [Cygwin](http://cygwin.com/)
+  - [Notepad++](http://notepad-plus-plus.org/)
 - Icon
   - [Share Icons](http://iconsparadise.com/)
 - Search
