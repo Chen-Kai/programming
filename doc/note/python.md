@@ -24,3 +24,16 @@
 
 ###### 文档
 	"""doc content"""
+	
+###### 原始格式字符串
+	r"raw\tstring"
+
+###### 字符串过滤
+	"abc  ".strip() # abc
+
+###### 字符串替换
+	"abc".replace("a", "b") # bbc
+	
+######　字符串格式化
+	txt = "He is %d ages old in %d." % (52, 2013)
+	
