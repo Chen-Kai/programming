@@ -9,3 +9,9 @@
 
 显示行号  
 `File - Settings - Editor - Appearance - Show line numbers`
+
+显示project导航目录
+ `Alt` + `1`
+
+一屏显示两个Editor
+Right click on the Editor Tab - Split Horzontally.
