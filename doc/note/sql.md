@@ -2,7 +2,7 @@
 `create table stu(id integer primary key, name text, age integer);`
 
 舍弃表  
-`drop table stu`
+  drop table stu
 
 插入数值  
 `insert into stu(name, age) values("Mary", 23);`
