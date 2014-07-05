@@ -15,3 +15,6 @@
 
 一屏显示两个Editor
 Right click on the Editor Tab - Split Horzontally.
+
+不进行实时语句检测  
+`File - check "Power Save Mode"`
