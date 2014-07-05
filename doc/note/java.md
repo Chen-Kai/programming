@@ -13,7 +13,7 @@ A **Class** defines two things for an object of this class:
 
 ---
 
-##### The lifetime of variables.
+##### The lifetime of variables.  
 * The variables in a method are alive until the method returns.
 * object fields are alive until the object points to null.
 * static variables are alive as long as the program is running. 
@@ -85,19 +85,20 @@ A **Class** defines two things for an object of this class:
 ---
 
 编译器看到`final`的原始类型变量或者String对象，会进行常量替换。例如：
-编译前：
-	private static final int MAX_HEIGHT = 100;
+```Java
+private static final int MAX_HEIGHT = 100;
 	
-	public int getMaxHeight () {
-		return MAX_HEIGHT;
-	}
+public int getMaxHeight () {
+	return MAX_HEIGHT;
+}
+```
 编译后：
-	private static final int MAX_HEIGHT = 100;
+```java
+private static final int MAX_HEIGHT = 100;
 	
-	public int getMaxHeight () {
-		return 100;
-	}
-
----
+public int getMaxHeight () {
+	return 100;
+}
+```
 
 
