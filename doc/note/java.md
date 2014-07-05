@@ -1,15 +1,10 @@
-An **Object**:
-* Holds data
-* Does somthing.
-
-例如：
-一部手机有CPU、SIM卡、显示器、电池等，它能打电话、发短信、加载网页
-
----
-
-A **Class** defines two things for an object of this class:
-* The **data** it holds. 
-* The **message** it can receive. 
+一个 `对象`:
+- 拥有状态、持有数据
+- 拥有行为、有所作为  
+例如`一部手机`有CPU、SIM卡、显示器、电池等，它能打电话、发短信、加载网页  
+一个`类`为所有此类对象定义了两件事
+- 它的`状态`
+- 它的`行为`
 
 ---
 
