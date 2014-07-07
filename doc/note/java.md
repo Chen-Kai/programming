@@ -1,19 +1,15 @@
-An **Object**:
-* Holds data
-* Does somthing.
+一个 `对象`:
+- 拥有状态、持有数据
+- 拥有行为、有所作为  
+例如`一部手机`有CPU、SIM卡、显示器、电池等，它能打电话、发短信、加载网页  
 
-例如：
-一部手机有CPU、SIM卡、显示器、电池等，它能打电话、发短信、加载网页
-
----
-
-A **Class** defines two things for an object of this class:
-* The **data** it holds. 
-* The **message** it can receive. 
+一个`类`为所有此类对象定义了两件事
+- 它的`状态`
+- 它的`行为`
 
 ---
 
-##### The lifetime of variables.
+##### The lifetime of variables.  
 * The variables in a method are alive until the method returns.
 * object fields are alive until the object points to null.
 * static variables are alive as long as the program is running. 
@@ -85,19 +81,20 @@ A **Class** defines two things for an object of this class:
 ---
 
 编译器看到`final`的原始类型变量或者String对象，会进行常量替换。例如：
-编译前：
-	private static final int MAX_HEIGHT = 100;
+```Java
+private static final int MAX_HEIGHT = 100;
 	
-	public int getMaxHeight () {
-		return MAX_HEIGHT;
-	}
+public int getMaxHeight () {
+	return MAX_HEIGHT;
+}
+```
 编译后：
-	private static final int MAX_HEIGHT = 100;
+```java
+private static final int MAX_HEIGHT = 100;
 	
-	public int getMaxHeight () {
-		return 100;
-	}
-
----
+public int getMaxHeight () {
+	return 100;
+}
+```
 
 
