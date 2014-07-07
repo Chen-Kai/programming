@@ -274,3 +274,5 @@
 ###### 选中整行
 	V
 	
+###### 找回上次commit中不小心删除的文件
+	 $ git checkout HEAD^ java/test.db
