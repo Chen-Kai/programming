@@ -69,5 +69,7 @@ Activities are organized as a stack:
 
 ---
 
-
-
+允许子view超出容器
+```xml
+android:clipChildren="false"
+```
