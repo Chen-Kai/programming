@@ -69,7 +69,7 @@ Activities are organized as a stack:
 
 ---
 
-允许子view超出容器
+允许子view超出容器[android:clipChildren](http://developer.android.com/reference/android/view/ViewGroup.html#attr_android:clipChildren)
 ```xml
 android:clipChildren="false"
 ```
