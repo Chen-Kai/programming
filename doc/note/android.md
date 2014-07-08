@@ -73,3 +73,10 @@ Activities are organized as a stack:
 ```xml
 android:clipChildren="false"
 ```
+
+---
+
+子View要求容器不要截获Touch事件
+```Java
+getParent().requestDisallowInterceptTouchEvent(true)
+```
