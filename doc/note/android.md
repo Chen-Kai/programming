@@ -83,11 +83,11 @@ getParent().requestDisallowInterceptTouchEvent(true)
 
 在layout发生变化时显示动画
 ```xml
-    <LinearLayout
+<LinearLayout
 	android:animateLayoutChanges="true"
-        android:id="@+id/container"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        />
+	android:id="@+id/container"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	/>
 ```
