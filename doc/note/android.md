@@ -81,7 +81,7 @@ android:clipChildren="false"
 getParent().requestDisallowInterceptTouchEvent(true)
 ```
 
-在layout发生变化时显示动画
+在layout发生变化时显示动画  
 ```xml
 <LinearLayout
 	android:animateLayoutChanges="true"
@@ -90,4 +90,8 @@ getParent().requestDisallowInterceptTouchEvent(true)
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	/>
+```
+```java
+LayoutTransition transition = container.getLayoutTransition();
+transition.enableTransitionType(LayoutTransition.CHANGING);
 ```
