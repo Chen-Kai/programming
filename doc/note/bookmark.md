@@ -36,6 +36,9 @@
   - [IntelliJ](http://www.jetbrains.com/idea/)
   - [在线Markdown编辑](http://dillinger.io/)
   - [可视化运行过程](http://cs.joensuu.fi/jeliot/)
+  - [UML](http://astah.net/)
+  - [APP图标](http://www.quirco.com/iPhoneIcon/)
+  - [Online-Flowchart](https://www.lucidchart.com/)
 - Icon
   - [Share Icons](http://iconsparadise.com/)
 - Search

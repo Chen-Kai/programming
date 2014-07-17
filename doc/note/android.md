@@ -69,5 +69,29 @@ Activities are organized as a stack:
 
 ---
 
+允许子view超出容器[android:clipChildren](http://developer.android.com/reference/android/view/ViewGroup.html#attr_android:clipChildren)
+```xml
+android:clipChildren="false"
+```
 
+---
 
+子View要求容器不要截获Touch事件
+```Java
+getParent().requestDisallowInterceptTouchEvent(true)
+```
+
+在layout发生变化时显示动画  
+```xml
+<LinearLayout
+	android:animateLayoutChanges="true"
+	android:id="@+id/container"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	/>
+```
+```java
+LayoutTransition transition = container.getLayoutTransition();
+transition.enableTransitionType(LayoutTransition.CHANGING);
+```
