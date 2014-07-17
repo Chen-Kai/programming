@@ -39,6 +39,7 @@
   - [UML](http://astah.net/)
   - [APP图标](http://www.quirco.com/iPhoneIcon/)
   - [Online-Flowchart](https://www.lucidchart.com/)
+  - [二维码](http://www.barcode-generator.org/)
 - Icon
   - [Share Icons](http://iconsparadise.com/)
 - Search
