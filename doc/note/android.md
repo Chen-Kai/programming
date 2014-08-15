@@ -95,3 +95,16 @@ getParent().requestDisallowInterceptTouchEvent(true)
 LayoutTransition transition = container.getLayoutTransition();
 transition.enableTransitionType(LayoutTransition.CHANGING);
 ```
+
+获得当前task的ID  
+	activity.getTaskId()
+
+使用Traceview进行性能分析：  
+- 申请外部存储写权限
+- Debug.startMethodTracing()
+- Debug.stopMethodTracing()
+- run apk
+- TRACE STARTED
+- adb pull *.trace
+- traceview *.trace
+
