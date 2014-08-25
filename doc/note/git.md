@@ -203,6 +203,9 @@
 ##### 在7200秒(2个小时)内记住密码
 	$ git config --global credential.helper 'cache --timeout=7200'
 
+##### 忘记之前缓存的密码
+	$ git config --system --unset-all credential.helper
+
 ##### merge project pro_x into project pro_main
 	$ git remote add <pro_x name> <remote url of pro_b>
 	$ git fetch <pro_x name>
