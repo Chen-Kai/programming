@@ -455,3 +455,5 @@ Please, commit your changes before you can merge.
 	Solution-2:
 	$ git reset --merge
 
+###### 修改上次提交的作者信息
+	$ git commit --amend --author="name <email>"
