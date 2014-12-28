@@ -45,3 +45,6 @@
   - [Share Icons](http://iconsparadise.com/)
 - Search
   - [Search code](https://searchcode.com/)
+
+- SQLite Expert
+  - http://sqliteexpert.com/
