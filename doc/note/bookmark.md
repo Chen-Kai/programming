@@ -47,4 +47,8 @@
   - [Search code](https://searchcode.com/)
 
 - SQLite Expert
-  - http://sqliteexpert.com/
+  - [SQLite Expert](http://sqliteexpert.com/)
+
+- LeetCode
+  -[LeetCode](https://oj.leetcode.com)
+
