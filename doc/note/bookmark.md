@@ -21,7 +21,27 @@
 - [C Tutorial](http://www.zentut.com/)
 - [C FAQs](http://c-faq.com/index.html)
 - [C and Java Tutorial](http://fresh2refresh.com/)
+- [Coder](https://oj.leetcode.com/)
 - Android Blog
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
   - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
+  - [好用的库](http://moodroid.com/)
+- [在线编译](http://www.compileonline.com)
+- 软件
+  - [xmind](http://www.xmind.net/)
+  - [Search Everything](http://www.voidtools.com/)
+  - [eclipse theme](http://eclipse-color-theme.github.io/update/)
+  - [Cygwin](http://cygwin.com/)
+  - [Notepad++](http://notepad-plus-plus.org/)
+  - [IntelliJ](http://www.jetbrains.com/idea/)
+  - [在线Markdown编辑](http://dillinger.io/)
+  - [可视化运行过程](http://cs.joensuu.fi/jeliot/)
+  - [UML](http://astah.net/)
+  - [APP图标](http://www.quirco.com/iPhoneIcon/)
+  - [Online-Flowchart](https://www.lucidchart.com/)
+  - [二维码](http://www.barcode-generator.org/)
+- Icon
+  - [Share Icons](http://iconsparadise.com/)
+- Search
+  - [Search code](https://searchcode.com/)

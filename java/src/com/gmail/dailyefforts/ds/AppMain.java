@@ -8,6 +8,5 @@ public class AppMain {
 			list.add(String.valueOf(i));
 		}
 		System.out.println("AppMain.main() " + list.getSize() + list.toString());
-		
 	}
 }

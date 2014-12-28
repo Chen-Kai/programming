@@ -1,18 +1,18 @@
-*italic text*
+*斜体*
 
-**bold text**
+**粗体**
 
-***bold and italic***
+***粗斜体***
 
 * list item 01
 * list item 02
   * sub item here
 * list item 03
 
-two spaces  
-a new line
+两个空格   
+新行
 
-`code`
+`代码`
 
 ``code includes ` character``
 
@@ -30,7 +30,7 @@ a new line
 ##### h5
 ###### h6
 
-> quotes here (moved leftward)
+> 引用段落
  
 <http://www.bing.com/>
 

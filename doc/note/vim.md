@@ -274,3 +274,8 @@
 ###### 选中整行
 	V
 	
+###### 找回上次commit中不小心删除的文件
+	 $ git checkout HEAD^ java/test.db
+
+###### 比较两个文档（上下位置）
+	$ vimdiff -o a.txt b.txt

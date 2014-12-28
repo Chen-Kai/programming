@@ -39,3 +39,7 @@ The action would require the installation of packages from not authenticated sou
 
 ##### 下载文件
 	$ wget -c https://github.com/cstrap/monaco-font/raw/master/Monaco_Linux.ttf
+
+##### 解决“Could not get lock /var/lib/dpkg/lock-open”错误提示
+	$ sudo rm /var/cache/apt/archives/lock 
+	$ sudo rm /var/lib/dpkg/lock

@@ -10,6 +10,5 @@ public class Env {
 		for (String name : c) {
 			System.out.format("%s=%s%n", name, envMap.get(name));
 		}
-		
 	}
 }
