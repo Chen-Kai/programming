@@ -279,3 +279,10 @@
 
 ###### 比较两个文档（上下位置）
 	$ vimdiff -o a.txt b.txt
+
+###### 把find命令返回的结果交给vim
+	$ find . -name "*.java" | vim -
+
+###### 打开文件的时候定位到某行：
+	$ vi a.c +99
+

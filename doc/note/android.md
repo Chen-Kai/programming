@@ -108,3 +108,29 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 - adb pull *.trace
 - traceview *.trace
 
+###### 显示Activity栈信息
+	$ adb shell dumpsys activity activities
+
+###### 删除某一列为空的记录：
+	`db.delete(table, col, " IS NULL", null);`
+	`db.execSQL("DELETE FROM "+ table + " WHERE " + col + " IS NULL;");`
+
+###### 在启动另一个新activity后销毁自己
+	```xml
+		<activity android: noHistory="true"/>
+	```
+###### 显示PopupMenu 
+	```java
+	PopupMenu popup = new PopupMenu(context, anchor);
+	popup.inflate(R.menu.main);
+	popup.show();
+	```
+
+###### DialogFragment.setCancelable(false); 影响:
+	- 按返回键，对话框不消失
+	- 按回家键 - 点击应用图标 - 对话框还在
+
+###### Dialog.setCanceledOnTouchOutside(true); 效应：
+	- 点击对话框外部，其消失。
+
+###### 为Preference设置Intent -- `setIntent`
