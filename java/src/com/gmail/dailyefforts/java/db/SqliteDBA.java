@@ -13,7 +13,7 @@ public class SqliteDBA {
 		Class.forName("org.sqlite.JDBC");
 
 		Connection connection = DriverManager
-				.getConnection("jdbc:sqlite:test.db");
+				.getConnection("jdbc:sqlite:./src/com/gmail/dailyefforts/java/db/test.db");
 
 		// file_list is the table name.
 		String sql = "drop table if exists file_list";
@@ -24,10 +24,11 @@ public class SqliteDBA {
 				+ "'file_name' text, " + "'file_path' text, "
 				+ "'timestamp' datetime default current_timestamp)";
 		runSql(connection, sql);
-
+		connection.setAutoCommit(false);
 		File root = new File("/bin");
 		sql = "insert into file_list(file_name, file_path) values(?, ?)";
 		travel(root, connection, sql);
+		connection.commit();
 	}
 
 	private static void travel(File root, Connection connection, String sql)
@@ -38,6 +39,7 @@ public class SqliteDBA {
 				if (f.isFile()) {
 					runSqlInsert(connection, sql, f.getName(), f.getParent()
 							.toString());
+					System.out.println(f);
 				} else {
 					travel(f, connection, sql);
 				}
