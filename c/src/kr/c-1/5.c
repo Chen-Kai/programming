@@ -1,7 +1,7 @@
 /*
    K&R
-   Exercise 1-3.
-   Modify the temperature conversion program to print a heading above the table.
+   Exercise 1-5.
+   Modify the temperature conversion program to print the table in reverse order, that is, from 300 degrees to 0.
  */
 #include <stdio.h>
 
@@ -14,7 +14,7 @@ int main(void) {
 
 	printf("%10s\t%7s\n", "Fahrenheit", "Celsius");
 
-	for (fahr = lower; fahr <= upper; fahr += step) {
+	for (fahr = upper; fahr >= lower; fahr -= step) {
 		celsius = (5.0 / 9.0) * (fahr - 32.0);
 		printf("%10.0f\t%7.1f\n", fahr, celsius);
 	}
