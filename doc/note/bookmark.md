@@ -22,6 +22,7 @@
 - [C FAQs](http://c-faq.com/index.html)
 - [C and Java Tutorial](http://fresh2refresh.com/)
 - [Coder](https://oj.leetcode.com/)
+-[LeetCode](https://oj.leetcode.com)
 - Android Blog
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
@@ -41,6 +42,7 @@
   - [APP图标](http://www.quirco.com/iPhoneIcon/)
   - [Online-Flowchart](https://www.lucidchart.com/)
   - [二维码](http://www.barcode-generator.org/)
+  -[Tomcat](http://tomcat.apache.org/)
 - Icon
   - [Share Icons](http://iconsparadise.com/)
 - Search
@@ -48,7 +50,3 @@
 
 - SQLite Expert
   - [SQLite Expert](http://sqliteexpert.com/)
-
-- LeetCode
-  -[LeetCode](https://oj.leetcode.com)
-

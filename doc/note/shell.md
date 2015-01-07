@@ -280,3 +280,5 @@
 ###### 把文件复制到另一个服务器(复制文件夹加 -r 参数)
 	$ scp file user@ip:file
 
+###### 下载文件
+	$ wget https://www.apache.org/dist/tomcat/tomcat-6/v6.0.43/bin/apache-tomcat-6.0.43-windows-x86.zip
