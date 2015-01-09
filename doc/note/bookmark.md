@@ -38,15 +38,18 @@
   - [IntelliJ](http://www.jetbrains.com/idea/)
   - [在线Markdown编辑](http://dillinger.io/)
   - [可视化运行过程](http://cs.joensuu.fi/jeliot/)
-  - [UML](http://astah.net/)
+  - [Astah UML](http://astah.net/)
   - [APP图标](http://www.quirco.com/iPhoneIcon/)
   - [Online-Flowchart](https://www.lucidchart.com/)
   - [二维码](http://www.barcode-generator.org/)
-  -[Tomcat](http://tomcat.apache.org/)
+  - [Tomcat](http://tomcat.apache.org/)
+  - [SQLite Expert](http://sqliteexpert.com/)
+  - 截图
+    - Ubuntu: Shutter
+  - 录制电脑屏幕视频+音频
+    - Windows: http://atomisystems.com/activepresenter/
+    - Ubuntu: Kazam screencaster
 - Icon
   - [Share Icons](http://iconsparadise.com/)
 - Search
   - [Search code](https://searchcode.com/)
-
-- SQLite Expert
-  - [SQLite Expert](http://sqliteexpert.com/)
