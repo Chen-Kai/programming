@@ -52,6 +52,7 @@ The action would require the installation of packages from not authenticated sou
 
 ###### 压缩图片
 	$ optipng pic.png
+
 ###### 查看不同
 	$ vimdiff 文件名 文件名
 	$ gvimdiff 文件名 文件名
@@ -358,3 +359,12 @@ deb-src http://mirrors.sohu.com/ubuntu/ precise-updates main restricted universe
 deb-src http://mirrors.sohu.com/ubuntu/ precise-proposed main restricted universe multiverse
 deb-src http://mirrors.sohu.com/ubuntu/ precise-backports main restricted universe multiverse
 ```
+###### 删除所有的 (`Ctrl` + `c` + `m`)
+	$ sed 's/^M//g' `find . -name '*.java'` -i
+
+###### 查看MD5校验值(较老)
+	$ md5sum a.c
+
+###### 查看SHA校验值(安全性高)
+	$ sha1sum du.sh
+dd if=du.sh of=du.sh.bak

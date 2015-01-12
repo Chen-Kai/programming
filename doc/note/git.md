@@ -460,3 +460,7 @@ Please, commit your changes before you can merge.
 
 ###### 修改上次提交的作者信息
 	$ git commit --amend --author="name <email>"
+
+###### 撤销merge
+	$ git reset --hard HEAD
+	$ git clean -df

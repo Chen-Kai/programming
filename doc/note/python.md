@@ -36,6 +36,6 @@
 	
 ###### 字符串格式化
 	txt = "He is %d ages old in %d." % (52, 2013)
-	
 
-	
+###### 创建文件夹
+	os.mkdir("folder")
