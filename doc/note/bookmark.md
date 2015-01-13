@@ -23,11 +23,12 @@
 - [C and Java Tutorial](http://fresh2refresh.com/)
 - [Coder](https://oj.leetcode.com/)
 -[LeetCode](https://oj.leetcode.com)
-- Android Blog
+- Android
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
   - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
   - [好用的库](http://moodroid.com/)
+  - [AndroidDev](http://wear.techbrood.com/design/index.html)
 - [在线编译](http://www.compileonline.com)
 - 软件
   - [xmind](http://www.xmind.net/)
