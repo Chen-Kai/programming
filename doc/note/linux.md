@@ -346,20 +346,20 @@ The action would require the installation of packages from not authenticated sou
 	$ sudo apt-get clean
 	$ sudo apt-get update --fix-missing
 	$ sudo apt-get upgrade
-Sohu源头
+Aliyun 源头
 ```
-deb http://mirrors.sohu.com/ubuntu/ precise main restricted universe multiverse
-deb http://mirrors.sohu.com/ubuntu/ precise-security main restricted universe multiverse
-deb http://mirrors.sohu.com/ubuntu/ precise-updates main restricted universe multiverse
-deb http://mirrors.sohu.com/ubuntu/ precise-proposed main restricted universe multiverse
-deb http://mirrors.sohu.com/ubuntu/ precise-backports main restricted universe multiverse
-deb-src http://mirrors.sohu.com/ubuntu/ precise main restricted universe multiverse
-deb-src http://mirrors.sohu.com/ubuntu/ precise-security main restricted universe multiverse
-deb-src http://mirrors.sohu.com/ubuntu/ precise-updates main restricted universe multiverse
-deb-src http://mirrors.sohu.com/ubuntu/ precise-proposed main restricted universe multiverse
-deb-src http://mirrors.sohu.com/ubuntu/ precise-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ precise main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ precise-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ precise-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ precise-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ precise main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ precise-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ precise-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ precise-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted universe multiverse
 ```
-###### 删除所有的 (`Ctrl` + `c` + `m`)
+# 删除所有的 (`C#####trl` +`c  `m`)
 	$ sed 's/^M//g' `find . -name '*.java'` -i
 
 ###### 查看MD5校验值(较老)
@@ -368,3 +368,7 @@ deb-src http://mirrors.sohu.com/ubuntu/ precise-backports main restricted univer
 ###### 查看SHA校验值(安全性高)
 	$ sha1sum du.sh
 dd if=du.sh of=du.sh.bak
+free -m
+watch -n 1 cat /proc/meminfo
+watch -n 1 free -m
+sudo sysctl -w vm.drop_caches=3

@@ -22,13 +22,15 @@
 - [C FAQs](http://c-faq.com/index.html)
 - [C and Java Tutorial](http://fresh2refresh.com/)
 - [Coder](https://oj.leetcode.com/)
--[LeetCode](https://oj.leetcode.com)
+- [LeetCode](https://oj.leetcode.com)
 - Android
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
   - [http://www.cnblogs.com/qianxudetianxia/](http://www.cnblogs.com/qianxudetianxia/)
   - [好用的库](http://moodroid.com/)
   - [AndroidDev](http://wear.techbrood.com/design/index.html)
+  - [开发工具集](http://www.androiddevtools.cn/)
+  - [阿里icon库](http://iconfont.cn/)
 - [在线编译](http://www.compileonline.com)
 - 软件
   - [xmind](http://www.xmind.net/)
@@ -45,6 +47,7 @@
   - [二维码](http://www.barcode-generator.org/)
   - [Tomcat](http://tomcat.apache.org/)
   - [SQLite Expert](http://sqliteexpert.com/)
+  - [Becompare](http://www.scootersoftware.com/)
   - 截图
     - Ubuntu: Shutter
   - 录制电脑屏幕视频+音频
@@ -54,3 +57,4 @@
   - [Share Icons](http://iconsparadise.com/)
 - Search
   - [Search code](https://searchcode.com/)
+- [北京化工大学开源镜像站](http://ubuntu.buct.edu.cn/)
