@@ -359,7 +359,8 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-updates main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ precise-proposed main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted universe multiverse
 ```
-# 删除所有的 (`C#####trl` +`c  `m`)
+# 删除所有的
+ (`C#####trl` +`c  `m`)
 	$ sed 's/^M//g' `find . -name '*.java'` -i
 
 ###### 查看MD5校验值(较老)
@@ -367,8 +368,18 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 
 ###### 查看SHA校验值(安全性高)
 	$ sha1sum du.sh
-dd if=du.sh of=du.sh.bak
-free -m
-watch -n 1 cat /proc/meminfo
-watch -n 1 free -m
-sudo sysctl -w vm.drop_caches=3
+
+###### backup big file
+	$ dd if=du.sh of=du.sh.bak
+
+###### check free memeory
+	$ free -m
+
+###### 
+	$ watch -n 1 cat /proc/meminfo
+	$ watch -n 1 free -m
+###### 
+	$ sudo sysctl -w vm.drop_caches=3
+
+###### install open jdk 7
+	$ sudo apt-get install openjdk-7-jdk
