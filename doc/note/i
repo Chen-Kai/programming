@@ -1,5 +1,5 @@
-export p=/home/null/workspace/programming/
-export r=/home/null/workspace/reciter/
-export w=/home/null/workspace/wordcard
 export PS1="~$ "
-export m=/home/null/workspace/watermark_maker/
+export w=/home/null/dev/workspace/
+export f=/home/null/dev/workspace/finder/
+export r=/home/null/dev/workspace/reciter/
+export p=/home/null/dev/workspace/programming/

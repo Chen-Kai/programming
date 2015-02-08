@@ -381,5 +381,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 ###### 
 	$ sudo sysctl -w vm.drop_caches=3
 
-###### install open jdk 7
+###### install open jdk 7 and vim
 	$ sudo apt-get install openjdk-7-jdk
+	$ sudo apt-get install vim
