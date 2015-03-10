@@ -31,6 +31,7 @@
   - [AndroidDev](http://wear.techbrood.com/design/index.html)
   - [开发工具集](http://www.androiddevtools.cn/)
   - [阿里icon库](http://iconfont.cn/)
+  - [CodePath](http://guides.codepath.com/android)
 - [在线编译](http://www.compileonline.com)
 - 软件
   - [xmind](http://www.xmind.net/)
