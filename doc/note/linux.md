@@ -385,3 +385,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 	$ sudo apt-get install openjdk-7-jdk
 	$ sudo apt-get install vim
 	$ sudo apt-get install git
+
+###### 安装rpm文件
+	$ sudo apt-get install alien
+	$ sudo apt-get install fakeroot
+	$ fakeroot alien jdk-7u75-linux-x64.rpm
+	$ sudo dpkg -i jdk_1.7.075-1_amd64.deb
