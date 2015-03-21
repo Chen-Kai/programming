@@ -14,9 +14,9 @@ public class IpInfo {
 		final String ipAddr = ip.getHostAddress();
 		final String pcName = ip.getHostName();
 		final boolean isReachable = ip.isReachable(5 * 1000);
-		System.out.println("IP地址: " + ipAddr);
-		System.out.println("PC地址: " + pcName);
-		System.out.println("是否可连接本机：" + isReachable);
+		System.out.println("getHostAddress: " + ipAddr);
+		System.out.println("getHostName: " + pcName);
+		System.out.println("isReachable" + isReachable);
 		final InetAddress googleIp = ip.getByName("google.com.hk");
 		System.out.println("Google IP: " + googleIp);
 	}
