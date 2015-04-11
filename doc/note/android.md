@@ -134,3 +134,6 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 	- 点击对话框外部，其消失。
 
 ###### 为Preference设置Intent -- `setIntent`
+
+###### 录屏
+	$ ./adb shell screenrecord /sdcard/a.mp4
