@@ -137,3 +137,6 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 
 ###### 什么时候获取ViewGroup中的子View
 	`onFinishInflate`
+
+###### 录屏
+	$ ./adb shell screenrecord /sdcard/a.mp4
