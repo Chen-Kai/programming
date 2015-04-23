@@ -391,3 +391,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 	$ sudo apt-get install fakeroot
 	$ fakeroot alien jdk-7u75-linux-x64.rpm
 	$ sudo dpkg -i jdk_1.7.075-1_amd64.deb
+
+###### 快速搜索文件
+	$ locate 文件名
+$ vi /etc/updatedb.conf
