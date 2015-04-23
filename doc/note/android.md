@@ -134,3 +134,6 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 	- 点击对话框外部，其消失。
 
 ###### 为Preference设置Intent -- `setIntent`
+
+###### 什么时候获取ViewGroup中的子View
+	`onFinishInflate`
