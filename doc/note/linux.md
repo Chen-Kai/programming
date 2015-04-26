@@ -1,6 +1,6 @@
 ###### 设置环境变量
     $ vi ~/.bashrc
-    $ export PATH=/home/null/dev/android/sdk/platform-tools:$PATH
+    $ export TH=/home/null/dev/android/sdk/platform-tools:$PATH
     $ export PATH=/usr/lib/jvm/jdk1.6.0_32/bin:$PATH
 
 ###### 在Ubuntu 12.04上安装Gnome
@@ -113,7 +113,7 @@ The action would require the installation of packages from not authenticated sou
 ###### 1. start with by using `-exec`
 ###### 2. refer to the result by using `{}`
 ###### 3. close the exec statement by using `\;`
-	$ find . -exec ls -l {} \;
+	$ find . -exec ls -lh {} \;
 
 ###### 找到不是以数字开头的行
 	$ grep '^[0-9]' *
@@ -395,3 +395,18 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 ###### 快速搜索文件
 	$ locate 文件名
 $ vi /etc/updatedb.conf
+
+###### 查找当前所有文件
+	$ find . -name '*'
+	$ find . -user null
+	$ find . -nouser
+	$ find . -mtime -3
+	$ find . -ctime -3
+	$ find . -atime -3
+	$ find . -size +20k -a -name '*.jar'
+
+###### check help level
+	$ man -f ls
+
+###### set env var  
+	$ export PATH=/home/null/dev/sdk/platform-tools:$PATH
