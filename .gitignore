@@ -45,3 +45,6 @@ android/app/.project
 # secret files
 Secret.java
 secret.properties
+
+# 
+*.iml

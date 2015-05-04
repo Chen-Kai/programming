@@ -1,6 +1,5 @@
 ###### 设置环境变量
     $ vi ~/.bashrc
-    $ export TH=/home/null/dev/android/sdk/platform-tools:$PATH
     $ export PATH=/usr/lib/jvm/jdk1.6.0_32/bin:$PATH
 
 ###### 在Ubuntu 12.04上安装Gnome
@@ -394,7 +393,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 
 ###### 快速搜索文件
 	$ locate 文件名
-$ vi /etc/updatedb.conf
+	$ vi /etc/updatedb.conf
 
 ###### 查找当前所有文件
 	$ find . -name '*'
@@ -410,3 +409,6 @@ $ vi /etc/updatedb.conf
 
 ###### set env var  
 	$ export PATH=/home/null/dev/sdk/platform-tools:$PATH
+
+###### check the return value of the last cmd
+	$ echo $?

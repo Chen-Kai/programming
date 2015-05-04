@@ -61,3 +61,5 @@
   - [Search code](https://searchcode.com/)
 - [北京化工大学开源镜像站](http://ubuntu.buct.edu.cn/)
 - [网站分析](http://www.netcraft.com/)
+- Java
+  - [基础练习](http://www.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html)

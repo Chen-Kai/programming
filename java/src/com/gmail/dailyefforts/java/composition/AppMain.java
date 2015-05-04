@@ -8,7 +8,7 @@ public class AppMain {
 		IntegerBox integerBox = new IntegerBox();
 		integerBox.putInt(-1);
 		
-		System.out.println("AppMain.main()" + myIntegerBox.getIntNum());
-		System.out.println("AppMain.main()" + integerBox.getIntNum());
+		System.out.println("App.main()" + myIntegerBox.getIntNum());
+		System.out.println("App.main()" + integerBox.getIntNum());
 	}
 }
