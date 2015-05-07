@@ -63,3 +63,6 @@
 - [网站分析](http://www.netcraft.com/)
 - Java
   - [基础练习](http://www.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html)
+- Web
+  - [博客解决方案](https://farbox.com/)
+  - [一个优秀的UXer博客](http://colachan.com/)
