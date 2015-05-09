@@ -1,5 +1,5 @@
 ###### 替换字符串 
-	:%s/<old>/<new>/gc
+	:%s/旧/新/gc
 
 ###### 插入时间戳
 	:r !date
@@ -21,7 +21,7 @@
 	$ <shell command here>
 	$ exit
 
-###### highlight key word during searching
+###### 高亮匹配搜索字
 	:set hlsearch
 
 ###### 打开拼写检查
@@ -31,7 +31,7 @@
 	:set encoding=utf-8
 
 ###### 智能缩进
-	:set smartindent
+	:set si
 
 ###### 自动缩进
 	:set ai
@@ -46,7 +46,7 @@
 	:set list!
 
 ###### 显示匹配项总数
-	:%s/<key-string-here>//gn
+	:%s/键//gn
 
 ###### 大小写互换
 	~
@@ -216,8 +216,6 @@
 ###### 选中双引号中的内容
 	vi"	
 
-###### 全选
-	ggVG
 
 ###### 选中当前行
 	V

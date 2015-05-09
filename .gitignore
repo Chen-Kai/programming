@@ -48,3 +48,5 @@ secret.properties
 
 # 
 *.iml
+
+*.swp
