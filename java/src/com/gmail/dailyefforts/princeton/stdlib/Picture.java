@@ -1,3 +1,5 @@
+package com.gmail.dailyefforts.princeton.stdlib;
+
 /*************************************************************************
  *  Compilation:  javac Picture.java
  *  Execution:    java Picture imagename

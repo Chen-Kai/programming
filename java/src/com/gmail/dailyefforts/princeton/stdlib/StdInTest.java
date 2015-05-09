@@ -1,3 +1,4 @@
+package com.gmail.dailyefforts.princeton.stdlib;
 /**
  * Test client for StdIn and In. 
  **/

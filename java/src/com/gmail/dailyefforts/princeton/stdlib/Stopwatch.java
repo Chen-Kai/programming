@@ -1,3 +1,4 @@
+package com.gmail.dailyefforts.princeton.stdlib;
 /*************************************************************************
  *  Compilation:  javac Stopwatch.java
  *

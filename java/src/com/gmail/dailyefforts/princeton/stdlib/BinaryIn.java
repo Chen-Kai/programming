@@ -7,7 +7,7 @@
  *  % java BinaryIn http://introcs.cs.princeton.edu/cover.jpg output.jpg
  *
  *************************************************************************/
-
+package com.gmail.dailyefforts.princeton.stdlib;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
