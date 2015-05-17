@@ -23,6 +23,7 @@
 - [C and Java Tutorial](http://fresh2refresh.com/)
 - [Coder](https://oj.leetcode.com/)
 - [LeetCode](https://oj.leetcode.com)
+- [Java Performance](http://java-performance.info/)
 - Android
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
