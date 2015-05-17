@@ -33,6 +33,7 @@
   - [阿里icon库](http://iconfont.cn/)
   - [CodePath](http://guides.codepath.com/android)
 - [在线编译](http://www.compileonline.com)
+- [动态网页效果](http://fff.cmiscm.com/)
 - 软件
   - [xmind](http://www.xmind.net/)
   - [Search Everything](http://www.voidtools.com/)
