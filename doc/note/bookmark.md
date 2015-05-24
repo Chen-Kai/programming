@@ -24,6 +24,7 @@
 - [Coder](https://oj.leetcode.com/)
 - [LeetCode](https://oj.leetcode.com)
 - [Java Performance](http://java-performance.info/)
+- [可汗学院](https://www.khanacademy.org)
 - Android
   - [http://ryantang.me/](http://ryantang.me/)
   - [http://www.trinea.cn/](http://www.trinea.cn/)
