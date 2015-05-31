@@ -1,36 +1,53 @@
+##### 提交一个tag
+	$ git tag -a 分支名
+
+##### 显示某个标签
+	$ git show 标签名
+
+##### 显示某个标签的详细信息
+	$ git tag -v 标签名
+
+##### 为某次提交添加一个tag
+	$ git tag -a 标签名 提交码
+
+##### 将某个tag推送到远端
+	$ git push 远端名 标签名
+
+##### 将所有tag都推送到远端
+	$ git push 远端名 --tags
+
 ##### 从远端下载
-	$ git clone <remote url> (<local_dir>)
+	$ git clone 服务器地址 本地目录
 
 ##### 显示远端URL
 	$ git remote -v
 
 ##### 向远端推送
-	$ git push (-f) <remote name>
+	$ git push -f -u 服务器代称 --all
 
 ##### 重置到之前的某个版本
 	$ git reset HEAD~1
 
 ##### 增加一个远端
-	$ git remote add <remote name> <remote url>
+	$ git remote add 名称 地址
 
 ##### 删除一个远端
-	$ git remote rm <remote name>
-	$ git remote remove <remote name>
+	$ git remote rm 名称
 
 ##### 重命名远端
-	$ git remote rename origin github
+	$ git remote rename 老名字 新名字
 
-##### 从git仓库中取出一个文件
-	$ git checkout <file name>
+##### 从git仓库中取出一个文件到工作区
+	$ git checkout -- 文件
 
 ##### 从远端获取最新文件
-	$ git fetch <remote name>
+	$ git fetch 远端名
 
-##### merge从远端获取的文件
-	$ git merge <remote name>/<remote branch>
+##### merge从远端获取的文件到当前工作区
+	$ git merge 远端名/分支名
 
-##### 从index区中删除某个文件
-	$ git rm --cached <file to be rm>
+##### 从缓存区中删除某个文件
+	$ git rm --cached 文件
 
 ##### 显示log，一次提交占一行
 	$ git log --pretty=oneline
@@ -42,7 +59,7 @@
 	$ gitk
 
 ##### 查看这次更改的详细内容
-	$ git log -p
+	$ git log -1 -p
 
 ##### 查看上一次更改
 	$ git log -1
@@ -50,35 +67,30 @@
 ##### 查看git配置信息
 	$ git config --list
 
-##### 将本地git仓库推送到远端
-	$ git push -u origin master
-
 ##### 设置用户名
-	$ git config --global user.name <your name here>
+	$ git config --global user.name 作者
 
 ##### 显示远端信息
-	$ git remote show <remote name>
+	$ git remote show 远端名
 
 ##### 切换到某个分支
-	$ git branch <branch name>
-
-##### 将某个分支merge到当前分支
-	$ git merge <branch-name>
-
-##### 将本地的所有分支都push到远端
-	$ git push <remote-name> --all
-
-##### 让git停止追踪某个文件
-	$ git rm --cached .project
+	$ git branch 分支名
 
 ##### 查看分支信息
 	$ git branch -v
 
+##### 将某个分支merge到当前分支
+	$ git merge 分支名
+
+##### 让git停止追踪某个文件
+	$ git rm --cached .project
+
 ##### 创建一个新分支并切换到该分支
-	$ git checkout -b <branch-name>
+	$ git checkout -b 分支名
 
 ##### 删除某个分支
-	$ git branch -d(D) <branch_name>
+	$ git branch -d 分支名
+	$ git branch -D 分支名
 
 ##### 列出没有被merge的分支
 	$ git branch --no-merged
@@ -89,35 +101,12 @@
 ##### 修改最近一次提交
 	$ git commit --amend
 
-##### 提交一个tag
-	$ git tag -a <tag-name>
 
 ##### 列出所有被删除了的文件
 	$ git ls-files deleted
 
 ##### 更新index目录（添加或删除了文件）
 	$ git add -u
-
-##### 从git仓库中取出一个文件, 替换掉本地改动
-	$ git checkout -- app/res/values/strings.xml
-
-##### unstage某个文件（从index区移除）
-	$ git reset HEAD <file>
-
-##### 显示某个标签
-	$ git show <tag-name>
-
-##### 显示某个标签的详细信息
-	$ git tag -v <tag-name>
-
-##### 为某次提交添加一个tag
-	$ git tag -a <tag-name> <commit-id>
-
-##### 将某个tag推送到远端
-	$ git push <remote-name> <tag-name>
-
-##### 将所有tag都推送到远端
-	$ git push <remote-name> --tags
 
 ##### 显示所有新添加的文件
 	$ git status -u
@@ -129,7 +118,7 @@
 	$ git checkout -- .
 
 ##### 显示上次commit对某个文件做的修改细节
-	$ git log -p -1 <file-name>
+	$ git log -p -1 文件
 
 ##### 使用gitk工具查看某个文件
 	$ gitk .gitignore
@@ -139,10 +128,10 @@
 	$ git merge origin/master
 
 ##### unstaging a staged file
-	$ git reset HEAD <file>
+	$ git reset HEAD -- 文件
 
-##### 放弃对某个文件的修改
-	$ git checkout -- <file>
+##### 放弃工作区未缓存的修改
+	$ git checkout -- 文件
 
 ##### 在commit之前显示修改细节
 	$ git commit -v
@@ -154,7 +143,7 @@
 	$ git rm \*~
 
 ##### 重命名某个文件
-	$ git mv <old-name> <new-name>
+	$ git mv <老名字> <新名字>
 
 ##### reset至前一次提交时的版本
 	$ git reset HEAD~1
@@ -163,25 +152,25 @@
 	$ git push -u origin master
 
 ##### 删除远端某个分支
-	$ git push <remote-name> :<branch-name>
+	$ git push 远端名 :分支名
 
 ##### 重命名某个远端
-	$ git remote rename <old-name> <new-name>
+	$ git remote rename 老名字 新名字
 
 ##### 列出某个程序员的所有提交
-	$ git log --author=<author-name or email>
+	$ git log --author=作者
 
 ##### 列出某个提交者的所有提交
-	$ git log --committer=<committer-name or email>
+	$ git log --committer=提交者
 
 ##### 获取某个文件之前的版本
-	$ git checkout HEAD~1 <file-name>
+	$ git checkout HEAD~1 -- 文件
 
 ##### 直接从git仓库检出某个文件（跳过缓存区）
-	$ git checkout HEAD 文件名
+	$ git checkout HEAD -- 文件
 
 ##### 查看某个文件在上次提交时的样子
-	$ git show HEAD~1:<file-name>
+	$ git show HEAD~1:文件
 
 ##### unstage 所有文件
 	$ git rm --cached .
@@ -439,7 +428,7 @@ Please, commit your changes before you can merge.
 ###### 基于master分支，将dev分支的零散提交合并起来
 	$ git rebase -i master
 
-###### 在向推送前整合提交
+###### 在向推送前重设基准
 	$ git rebase -i origin/master
 
 ###### 安装tig
