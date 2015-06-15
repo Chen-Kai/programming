@@ -1,6 +1,9 @@
 package com.gmail.dailyefforts.algrithm.recursion;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Permutations {
     public static void perm(String str) {
@@ -50,6 +53,25 @@ public class Permutations {
         }
     }
 
+    private int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    private int[] box = new int[a.length];
+    private boolean[] check = new boolean[a.length];
+
+
+    private void dfs(final int n) {
+        if (n == a.length) {
+            System.out.println(Arrays.toString(box));
+            return;
+        }
+        for (int i = 0; i < a.length; i++) {
+            if (!check[i]) {
+                check[i] = true;
+                box[n] = a[i];
+                dfs(n + 1);
+                check[i] = false;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         perm("abcdef");
@@ -61,5 +83,6 @@ public class Permutations {
         list.add("e");
         list.add("f");
         perm(list);
+        new Permutations().dfs(0);
     }
 }
