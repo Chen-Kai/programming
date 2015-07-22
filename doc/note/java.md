@@ -1,58 +1,68 @@
 一个 `对象`:
-- 拥有状态、持有数据
-- 拥有行为、有所作为  
-例如`一部手机`有CPU、SIM卡、显示器、电池等，它能打电话、发短信、加载网页  
+- 拥有**状态**、持有数据
+- 拥有**行为**、有所作为
+例如`一部手机`
+拥有:
+    - 一个CPU
+    - 一张SIM卡
+    - 一个显示器
+    - 一块电池
+能够:
+    - 拨打电话
+    - 发送短信
+    - 加载网页
 
-一个`类`为所有此类对象定义了两件事
+---
+
+一个`类`为所有此类对象定义了两件事:
 - 它的`状态`
 - 它的`行为`
 
 ---
 
-##### The lifetime of variables.  
-* The variables in a method are alive until the method returns.
-* object fields are alive until the object points to null.
-* static variables are alive as long as the program is running. 
+##### 变量的生命周期
+- 声明于方法体内的变量在方法返回后失效
+- 对象的成员变量在对象被赋为`null`时失效
+- 静态变量在进程结束时失效
 
 ---
 
-##### Array in Java
-> When you create an array of objects, you are really creating an array of references, and each of those references is automatically initialized to `null`. You must assign an object to each reference before you use it, and if you try to use a reference that is still `null`, the problem will be reported at run time. When you create an array of primitives, the compiler guarantees initialization because it zeroes the memory for that array. (from "Thinking in Java")
+##### 对象数组
+当你创建了一个**房子**数组，其实是创建了一个**地址**列表（每个地址都为空）。
 
 ---
 
-##### Garbage collector
-> GC looks at all the objects that were created with **new** and figures out which ones are not being referenced anymore. Then it releases that memory for those objects, so the memory can be used for new object. (from "Thinking in Java")
+##### 垃圾回收器
+GC追踪所有`new`出来的对象，当不再存在指向其的引用时就回收之。
 
 ---
 
-`final` means last version, means fixed, CANNOT be modified anymore, so:  
-* A `final` variable can not re-assinged.
-* A `final` method can not be overrode.
-* A `final` class can not be extends.
+
+##### `final`
+`final`意味着**绝版**、**终稿**、**不再更改**，所以：
+- 一个`final`变量不可被再次赋值
+- 一个`final`方法不可被重写
+- 一个`final`类不可被扩展
 
 ---
 
-##### Get JVM bytecodes from a A.class
+##### 查看A.class文件字节码
     $ javap -c A
 
-##### `final` class
-> An **final class** is simply a class whose instances can not be modified. All of the information contained in each instance is provided when it is created and fixed for lifetime of the object. (from "Effective Java")
+---
+
+##### 如何把一个对象写入硬盘
+- 告诉Java这个类`Serializable`
+- 创建一个`ObjectOutputStream`（对象输出流）对象
+- 让oos执行`writeObject()`
 
 ---
 
-##### How to serialize an object?
-1. The Java the class is Serializable.
-2. Create an ObjectOutputStream object.
-3. Ask oos to execute writeObject()
-
----
-
-##### Principles:
-1. We should attempt to detect errors as soon as possible after they occur.
-2. Nonpublic methods should generally check their parameters using assertions rather than normal check.
-3. It is very important to check the validity of parameters to constructors to prevent the construction of an object that violates class invariants.
-4. 及时发现错误、报告错误、合理处理错误；不可以哑处理。
+##### 关于错误处理的原则
+- 尽早发现
+- 非`public`方法要对参数合法性进行`assert`
+- 在构造函数中进行参数合法性检查
+- 及时发现错误、报告错误、合理处理错误；不可以哑处理
 
 ---
 

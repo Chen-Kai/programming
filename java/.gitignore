@@ -2,3 +2,5 @@
 .classpath
 *.iml
 *.db
+out/
+.settings/
