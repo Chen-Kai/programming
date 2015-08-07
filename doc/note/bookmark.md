@@ -72,3 +72,4 @@
   - [可视化算法演示](http://visualgo.net/)
   - [练习打字](http://www.ratatype.com/)
   - [免费图片](http://www.freeimages.com/)
+  - [透明背景图片](http://pngimg.com/)
