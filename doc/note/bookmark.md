@@ -75,3 +75,7 @@
   - [bootstrap主题](http://bootswatch.com/)
   - [在线生成CSS](http://enjoycss.com/)
   - [颜色](http://www.colorhunt.co/)
+  - [练习打字](http://www.ratatype.com/)
+  - [免费图片](http://www.freeimages.com/)
+  - [透明背景图片](http://pngimg.com/)
+  - [计算机组成](http://shimonschocken.com/)
