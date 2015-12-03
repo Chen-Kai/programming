@@ -70,3 +70,8 @@
   - [博客解决方案](https://farbox.com/)
   - [一个优秀的UXer博客](http://colachan.com/)
   - [可视化算法演示](http://visualgo.net/)
+  - [markdown在线编辑](http://dillinger.io/)
+  - [JSON编辑器](http://www.jsoneditoronline.org/)
+  - [bootstrap主题](http://bootswatch.com/)
+  - [在线生成CSS](http://enjoycss.com/)
+  - [颜色](http://www.colorhunt.co/)

@@ -269,6 +269,7 @@
 
 ##### 显示那些包含“update”字符串的log 
 	$ git log --since=2013-03-22
+	$ git log --since=2.weeks
 
 ##### 根据远端仓库进行重置
 	$ git reset origin/HEAD
@@ -453,3 +454,7 @@ Please, commit your changes before you can merge.
 ###### 撤销merge
 	$ git reset --hard HEAD
 	$ git clean -df
+
+###### 从暂存区中删除文件
+	$ git rm log/\*.log
+	$ git rm \*~

@@ -140,3 +140,7 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 
 ###### 录屏
 	$ ./adb shell screenrecord /sdcard/a.mp4
+
+###### Nexus S 解锁
+	$ fastboot devices
+	$ fastboot oem unlock
