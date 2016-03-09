@@ -107,4 +107,12 @@ public int getMaxHeight () {
 }
 ```
 
+---
+
+匹配所有gif文件的正则
+
+```
+Pattern.compile(".*.gif").matcher(name).matches();
+```
+
 
