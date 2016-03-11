@@ -366,81 +366,81 @@
 	2. rm -f .git/index
 	3. git reset
 
-###### merge错误：
+### merge错误：
 fatal: You have not concluded your merge (MERGE_HEAD exists).
 Please, commit your changes before you can merge.
 解决方案：
 	$ git reset --merge 
 
-###### 缓存(隐藏)变更
+### 缓存(隐藏)变更
 	$ git stash
 
-###### 查看所有缓存变更列表
+### 查看所有缓存变更列表
 	$ git stash list
 
-###### 应用缓存的变更
+### 应用缓存的变更
 	$ git stash apply
 
-###### 应用缓存的变更后将其从缓存栈中取走
+### 应用缓存的变更后将其从缓存栈中取走
 	$ git stash pop
 
-###### 撤销`git add <file>`
+### 撤销`git add <file>`
 	$ git reset <file>
 
-###### 在将dev分支merge都master分支时，保留一个节点
+### 在将dev分支merge都master分支时，保留一个节点
 	$ git merge --no-ff dev
 
-###### 查看hash对应的内容
+### 查看hash对应的内容
 	$ git cat-file -p <hash>
 
-###### 查看每次提交文件变化（增、删行数）
+### 查看每次提交文件变化（增、删行数）
 	$ git log --stat
 
-###### 查看HEAD中的目录树
+### 查看HEAD中的目录树
 	$ git ls-tree HEAD
 
-###### 打印文件内容
+### 打印文件内容
 	$ git cat-file -p
 
-###### 工作区和HEAD比较
+### 工作区和HEAD比较
 	$ git diff HEAD
 
-###### 一行显示log
+### 一行显示log
 	$ git log --oneline
 
-###### 重置暂存区，即，undo 'git add' 命令
+### 重置暂存区，即，undo 'git add' 命令
 	$ git reset HEAD
 
-###### 查看总提交次数
+### 查看总提交次数
 	$ git rev-list HEAD | wc -l
 
-###### 显示中文文件名(而非Unicode)
+### 显示中文文件名(而非Unicode)
 	$ git config --global core.quotepath false
 
-###### 删除设置
+### 删除设置
 	$ git config --unset --global user.name
 
-###### 修改提交者
+### 修改提交者
 	$ git commit --amend --author='name'
 
-###### 查看某一文件的修改记录
+### 查看某一文件的修改记录
 	$ git blame 文件名
 
-###### 基于master分支，将dev分支的零散提交合并起来
+### 基于master分支，将dev分支的零散提交合并起来
 	$ git rebase -i master
 
-###### 在向推送前重设基准
+### 在向推送前重设基准
 	$ git rebase -i origin/master
 
-###### 安装tig
+### 安装tig
 	$ sudo apt-get install tig
 
-###### 询问式add, checkout, reset
+### 询问式add, checkout, reset
 	$ git add -i
 	$ git checkout -p
 	$ git reset -p
 
-###### Problem:
+### Problem:
 	fatal: You have not concluded your merge (MERGE_HEAD exists).
 	Please, commit your changes before you can merge.
 	Solution-1:
@@ -448,13 +448,17 @@ Please, commit your changes before you can merge.
 	Solution-2:
 	$ git reset --merge
 
-###### 修改上次提交的作者信息
+### 修改上次提交的作者信息
 	$ git commit --amend --author="name <email>"
 
-###### 撤销merge
+### 撤销merge
 	$ git reset --hard HEAD
 	$ git clean -df
 
-###### 从暂存区中删除文件
+### 从暂存区中删除文件
 	$ git rm log/\*.log
 	$ git rm \*~
+### 忽略文件模式
+	$ git config --global core.filemode false
+### 忽略换行问题
+	$ git config --global core.autocrlf false
