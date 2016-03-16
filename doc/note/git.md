@@ -1,127 +1,126 @@
-æ ‡ç­¾
-### æ·»åŠ tag
-	$ git tag -a åˆ†æ”¯å
+### ¿¿tag
+	$ git tag -a ¿¿¿
 
-### æ˜¾ç¤ºæŸä¸ªæ ‡ç­¾
-	$ git show æ ‡ç­¾å
+### ¿¿¿¿¿¿
+	$ git show ¿¿¿
 
-### æ˜¾ç¤ºæŸä¸ªæ ‡ç­¾çš„è¯¦ç»†ä¿¡æ¯
-	$ git tag -v æ ‡ç­¾å
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git tag -v ¿¿¿
 
-### ä¸ºæŸæ¬¡æäº¤æ·»åŠ ä¸€ä¸ªtag
-	$ git tag -a æ ‡ç­¾å æäº¤ç 
+### ¿¿¿¿¿¿¿¿¿tag
+	$ git tag -a ¿¿¿ ¿¿¿
 
-### å°†æŸä¸ªtagæ¨é€åˆ°è¿œç«¯
-	$ git push è¿œç«¯å æ ‡ç­¾å
+### ¿¿¿tag¿¿¿¿¿
+	$ git push ¿¿¿ ¿¿¿
 
-### å°†æ‰€æœ‰tagéƒ½æ¨é€åˆ°è¿œç«¯
-	$ git push è¿œç«¯å --tags
+### ¿¿¿tag¿¿¿¿¿¿
+	$ git push ¿¿¿ --tags
 
-### ä»è¿œç«¯ä¸‹è½½
-	$ git clone æœåŠ¡å™¨åœ°å€ æœ¬åœ°ç›®å½•
+### ¿¿¿¿¿
+	$ git clone ¿¿¿¿¿ ¿¿¿¿
 
-### æ˜¾ç¤ºè¿œç«¯URL
+### ¿¿¿¿URL
 	$ git remote -v
 
-### å‘è¿œç«¯æ¨é€
-	$ git push -f -u æœåŠ¡å™¨ä»£ç§° --all
+### ¿¿¿¿¿
+	$ git push -f -u ¿¿¿¿¿ --all
 
-### é‡ç½®åˆ°ä¹‹å‰çš„æŸä¸ªç‰ˆæœ¬
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git reset HEAD~1
 
-### å¢åŠ ä¸€ä¸ªè¿œç«¯
-	$ git remote add åç§° åœ°å€
+### ¿¿¿¿¿¿
+	$ git remote add ¿¿ ¿¿
 
-### åˆ é™¤ä¸€ä¸ªè¿œç«¯
-	$ git remote rm åç§°
+### ¿¿¿¿¿¿
+	$ git remote rm ¿¿
 
-### é‡å‘½åè¿œç«¯
-	$ git remote rename è€åå­— æ–°åå­—
+### ¿¿¿¿¿
+	$ git remote rename ¿¿¿ ¿¿¿
 
-### ä»gitä»“åº“ä¸­å–å‡ºä¸€ä¸ªæ–‡ä»¶åˆ°å·¥ä½œåŒº
-	$ git checkout -- æ–‡ä»¶
+### ¿git¿¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout -- ¿¿
 
-### ä»è¿œç«¯è·å–æœ€æ–°æ–‡ä»¶
-	$ git fetch è¿œç«¯å
+### ¿¿¿¿¿¿¿¿¿
+	$ git fetch ¿¿¿
 
-### mergeä»è¿œç«¯è·å–çš„æ–‡ä»¶åˆ°å½“å‰å·¥ä½œåŒº
-	$ git merge è¿œç«¯å/åˆ†æ”¯å
+### merge¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git merge ¿¿¿/¿¿¿
 
-### ä»ç¼“å­˜åŒºä¸­åˆ é™¤æŸä¸ªæ–‡ä»¶
-	$ git rm --cached æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git rm --cached ¿¿
 
-### æ˜¾ç¤ºlogï¼Œä¸€æ¬¡æäº¤å ä¸€è¡Œ
+### ¿¿log¿¿¿¿¿¿¿¿
 	$ git log --pretty=oneline
 
-### æŸ¥çœ‹æœ€åä¸€æ¬¡æ›´æ”¹çš„ç»†èŠ‚
+### ¿¿¿¿¿¿¿¿¿¿¿
 	$ git log -p -1
 
-### å¯åŠ¨gitk
+### ¿¿gitk
 	$ gitk
 
-### æŸ¥çœ‹è¿™æ¬¡æ›´æ”¹çš„è¯¦ç»†å†…å®¹
+### ¿¿¿¿¿¿¿¿¿¿¿
 	$ git log -1 -p
 
-### æŸ¥çœ‹ä¸Šä¸€æ¬¡æ›´æ”¹
+### ¿¿¿¿¿¿¿
 	$ git log -1
 
-### æŸ¥çœ‹gité…ç½®ä¿¡æ¯
+### ¿¿git¿¿¿¿
 	$ git config --list
 
-### è®¾ç½®ç”¨æˆ·å
-	$ git config --global user.name ä½œè€…
+### ¿¿¿¿¿
+	$ git config --global user.name ¿¿
 
-### æ˜¾ç¤ºè¿œç«¯ä¿¡æ¯
-	$ git remote show è¿œç«¯å
+### ¿¿¿¿¿¿
+	$ git remote show ¿¿¿
 
-### åˆ‡æ¢åˆ°æŸä¸ªåˆ†æ”¯
-	$ git branch åˆ†æ”¯å
+### ¿¿¿¿¿¿¿
+	$ git branch ¿¿¿
 
-### æŸ¥çœ‹åˆ†æ”¯ä¿¡æ¯
+### ¿¿¿¿¿¿
 	$ git branch -v
 
-### å°†æŸä¸ªåˆ†æ”¯mergeåˆ°å½“å‰åˆ†æ”¯
-	$ git merge åˆ†æ”¯å
+### ¿¿¿¿¿merge¿¿¿¿¿
+	$ git merge ¿¿¿
 
-### è®©gitåœæ­¢è¿½è¸ªæŸä¸ªæ–‡ä»¶
+### ¿git¿¿¿¿¿¿¿¿
 	$ git rm --cached .project
 
-### åˆ›å»ºä¸€ä¸ªæ–°åˆ†æ”¯å¹¶åˆ‡æ¢åˆ°è¯¥åˆ†æ”¯
-	$ git checkout -b åˆ†æ”¯å
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout -b ¿¿¿
 
-### åˆ é™¤æŸä¸ªåˆ†æ”¯
-	$ git branch -d åˆ†æ”¯å
-	$ git branch -D åˆ†æ”¯å
+### ¿¿¿¿¿¿
+	$ git branch -d ¿¿¿
+	$ git branch -D ¿¿¿
 
-### åˆ—å‡ºæ²¡æœ‰è¢«mergeçš„åˆ†æ”¯
+### ¿¿¿¿¿merge¿¿¿
 	$ git branch --no-merged
 
-### åˆ—å‡ºå·²ç»mergeå¥½äº†çš„åˆ†æ”¯
+### ¿¿¿¿merge¿¿¿¿¿
 	$ git branch --merged
 
-### ä¿®æ”¹æœ€è¿‘ä¸€æ¬¡æäº¤
+### ¿¿¿¿¿¿¿¿
 	$ git commit --amend
 
 
-### åˆ—å‡ºæ‰€æœ‰è¢«åˆ é™¤äº†çš„æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿
 	$ git ls-files deleted
 
-### æ›´æ–°indexç›®å½•ï¼ˆæ·»åŠ æˆ–åˆ é™¤äº†æ–‡ä»¶ï¼‰
+### ¿¿index¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git add -u
 
-### æ˜¾ç¤ºæ‰€æœ‰æ–°æ·»åŠ çš„æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git status -u
 
-### åˆ é™¤æ‰€æœ‰å°šæœªè¢«gitè¿½è¸ªçš„æ–°æ·»åŠ çš„æ–‡ä»¶
+### ¿¿¿¿¿¿¿git¿¿¿¿¿¿¿¿¿
 	$ git clean -df
 
-### æ”¾å¼ƒå°šæœªcommitçš„æ‰€æœ‰ä¿®æ”¹
+### ¿¿¿¿commit¿¿¿¿¿
 	$ git checkout -- .
 
-### æ˜¾ç¤ºä¸Šæ¬¡commitå¯¹æŸä¸ªæ–‡ä»¶åšçš„ä¿®æ”¹ç»†èŠ‚
-	$ git log -p -1 æ–‡ä»¶
+### ¿¿¿¿commit¿¿¿¿¿¿¿¿¿¿¿
+	$ git log -p -1 ¿¿
 
-### ä½¿ç”¨gitkå·¥å…·æŸ¥çœ‹æŸä¸ªæ–‡ä»¶
+### ¿¿gitk¿¿¿¿¿¿¿¿
 	$ gitk .gitignore
 
 ### Your branch and 'origin/master' have diverged,
@@ -129,57 +128,57 @@
 	$ git merge origin/master
 
 ### unstaging a staged file
-	$ git reset HEAD -- æ–‡ä»¶
+	$ git reset HEAD -- ¿¿
 
-### æ”¾å¼ƒå·¥ä½œåŒºæœªç¼“å­˜çš„ä¿®æ”¹
-	$ git checkout -- æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout -- ¿¿
 
-### åœ¨commitä¹‹å‰æ˜¾ç¤ºä¿®æ”¹ç»†èŠ‚
+### ¿commit¿¿¿¿¿¿¿¿
 	$ git commit -v
 
-### åˆ é™¤logæ–‡ä»¶å¤¹ä¸‹æ‰€æœ‰ä»¥logä¸ºåç¼€çš„æ–‡ä»¶
+### ¿¿log¿¿¿¿¿¿¿log¿¿¿¿¿¿
 	$ git rm log/\*.log
 
-### åˆ é™¤æ‰€æœ‰ä»¥~ä¸ºåç¼€çš„æ–‡ä»¶
+### ¿¿¿¿¿~¿¿¿¿¿¿
 	$ git rm \*~
 
-### é‡å‘½åæŸä¸ªæ–‡ä»¶
-	$ git mv <è€åå­—> <æ–°åå­—>
+### ¿¿¿¿¿¿¿
+	$ git mv <¿¿¿> <¿¿¿>
 
-### resetè‡³å‰ä¸€æ¬¡æäº¤æ—¶çš„ç‰ˆæœ¬
+### reset¿¿¿¿¿¿¿¿¿¿
 	$ git reset HEAD~1
 
-### pushå¹¶ä¸”update
+### push¿¿update
 	$ git push -u origin master
 
-### åˆ é™¤è¿œç«¯æŸä¸ªåˆ†æ”¯
-	$ git push è¿œç«¯å :åˆ†æ”¯å
+### ¿¿¿¿¿¿¿¿
+	$ git push ¿¿¿ :¿¿¿
 
-### é‡å‘½åæŸä¸ªè¿œç«¯
-	$ git remote rename è€åå­— æ–°åå­—
+### ¿¿¿¿¿¿¿
+	$ git remote rename ¿¿¿ ¿¿¿
 
-### åˆ—å‡ºæŸä¸ªç¨‹åºå‘˜çš„æ‰€æœ‰æäº¤
-	$ git log --author=ä½œè€…
+### ¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git log --author=¿¿
 
-### åˆ—å‡ºæŸä¸ªæäº¤è€…çš„æ‰€æœ‰æäº¤
-	$ git log --committer=æäº¤è€…
+### ¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git log --committer=¿¿¿
 
-### è·å–æŸä¸ªæ–‡ä»¶ä¹‹å‰çš„ç‰ˆæœ¬
-	$ git checkout HEAD~1 -- æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout HEAD~1 -- ¿¿
 
-### ç›´æ¥ä»gitä»“åº“æ£€å‡ºæŸä¸ªæ–‡ä»¶ï¼ˆè·³è¿‡ç¼“å­˜åŒºï¼‰
-	$ git checkout HEAD -- æ–‡ä»¶
+### ¿¿¿git¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout HEAD -- ¿¿
 
-### æŸ¥çœ‹æŸä¸ªæ–‡ä»¶åœ¨ä¸Šæ¬¡æäº¤æ—¶çš„æ ·å­
-	$ git show HEAD~1:æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+	$ git show HEAD~1:¿¿
 
-### unstage æ‰€æœ‰æ–‡ä»¶
+### unstage ¿¿¿¿
 	$ git rm --cached .
 
 ### git add . & git add -u
 	$ git add -A
 
-### å½»åº•ä»gitä»“åº“ä¸­ç§»é™¤æŸä¸ªæ–‡ä»¶
+### ¿¿¿git¿¿¿¿¿¿¿¿¿
 	$ git filter-branch --index-filter 'git rm --cached --ignore-unmatch <full path of this file here>' \
 	--prune-empty --tag-name-filter cat -- --all
 	$ rm -rf .git/refs/original/
@@ -187,13 +186,13 @@
 	$ git gc --prune=now
 	$ git gc --aggressive --prune=now
 
-### æ˜¾ç¤ºæ‰€æœ‰gitæ­£åœ¨è¿½è¸ªçš„æ–‡ä»¶
+### ¿¿¿¿git¿¿¿¿¿¿¿
 	$ git ls-files
 
-### åœ¨7200ç§’(2ä¸ªå°æ—¶)å†…è®°ä½å¯†ç 
+### ¿7200¿(2¿¿¿)¿¿¿¿¿
 	$ git config --global credential.helper 'cache --timeout=7200'
 
-### å¿˜è®°ä¹‹å‰ç¼“å­˜çš„å¯†ç 
+### ¿¿¿¿¿¿¿¿¿
 	$ git config --system --unset-all credential.helper
 
 ### merge project pro_x into project pro_main
@@ -203,240 +202,240 @@
 	deal with conflict files manually
 	$ git remote remove <pro_x name>
 
-### æ˜¾ç¤ºä¸Šæ¬¡æäº¤æ›´æ–°çš„æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff --name-only HEAD^ HEAD
 
-### æ˜¾ç¤ºæŸä¸ªæ–‡ä»¶åœ¨å·¥ä½œåŒºå’Œç¼“å­˜åŒºçš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff <file-path-goes-here>
 
-### æ˜¾ç¤ºæŸä¸ªæ–‡ä»¶åœ¨ç¼“å­˜åŒºå’Œgitä»“åº“çš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿git¿¿¿¿¿
 	$ git diff --cached <file-path-goes-here>
 
-### æ˜¾ç¤ºæ”¹åŠ¨è¿‡æŸä¸ªæ–‡ä»¶çš„æ‰€æœ‰æäº¤
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git log --follow <file-name>
-### æ˜¾ç¤ºä¸Šæ¬¡æäº¤æ”¹åŠ¨äº†ä»€ä¹ˆæ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git whatchanged -1
 
-### æ˜¾ç¤ºHEADå±¥å†ä¿¡æ¯
+### ¿¿HEAD¿¿¿¿
 	$ git reflog
 
-### å°†æœ€è¿‘ä¸‰æ¬¡æäº¤æ‰“æˆpatch
+### ¿¿¿¿¿¿¿¿¿patch
 	$ git format-patch -3
 
-### ç”ŸæˆæŸä¸¤æ¬¡æäº¤ä¹‹é—´çš„patch
+### ¿¿¿¿¿¿¿¿¿¿patch
 	$ git format-patch HEAD@{1}..HEAD
 	
-### mergeæŸä¸ªpatch
+### merge¿¿patch
 	$ git apply <patch-file-name>
 
-### å›é€€ä¸Šæ¬¡æäº¤
+### ¿¿¿¿¿¿
 	$ git revert HEAD
 
-### æŸ¥çœ‹æ‰€æœ‰æäº¤
+### ¿¿¿¿¿¿
 	$ git shortlog
 
-### ä¸ºæŸæ¬¡æäº¤è¡¥åŠ ä¸€ä¸ªtag
+### ¿¿¿¿¿¿¿¿¿tag
 	$ git tag -a <tag-name> <commit> -m 'messag-here'
 
-### æ¸…ç†åƒåœ¾
+### ¿¿¿¿
 	$ git gc
 
-### æ˜¾ç¤ºä¸¤æ¬¡æäº¤ä¸­æœ‰å·®åˆ«çš„æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff --name-only <commit> <commit>
 
-### å–å‡ºæŸä¸ªæ–‡ä»¶åœ¨æŸæ¬¡æäº¤æ—¶çš„ç‰ˆæœ¬
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git checkout <commit> <file>
 
-### æ˜¾ç¤ºæŸä¸ªæ–‡ä»¶åœ¨ä¸¤æ¬¡æäº¤ä¸­çš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff <commit> <commit> <file>
 
-### æ˜¾ç¤ºé…ç½®ä¿¡æ¯
+### ¿¿¿¿¿¿
 	$ git config -l
 
-### æ¯”è¾ƒå·¥ä½œå»å’Œç¼“å­˜åŒºçš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff
 
-### æ¯”è¾ƒç¼“å­˜åŒºå’Œä¸Šæ¬¡æäº¤çš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff --cached
 
-### æ¯”è¾ƒå½“å‰å·¥ä½œåŒºä¸­å†…å®¹å’Œä¸Šæ¬¡æäº¤æ—¶çš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff HEAD
 
-### æ˜¾ç¤ºHEADä¹‹å‰çš„ç¬¬6æ¬¡æäº¤åŒHEADä¹‹å‰çš„ç¬¬2æ¬¡æäº¤ä¹‹é—´çš„å·®åˆ«
+### ¿¿HEAD¿¿¿¿6¿¿¿¿HEAD¿¿¿¿2¿¿¿¿¿¿¿¿
 	$ git diff HEAD~6..HEAD~2
 
-### æ˜¾ç¤ºé‚£äº›åŒ…å«â€œupdateâ€å­—ç¬¦ä¸²çš„log
+### ¿¿¿¿¿¿¿update¿¿¿¿¿log
 	$ git log --grep=update
 
-### æ˜¾ç¤ºé‚£äº›åŒ…å«â€œupdateâ€å­—ç¬¦ä¸²çš„log
+### ¿¿¿¿¿¿¿update¿¿¿¿¿log
 	$ git log --since=2013-03-22
 	$ git log --since=2.weeks
 
-### æ ¹æ®è¿œç«¯ä»“åº“è¿›è¡Œé‡ç½®
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git reset origin/HEAD
 
-### åˆ é™¤æœ¬åœ°tag
+### ¿¿¿¿tag
 	$ git tag -d <tag-name>
 
-### é‡å‘½åæŸä¸ªåˆ†æ”¯
+### ¿¿¿¿¿¿¿
 	$ git branch -m <old-name> <new-name>
 
-### è®¾ç½®é»˜è®¤ç¼–è¾‘å™¨
+### ¿¿¿¿¿¿¿
 	$ git config --global core.editor vim
 	
-### é‡ç½®æœ¬æ¬¡mergeï¼ˆå½“mergeå¤±è´¥æ—¶ï¼‰
+### ¿¿¿¿merge¿¿merge¿¿¿¿
 	$ git reset --merge
 	
-### å¼ºåˆ¶æ¨é€è‡³è¿œç«¯ï¼Œå³ä½¿å­˜åœ¨å†²çªã€æ²¡mergeå¥½
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿merge¿
 	$ git push origin --force master 
 	
-### ç¬¬ä¸€æ¬¡å‘è¿œç«¯æ¨é€
+### ¿¿¿¿¿¿¿¿
 	$ git push -u origin --all   # to push up the repo for the first time
 
-### åˆå§‹åŒ–ä¸€ä¸ªè¿œç¨‹ä»“åº“
+### ¿¿¿¿¿¿¿¿¿
 	$ mkdir <project name>
 	$ cd <project name>
 	$ mkdir .git
 	$ cd .git/
 	$ git --bare init
 
-### æ¯”è¾ƒå½“å‰å·¥ä½œåŒºä¸ä¸Šæ¬¡æäº¤ä¹‹é—´çš„å·®åˆ«
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git diff HEAD
 
-### ä½¿ç”¨HEADé‡ç½®æ‰€æœ‰æ–‡ä»¶
+### ¿¿HEAD¿¿¿¿¿¿
 	$ git reset (--hard)
 
-### æ”¾å¼ƒæœ¬åœ°æ”¹åŠ¨&æäº¤ï¼Œè·å–è¿œç«¯æœåŠ¡å™¨æœ€æ–°ç‰ˆæœ¬
+### ¿¿¿¿¿¿&¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git fetch origin
 	$ git reset --hard origin/master
 
-### ä½¿ç”¨HEADé‡ç½®æŸä¸ªæ–‡ä»¶
+### ¿¿HEAD¿¿¿¿¿¿
 	$ git reset -- <file-name>
 
-### æŸ¥çœ‹ä¸Šæ¬¡commitåšäº†å“ªäº›ä¿®æ”¹
+### ¿¿¿¿commit¿¿¿¿¿¿
 	$ git diff HEAD^^
 
-### åŒ¹é…ä»¥@å¼€å¤´ï¼Œä»¥#ç»“å°¾çš„å­—ç¬¦ä¸²ï¼ˆå¦‚ï¼šâ€œ@abc#â€ï¼‰
+### ¿¿¿@¿¿¿¿#¿¿¿¿¿¿¿¿¿¿@abc#¿¿
 	$ @.*#
 
-### åˆ é™¤æ ‡ç­¾
+### ¿¿¿¿
 	$ git tag -d v1.16.6
 
-### æ¨é€æ‰€æœ‰åˆ†æ”¯
+### ¿¿¿¿¿¿
 	$ git push origin --all
 
-### å¯åŠ¨å›¾å½¢åŒ–mergeå·¥å…·
+### ¿¿¿¿¿merge¿¿
 	$ git mergetool
 
-### è®©gitå¿˜è®°æŸä¸ªæ–‡ä»¶
+### ¿git¿¿¿¿¿¿
 	$ git rm <file-name>
 
-### è®©gitå¿˜è®°æŸä¸ªæ–‡ä»¶å¤¹
+### ¿git¿¿¿¿¿¿¿
 	$ git rm -r <folder-name>/
 
-### é‡å‘½åæŸä¸ªæ–‡ä»¶
+### ¿¿¿¿¿¿¿
 	$ git mv <old-name> <new-name>
 
-### æ’¤é”€æŸæ¬¡æäº¤
+### ¿¿¿¿¿¿
 	$ git revert <commit-hash> 
 
-### æŸ¥çœ‹è‡ªæ˜¨å¤©çš„æ”¹åŠ¨ç»†èŠ‚
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git diff '@{yesterday}'
 
-### æŸ¥çœ‹ä¸¤å¤©å†…çš„æäº¤è®°å½•
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git whatchanged --since='2 days ago'
 
-### åˆ—å‡ºåŒ…å«"featured"çš„æ ‡ç­¾
+### ¿¿¿¿"featured"¿¿¿
 	$ git tag -l '*featured*'
 
-### åˆ—å‡ºåœ¨æŸæ¬¡commitä¸­æ‰€ä¿®æ”¹çš„æ‰€æœ‰æ–‡ä»¶
+### ¿¿¿¿¿commit¿¿¿¿¿¿¿¿¿
 	$ git show --name-only <commit-hash>
 
-### åˆ—å‡ºä¿®æ”¹äº†æŸä¸ªæ–‡ä»¶çš„æ‰€æœ‰commit
+### ¿¿¿¿¿¿¿¿¿¿¿¿commit
 	$ git log -p <file-name>
 
-### åˆ—å‡ºä¸¤ä¸ªcommitä¹‹é—´å˜åŒ–äº†çš„æ–‡ä»¶
+### ¿¿¿¿commit¿¿¿¿¿¿¿¿
 	$ git diff --name-only <hash-1> <hash-2>
 
-### é‡åˆ°ä»¥ä¸‹é”™è¯¯
+### ¿¿¿¿¿¿
 	$ git status
 	error: bad index file sha1 signature
 	fatal: index file corrupt
-	è§£å†³æ–¹æ¡ˆï¼š
-	1. å¤‡ä»½
+	¿¿¿¿¿
+	1. ¿¿
 	2. rm -f .git/index
 	3. git reset
 
-### mergeé”™è¯¯ï¼š
+### merge¿¿¿
 fatal: You have not concluded your merge (MERGE_HEAD exists).
 Please, commit your changes before you can merge.
-è§£å†³æ–¹æ¡ˆï¼š
+¿¿¿¿¿
 	$ git reset --merge 
 
-### ç¼“å­˜(éšè—)å˜æ›´
+### ¿¿(¿¿)¿¿
 	$ git stash
 
-### æŸ¥çœ‹æ‰€æœ‰ç¼“å­˜å˜æ›´åˆ—è¡¨
+### ¿¿¿¿¿¿¿¿¿¿
 	$ git stash list
 
-### åº”ç”¨ç¼“å­˜çš„å˜æ›´
+### ¿¿¿¿¿¿¿
 	$ git stash apply
 
-### åº”ç”¨ç¼“å­˜çš„å˜æ›´åå°†å…¶ä»ç¼“å­˜æ ˆä¸­å–èµ°
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git stash pop
 
-### æ’¤é”€`git add <file>`
+### ¿¿`git add <file>`
 	$ git reset <file>
 
-### åœ¨å°†devåˆ†æ”¯mergeéƒ½masteråˆ†æ”¯æ—¶ï¼Œä¿ç•™ä¸€ä¸ªèŠ‚ç‚¹
+### ¿¿dev¿¿merge¿master¿¿¿¿¿¿¿¿¿¿
 	$ git merge --no-ff dev
 
-### æŸ¥çœ‹hashå¯¹åº”çš„å†…å®¹
+### ¿¿hash¿¿¿¿¿
 	$ git cat-file -p <hash>
 
-### æŸ¥çœ‹æ¯æ¬¡æäº¤æ–‡ä»¶å˜åŒ–ï¼ˆå¢ã€åˆ è¡Œæ•°ï¼‰
+### ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 	$ git log --stat
 
-### æŸ¥çœ‹HEADä¸­çš„ç›®å½•æ ‘
+### ¿¿HEAD¿¿¿¿¿
 	$ git ls-tree HEAD
 
-### æ‰“å°æ–‡ä»¶å†…å®¹
+### ¿¿¿¿¿¿
 	$ git cat-file -p
 
-### å·¥ä½œåŒºå’ŒHEADæ¯”è¾ƒ
+### ¿¿¿¿HEAD¿¿
 	$ git diff HEAD
 
-### ä¸€è¡Œæ˜¾ç¤ºlog
+### ¿¿¿¿log
 	$ git log --oneline
 
-### é‡ç½®æš‚å­˜åŒºï¼Œå³ï¼Œundo 'git add' å‘½ä»¤
+### ¿¿¿¿¿¿¿¿undo 'git add' ¿¿
 	$ git reset HEAD
 
-### æŸ¥çœ‹æ€»æäº¤æ¬¡æ•°
+### ¿¿¿¿¿¿¿
 	$ git rev-list HEAD | wc -l
 
-### æ˜¾ç¤ºä¸­æ–‡æ–‡ä»¶å(è€ŒéUnicode)
+### ¿¿¿¿¿¿¿(¿¿Unicode)
 	$ git config --global core.quotepath false
 
-### åˆ é™¤è®¾ç½®
+### ¿¿¿¿
 	$ git config --unset --global user.name
 
-### ä¿®æ”¹æäº¤è€…
+### ¿¿¿¿¿
 	$ git commit --amend --author='name'
 
-### æŸ¥çœ‹æŸä¸€æ–‡ä»¶çš„ä¿®æ”¹è®°å½•
-	$ git blame æ–‡ä»¶å
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git blame ¿¿¿
 
-### åŸºäºmasteråˆ†æ”¯ï¼Œå°†devåˆ†æ”¯çš„é›¶æ•£æäº¤åˆå¹¶èµ·æ¥
+### ¿¿master¿¿¿¿dev¿¿¿¿¿¿¿¿¿¿¿
 	$ git rebase -i master
 
-### åœ¨å‘æ¨é€å‰é‡è®¾åŸºå‡†
+### ¿¿¿¿¿¿¿¿¿
 	$ git rebase -i origin/master
 
-### å®‰è£…tig
+### ¿¿tig
 	$ sudo apt-get install tig
 
-### è¯¢é—®å¼add, checkout, reset
+### ¿¿¿add, checkout, reset
 	$ git add -i
 	$ git checkout -p
 	$ git reset -p
@@ -449,17 +448,52 @@ Please, commit your changes before you can merge.
 	Solution-2:
 	$ git reset --merge
 
-### ä¿®æ”¹ä¸Šæ¬¡æäº¤çš„ä½œè€…ä¿¡æ¯
+### ¿¿¿¿¿¿¿¿¿¿¿
 	$ git commit --amend --author="name <email>"
 
-### æ’¤é”€merge
+### ¿¿merge
 	$ git reset --hard HEAD
 	$ git clean -df
 
-### ä»æš‚å­˜åŒºä¸­åˆ é™¤æ–‡ä»¶
+### ¿¿¿¿¿¿¿¿¿
 	$ git rm log/\*.log
 	$ git rm \*~
-### å¿½ç•¥æ–‡ä»¶æ¨¡å¼
+
+### ¿¿¿¿¿¿
 	$ git config --global core.filemode false
-### å¿½ç•¥æ¢è¡Œé—®é¢˜
+
+### ¿¿¿¿¿¿
 	$ git config --global core.autocrlf false
+
+### ¿¿¿¿¿¿
+	$ git archive -o export.zip <commit-id>
+
+### ¿¿¿¿¿¿¿¿¿¿¿
+	$ git checkout --theirs
+
+log
+¿¿¿¿
+$ git log -p
+
+¿¿¿¿¿¿
+$ git log --stat
+
+¿¿¿¿¿¿¿¿
+$ git log --pretty=format:"%h - %an, %ar : %s" --graph
+
+¿¿¿¿¿¿¿¿
+$ git log --since=2.weeks
+
+¿¿¿¿¿¿¿¿¿¿¿¿
+$ git log -Sfix --oneline
+
+¿¿¿¿¿¿¿¿¿
+$ git log --author 'Jake Wharton'
+
+¿¿¿¿¿¿
+$ git shortlog -sn
+
+¿¿¿¿
+$ git shortlog --help
+
+
