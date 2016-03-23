@@ -291,3 +291,6 @@
 
 ###### 创建GVIM配置文件
 	:mkvimrc! ~/.vimrc
+
+###### 获取当前字体设置
+	:set guifont?
