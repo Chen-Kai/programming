@@ -293,4 +293,4 @@
 	:mkvimrc! ~/.vimrc
 
 ###### 获取当前字体设置
-	:set guifont?
+	set guifont=Consolas:h15
