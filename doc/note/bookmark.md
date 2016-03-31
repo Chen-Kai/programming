@@ -68,7 +68,6 @@
 - Java
   - [基础练习](http://www.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html)
 - Web
-  - [博客解决方案](https://farbox.com/)
   - [一个优秀的UXer博客](http://colachan.com/)
   - [可视化算法演示](http://visualgo.net/)
   - [markdown在线编辑](http://dillinger.io/)
@@ -81,3 +80,8 @@
   - [透明背景图片](http://pngimg.com/)
   - [计算机组成](http://shimonschocken.com/)
 - [npm镜像](https://npm.taobao.org/)
+
+- [CodePlayer](http://thecodeplayer.com/)
+- [Learnning jQuery](http://learningjquery.com/)
+- [Canvas](http://www.html5canvastutorials.com/)
+- [JS动画](http://javascript.info/tutorial/animation)
