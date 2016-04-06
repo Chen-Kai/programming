@@ -115,4 +115,27 @@ public int getMaxHeight () {
 Pattern.compile(".*.gif").matcher(name).matches();
 ```
 
+---
+
+Java查看字节码
+
+``` bash
+javap -c Cat
+```
+
+单例模式：
+
+``` java
+public enum Sun {
+  INSTANCE;
+  public void sayHi() {
+  }
+}
+```
+
+抛出断言异常：
+
+``` java
+	throw new AssertionError())
+```
 

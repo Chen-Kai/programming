@@ -17,3 +17,5 @@ $ hexo -version
 $ hexo clean
 
 $ cnpm install hexo-deployer-git --save
+
+$ hexo deploy
