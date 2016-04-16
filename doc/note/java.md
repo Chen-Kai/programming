@@ -139,3 +139,11 @@ public enum Sun {
 	throw new AssertionError())
 ```
 
+并发，将一个程序划分成多个分离的、独立运行的任务。
+
+这些任务中的每一个都由独立的线程驱动，每个任务都觉得自己独立占有CPU。
+线程可以驱动任务，实现Runnable接口的就是任务。
+
+Thread.yield() // hi，处理器，我不急。
+
+

@@ -18,6 +18,19 @@ nextElementSibling
 firstChild
 firstElementChild
 
+对象
+ - 方法 
+ - 属性 
+ 
+给数组类添加新的方法
+        Array.prototype.sum = function () {
+            var sum = 0;
+            for (var i = 0; i < this.length; i++) {
+                sum += this[i];
+            }
+            return sum;
+        };
+
 setArribute
 className
 
@@ -254,3 +267,224 @@ Always specify your starting position on your paths with a moveTo() command firs
     img.onload = function () {
         ctx.drawImage(img, 100, 100);
     };
+	
+进制转换：
+parseInt("100").toString(2);
+
+/\s/ 空白字符
+\s 空白字符
+\d 数字
+\w 字符
+\b 单词开端
+
+        $(document).ready(
+                function () {
+				// 当前窗口大小
+                    var w = $(window).width();
+                    var h = $(window).height();
+                    alert("w: " + w + ", h: " + h);
+                }
+        );
+		
+
+``` css
+selector {
+	property: value; 
+	property: value; 
+}
+```
+
+打包分组
+h1,h2,h3,h4,h5,h6 {
+  color: green;
+  }
+
+继承： 子元素继承父元素的属性
+
+后代选择
+li strong { // li下的strong标签
+	font-style: italic;
+	font-weight: normal;
+}  
+
+元素选择
+html {
+	color:black;
+}
+ 
+通配
+* {
+	color:white;
+}
+
+类选择 p && important类
+p.important {
+	color:red;
+}
+
+属性选择
+[title]
+{
+color:red;
+}
+
+a[href]
+{
+color:red;
+}
+
+有href && 有title属性
+a[href][title]
+{
+color:red;
+}
+
+a[href*="w3school.com.cn"]
+{
+color: red;
+}
+
+直接子元素
+h1 > strong {color:red;}
+
+相邻
+h1 + p {margin-top:50px;}
+
+:not(.cls)
+
+$('#selected-plays li:not(.horizontal)').addClass('sub-level');
+
+$('a[href^="mailto:"]').addClass('mailto');
+
+$('a[href$=".pdf"]').addClass('pdflink');
+
+ $('a[href^="http"][href*="henry"]').addClass('henrylink');
+
+ $('tr:even').addClass('alt');
+ 
+ $('div.horizontal:eq(1)')
+ 
+ $('tr:nth-child(odd)').addClass('alt');
+ 
+ $('td:contains(Henry)').addClass('highlight');
+ 
+   $('a').filter(function() {
+    return this.hostname && this.hostname != location.hostname;
+  }).addClass('external');
+  
+  // 最近的同辈元素
+  $('td:contains(Henry)').next().addClass('highlight');
+  
+  // 所有同辈的
+    $('td:contains(Henry)').nextAll().addClass('highlight');
+
+	.parent()方法在DOM中上溯一层
+	
+	.children()
+	
+	要访问jQuery对象引用的第
+一个DOM元素，可以使用.get(0)。
+
+var myTag = $('#my-element').get(0).tagName;
+var myTag = $('#my-element')[0].tagName;
+
+  $('div.chapter a').attr({
+    rel: 'external',
+    title: 'Learn more at Wikipedia'
+  });
+  
+$(document).ready(function() {
+  // Use attr() to add an id, rel, and title.
+  $('div.chapter a[href*="wikipedia"]').attr({
+    rel: 'external',
+    title: function() {
+      return 'Learn more about ' + $(this).text() + ' at Wikipedia.';
+    },
+    id: function(index, oldValue) {
+      return 'wikilink-' + index;
+    }
+  });
+});
+
+HTML属性是指页面标记中放在引号中的值，而DOM属性则指通过JS能够取得的值。
+
+在jQuery中，可以通过.prop()方法取得和设置DOM属性：
+//取得"checked"属性的当前值
+var currentlyChecked = $('.my-checkbox').prop('checked');
+//设置"checked"属性的值
+$('.my-checkbox').prop('checked', false);
+
+//取得文本输入框的当前值
+var inputValue = $('#my-input').val();
+//取得选项列表的当前值
+var selectValue = $('#my-select').val();
+//设置单选列表的值
+$('#my-single-select').val('value3');
+//设置多选列表的值
+$('#my-multi-select').val(['value1', 'value2']);
+
+  // Add "back to top" links.
+  $('<a href="#top">back to top</a>').insertAfter('div.chapter p');
+  $('<a id="top"></a>').prependTo('body');
+  bing
+ 在其他元素前、后插入新内容的一套
+方案。
+ .insertBefore()在现有元素外部、之前添加内容；
+ .prependTo()在现有元素内部、之前添加内容；
+ .appendTo()在现有元素内部、之后添加内容；
+ .insertAfter()在现有元素外部、之后添加内容。
+
+$.getJson("x.json");
+
+定义类和使用对象
+``` javascript
+        var Light = function () {
+
+        };
+
+        Light.prototype.turnOn = function () {
+            return "On";
+        };
+
+        Light.prototype.turnOff = function () {
+            return "Off";
+        };
+
+        window.onload = function () {
+            var light = new Light();
+            alert(light.turnOn());
+            alert(light.turnOff());
+        };
+```
+
+或者：
+``` javascript
+        var Light = function () {
+        };
+        Light.prototype = {
+            turnOn: function () {
+                return "On";
+            },
+            turnOff: function() {
+                return "Off";
+            }
+        };
+```
+
+alert
+confirm
+prompt
+window.open() 打开一个网址
+
+
+DOM：定义和访问HTML文档的标准方法。
+DOM节点类型：
+- 元素节点
+- 文本节点
+- 属性节点
+
+ele.style.display = "none";
+
+ele.className
+
+

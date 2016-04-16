@@ -144,3 +144,4 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 ###### Nexus S 解锁
 	$ fastboot devices
 	$ fastboot oem unlock
+
