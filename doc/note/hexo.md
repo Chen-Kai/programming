@@ -19,3 +19,7 @@ $ hexo clean
 $ cnpm install hexo-deployer-git --save
 
 $ hexo deploy
+
+$ hexo s --debug
+
+$ http://localhost:4000/

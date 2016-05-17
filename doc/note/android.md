@@ -145,3 +145,10 @@ transition.enableTransitionType(LayoutTransition.CHANGING);
 	$ fastboot devices
 	$ fastboot oem unlock
 
+View是可以画在屏幕上的，可见的东西。
+
+一个场景是一个状态，Transition可以让场景之间的切换更优雅、更有意义。
+每一次Transition，都是从初始状态到最终状态的过度。我们程序员要做得就是让这个过度更有意义、更自然、更优雅。
+
+
+

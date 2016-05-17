@@ -412,3 +412,51 @@ deb-src http://mirrors.aliyun.com/ubuntu/ precise-backports main restricted univ
 
 ###### check the return value of the last cmd
 	$ echo $?
+
+禁用触摸板命令：
+sudo rmmod psmouse
+启用触摸板命令：
+sudo modprobe psmouse
+屏幕截图
+Alt + PrtSc
+查找软件
+win
+启动系统监视器
+win + monitor 
+启动终端
+Ctrl + Alt + t
+锁屏
+Ctrl + Alt + L
+最小化当前窗口
+Alt + F9
+最大化/正常窗口大小切换
+Alt + F10
+添加环境变量：
+1. sudo -i
+cd /
+ll
+2. vi .bashrc
+添加
+export PATH="$PATH:/full_path"
+重启Ubuntu
+
+Restore deleted top panel:
+$ gconftool-2 --shutdown
+$ rm -rf ~/.gconf/apps/panel
+$ pkill gnome-panel
+
+execute *.sh
+sh *.sh
+
+execute *.bin
+sudo chmod  +x  *.bin
+sudo *.bin
+
+所有用户皆可使用的系统程序存放在/bin中
+超级用户才能使用的系统程序粗放在/sbin中
+ 
+所有用户皆可使用的应用程序存放在/usr/bin中
+超级用户才能使用的应用程序存放在/usr/sbin中
+ 
+所有用户皆可使用的与本地机器有关的程序存放在/usr/local/bin中
+超级用户才能使用的与本地机器有关的程序存放在/usr/local/sbin中
